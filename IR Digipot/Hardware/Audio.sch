@@ -1,0 +1,1605 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Library:AD5262 U4
+U 1 1 5FE37C9F
+P 8800 2300
+F 0 "U4" H 9250 2550 50  0000 L BNN
+F 1 "AD5262" H 9250 2450 50  0000 L BNN
+F 2 "Librray:TSSOP-16_4.4x5mm_P0.65mm" H 8800 2300 50  0001 C CNN
+F 3 "${KIPRJMOD}/../../Datasheet/AD5260_5262 15 V Digital Potentiometer.pdf" H 8800 2300 50  0001 C CNN
+F 4 "IC DGT POT 50KOHM 256TAP 16TSSOP" H 8800 2300 50  0001 C CNN "Description"
+F 5 "Analog Devices Inc." H 8800 2300 50  0001 C CNN "Manufacturer"
+F 6 "AD5262BRUZ50-RL7" H 8800 2300 50  0001 C CNN "Manufacturer Part Number"
+F 7 "AD5262BRUZ50-RL7CT-ND" H 8800 2300 50  0001 C CNN "Digi-Key Part Number"
+	1    8800 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0108
+U 1 1 5FE3AEBF
+P 9150 3350
+F 0 "#PWR0108" H 9150 3100 50  0001 C CNN
+F 1 "GNDA" H 9155 3177 50  0000 C CNN
+F 2 "" H 9150 3350 50  0001 C CNN
+F 3 "" H 9150 3350 50  0001 C CNN
+	1    9150 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 3300 9150 3350
+$Comp
+L power:-5VA #PWR0109
+U 1 1 5FE3B9AD
+P 8950 3350
+F 0 "#PWR0109" H 8950 3450 50  0001 C CNN
+F 1 "-5VA" H 8965 3523 50  0000 C CNN
+F 2 "" H 8950 3350 50  0001 C CNN
+F 3 "" H 8950 3350 50  0001 C CNN
+	1    8950 3350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8950 3300 8950 3350
+$Comp
+L power:+5VA #PWR0110
+U 1 1 5FE3C7B2
+P 8950 1600
+F 0 "#PWR0110" H 8950 1450 50  0001 C CNN
+F 1 "+5VA" H 8965 1773 50  0000 C CNN
+F 2 "" H 8950 1600 50  0001 C CNN
+F 3 "" H 8950 1600 50  0001 C CNN
+	1    8950 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 1600 8950 1850
+$Comp
+L Library:Ferrite_Bead FB1
+U 1 1 5FE43B5B
+P 9150 1850
+F 0 "FB1" H 9050 2100 50  0000 L BNN
+F 1 "Ferrite_Bead" H 9050 2000 50  0000 L BNN
+F 2 "Librray:L_0402_1005Metric" H 9450 2000 50  0001 C CNN
+F 3 "" H 9450 2000 50  0001 C CNN
+F 4 "FERRITE BEAD 10 OHM 0402 1LN" H 9150 1850 50  0001 C CNN "Description"
+F 5 "Murata Electronics" H 9150 1850 50  0001 C CNN "Manufacturer"
+F 6 "BLM15PG100SN1D" H 9150 1850 50  0001 C CNN "Manufacturer Part Number"
+F 7 "490-5976-1-ND" H 9150 1850 50  0001 C CNN "Digi-Key Part Number"
+	1    9150 1850
+	1    0    0    -1  
+$EndComp
+Connection ~ 8950 1850
+Wire Wire Line
+	8950 1850 8950 2100
+Wire Wire Line
+	9150 2100 9150 1950
+Wire Wire Line
+	9150 1950 9250 1950
+Wire Wire Line
+	9250 1950 9250 1850
+Text GLabel 7650 2650 0    50   Input ~ 0
+DIGIPOT_SHDN
+Text GLabel 7650 2900 0    50   Input ~ 0
+SPI_CS_DIGIPOT
+Text GLabel 7650 3000 0    50   Input ~ 0
+SPI_CLK
+Text GLabel 7650 3100 0    50   Input ~ 0
+SPI_MOSI
+Wire Wire Line
+	7650 2650 8500 2650
+Wire Wire Line
+	7650 2900 8500 2900
+Wire Wire Line
+	7650 3000 8500 3000
+Wire Wire Line
+	7650 3100 8500 3100
+$Comp
+L power:GNDA #PWR0111
+U 1 1 5FE5BE15
+P 8250 3350
+F 0 "#PWR0111" H 8250 3100 50  0001 C CNN
+F 1 "GNDA" H 8255 3177 50  0000 C CNN
+F 2 "" H 8250 3350 50  0001 C CNN
+F 3 "" H 8250 3350 50  0001 C CNN
+	1    8250 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 3350 8250 2500
+Wire Wire Line
+	8250 2500 8500 2500
+$Comp
+L power:GNDA #PWR0112
+U 1 1 5FE5C547
+P 9850 3350
+F 0 "#PWR0112" H 9850 3100 50  0001 C CNN
+F 1 "GNDA" H 9855 3177 50  0000 C CNN
+F 2 "" H 9850 3350 50  0001 C CNN
+F 3 "" H 9850 3350 50  0001 C CNN
+	1    9850 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 2500 9850 2500
+Wire Wire Line
+	9850 2500 9850 3350
+$Comp
+L Library:C C?
+U 1 1 5FE65CEF
+P 7600 1400
+AR Path="/5FE20DA8/5FE65CEF" Ref="C?"  Part="1" 
+AR Path="/5FE379B8/5FE65CEF" Ref="C7"  Part="1" 
+F 0 "C7" V 7621 1265 50  0000 R CNN
+F 1 "0.1uF" V 7530 1265 50  0000 R CNN
+F 2 "Librray:C_0402_1005Metric" H 7450 1600 50  0001 C CNN
+F 3 "" H 7450 1600 50  0001 C CNN
+F 4 "CAP CER 0.1UF 25V X7R 0402" V 7600 1400 50  0001 C CNN "Description"
+F 5 "KEMET" V 7600 1400 50  0001 C CNN "Manufacturer"
+F 6 "C0402C104K3RAC7411" V 7600 1400 50  0001 C CNN "Manufacturer Part Number"
+F 7 "399-C0402C104K3RAC7411CT-ND" V 7600 1400 50  0001 C CNN "Digi-Key Part Number"
+	1    7600 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Library:C C?
+U 1 1 5FE6669F
+P 7600 1750
+AR Path="/5FE20DA8/5FE6669F" Ref="C?"  Part="1" 
+AR Path="/5FE379B8/5FE6669F" Ref="C8"  Part="1" 
+F 0 "C8" V 7621 1615 50  0000 R CNN
+F 1 "0.1uF" V 7530 1615 50  0000 R CNN
+F 2 "Librray:C_0402_1005Metric" H 7450 1950 50  0001 C CNN
+F 3 "" H 7450 1950 50  0001 C CNN
+F 4 "CAP CER 0.1UF 25V X7R 0402" V 7600 1750 50  0001 C CNN "Description"
+F 5 "KEMET" V 7600 1750 50  0001 C CNN "Manufacturer"
+F 6 "C0402C104K3RAC7411" V 7600 1750 50  0001 C CNN "Manufacturer Part Number"
+F 7 "399-C0402C104K3RAC7411CT-ND" V 7600 1750 50  0001 C CNN "Digi-Key Part Number"
+	1    7600 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Library:C C?
+U 1 1 5FE38C6E
+P 7050 1400
+AR Path="/5FE20DA8/5FE38C6E" Ref="C?"  Part="1" 
+AR Path="/5FE379B8/5FE38C6E" Ref="C5"  Part="1" 
+F 0 "C5" V 7071 1265 50  0000 R CNN
+F 1 "10uF" V 6980 1265 50  0000 R CNN
+F 2 "Librray:C_0805_2012Metric" H 6900 1600 50  0001 C CNN
+F 3 "" H 6900 1600 50  0001 C CNN
+F 4 "CAP CER 10UF 16V X7R 0805" V 7050 1400 50  0001 C CNN "Description"
+F 5 "Taiyo Yuden" V 7050 1400 50  0001 C CNN "Manufacturer"
+F 6 "EMK212BB7106KG-T" V 7050 1400 50  0001 C CNN "Manufacturer Part Number"
+F 7 "587-6139-1-ND" V 7050 1400 50  0001 C CNN "Digi-Key Part Number"
+	1    7050 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Library:C C?
+U 1 1 5FE399CF
+P 7050 1750
+AR Path="/5FE20DA8/5FE399CF" Ref="C?"  Part="1" 
+AR Path="/5FE379B8/5FE399CF" Ref="C6"  Part="1" 
+F 0 "C6" V 7071 1615 50  0000 R CNN
+F 1 "10uF" V 6980 1615 50  0000 R CNN
+F 2 "Librray:C_0805_2012Metric" H 6900 1950 50  0001 C CNN
+F 3 "" H 6900 1950 50  0001 C CNN
+F 4 "CAP CER 10UF 16V X7R 0805" V 7050 1750 50  0001 C CNN "Description"
+F 5 "Taiyo Yuden" V 7050 1750 50  0001 C CNN "Manufacturer"
+F 6 "EMK212BB7106KG-T" V 7050 1750 50  0001 C CNN "Manufacturer Part Number"
+F 7 "587-6139-1-ND" V 7050 1750 50  0001 C CNN "Digi-Key Part Number"
+	1    7050 1750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7050 1900 7050 2000
+Wire Wire Line
+	7050 2000 6750 2000
+Wire Wire Line
+	7050 2000 7600 2000
+Wire Wire Line
+	7600 2000 7600 1900
+Connection ~ 7050 2000
+Wire Wire Line
+	7050 1550 7050 1600
+Wire Wire Line
+	7600 1550 7600 1600
+$Comp
+L power:+5VA #PWR010
+U 1 1 5FE3C76B
+P 6750 1100
+F 0 "#PWR010" H 6750 950 50  0001 C CNN
+F 1 "+5VA" H 6765 1273 50  0000 C CNN
+F 2 "" H 6750 1100 50  0001 C CNN
+F 3 "" H 6750 1100 50  0001 C CNN
+	1    6750 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 1100 6750 1200
+$Comp
+L power:-5VA #PWR011
+U 1 1 5FE3D743
+P 6750 2100
+F 0 "#PWR011" H 6750 2200 50  0001 C CNN
+F 1 "-5VA" H 6765 2273 50  0000 C CNN
+F 2 "" H 6750 2100 50  0001 C CNN
+F 3 "" H 6750 2100 50  0001 C CNN
+	1    6750 2100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6750 2000 6750 2100
+Wire Wire Line
+	7050 1600 7600 1600
+Connection ~ 7050 1600
+Connection ~ 7600 1600
+$Comp
+L power:GNDA #PWR012
+U 1 1 5FE3EBE9
+P 8150 1700
+F 0 "#PWR012" H 8150 1450 50  0001 C CNN
+F 1 "GNDA" H 8155 1527 50  0000 C CNN
+F 2 "" H 8150 1700 50  0001 C CNN
+F 3 "" H 8150 1700 50  0001 C CNN
+	1    8150 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 1600 8150 1600
+Wire Wire Line
+	8150 1600 8150 1700
+$Comp
+L Library:OPA2134 U5
+U 1 1 5FE3A925
+P 3200 700
+F 0 "U5" H 3500 650 50  0000 L BNN
+F 1 "OPA2134" H 3500 550 50  0000 L BNN
+F 2 "Librray:SOIC-8_Width3.9mm_Pitch1.27mm" H 3200 700 50  0001 C CNN
+F 3 "${KIPRJMOD}/../../Datasheet/OPAx134 SoundPlus High Performance Audio Operational Amplifiers.pdf" H 3200 700 50  0001 C CNN
+F 4 "IC AUDIO 2 CIRCUIT 8SOIC" H 3200 700 50  0001 C CNN "Description"
+F 5 "Texas Instruments" H 3200 700 50  0001 C CNN "Manufacturer"
+F 6 "OPA2134UA/2K5" H 3200 700 50  0001 C CNN "Manufacturer Part Number"
+F 7 "296-22024-1-ND" H 3200 700 50  0001 C CNN "Digi-Key Part Number"
+	1    3200 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Library:OPA2134 U5
+U 2 1 5FE3B8C4
+P 3200 1950
+F 0 "U5" H 3500 1900 50  0000 L BNN
+F 1 "OPA2134" H 3500 1800 50  0000 L BNN
+F 2 "Librray:SOIC-8_Width3.9mm_Pitch1.27mm" H 3200 1950 50  0001 C CNN
+F 3 "${KIPRJMOD}/../../Datasheet/OPAx134 SoundPlus High Performance Audio Operational Amplifiers.pdf" H 3200 1950 50  0001 C CNN
+	2    3200 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Library:R R?
+U 1 1 5FE48FC8
+P 2400 1150
+AR Path="/5FE20DA8/5FE48FC8" Ref="R?"  Part="1" 
+AR Path="/5FE379B8/5FE48FC8" Ref="R7"  Part="1" 
+F 0 "R7" V 2250 1050 50  0000 L BNN
+F 1 "3.3K" V 2250 1250 50  0000 L BNN
+F 2 "Librray:R_0402_1005Metric" H 2400 1150 50  0001 C CNN
+F 3 "" H 2400 1150 50  0001 C CNN
+F 4 "CRGCQ 0402 3K3 1%" H 2400 1150 50  0001 C CNN "Description"
+F 5 "TE Connectivity Passive Product" H 2400 1150 50  0001 C CNN "Manufacturer"
+F 6 "CRGCQ0402F3K3" H 2400 1150 50  0001 C CNN "Manufacturer Part Number"
+F 7 "A129633CT-ND" H 2400 1150 50  0001 C CNN "Digi-Key Part Number"
+	1    2400 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR019
+U 1 1 5FE4C4D9
+P 3200 1750
+F 0 "#PWR019" H 3200 1500 50  0001 C CNN
+F 1 "GNDA" H 3205 1577 50  0000 C CNN
+F 2 "" H 3200 1750 50  0001 C CNN
+F 3 "" H 3200 1750 50  0001 C CNN
+	1    3200 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 850  3100 850 
+Wire Wire Line
+	3100 2100 3000 2100
+$Comp
+L Library:R R?
+U 1 1 5FE58D04
+P 3300 1400
+AR Path="/5FE20DA8/5FE58D04" Ref="R?"  Part="1" 
+AR Path="/5FE379B8/5FE58D04" Ref="R11"  Part="1" 
+F 0 "R11" V 3150 1300 50  0000 L BNN
+F 1 "33K" V 3150 1500 50  0000 L BNN
+F 2 "Librray:R_0402_1005Metric" H 3300 1400 50  0001 C CNN
+F 3 "" H 3300 1400 50  0001 C CNN
+F 4 "CRGCQ 0402 33K 1%" H 3300 1400 50  0001 C CNN "Description"
+F 5 "TE Connectivity Passive Product" H 3300 1400 50  0001 C CNN "Manufacturer"
+F 6 "CRGCQ0402F33K" H 3300 1400 50  0001 C CNN "Manufacturer Part Number"
+F 7 "A129645CT-ND" H 3300 1400 50  0001 C CNN "Digi-Key Part Number"
+	1    3300 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 1750 3000 1750
+Wire Wire Line
+	3000 1750 3000 2100
+Wire Wire Line
+	3700 1300 3700 950 
+Wire Wire Line
+	2900 1300 2900 1050
+Connection ~ 2900 1050
+Wire Wire Line
+	2900 2550 2900 2300
+Connection ~ 2900 2300
+Wire Wire Line
+	2900 2300 3100 2300
+$Comp
+L Library:R R?
+U 1 1 5FE61557
+P 3300 2650
+AR Path="/5FE20DA8/5FE61557" Ref="R?"  Part="1" 
+AR Path="/5FE379B8/5FE61557" Ref="R12"  Part="1" 
+F 0 "R12" V 3150 2550 50  0000 L BNN
+F 1 "33K" V 3150 2750 50  0000 L BNN
+F 2 "Librray:R_0402_1005Metric" H 3300 2650 50  0001 C CNN
+F 3 "" H 3300 2650 50  0001 C CNN
+F 4 "CRGCQ 0402 33K 1%" H 3300 2650 50  0001 C CNN "Description"
+F 5 "TE Connectivity Passive Product" H 3300 2650 50  0001 C CNN "Manufacturer"
+F 6 "CRGCQ0402F33K" H 3300 2650 50  0001 C CNN "Manufacturer Part Number"
+F 7 "A129645CT-ND" H 3300 2650 50  0001 C CNN "Digi-Key Part Number"
+	1    3300 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Library:R R?
+U 1 1 5FE61E85
+P 2400 2400
+AR Path="/5FE20DA8/5FE61E85" Ref="R?"  Part="1" 
+AR Path="/5FE379B8/5FE61E85" Ref="R8"  Part="1" 
+F 0 "R8" V 2250 2300 50  0000 L BNN
+F 1 "3.3K" V 2250 2500 50  0000 L BNN
+F 2 "Librray:R_0402_1005Metric" H 2400 2400 50  0001 C CNN
+F 3 "" H 2400 2400 50  0001 C CNN
+F 4 "CRGCQ 0402 3K3 1%" H 2400 2400 50  0001 C CNN "Description"
+F 5 "TE Connectivity Passive Product" H 2400 2400 50  0001 C CNN "Manufacturer"
+F 6 "CRGCQ0402F3K3" H 2400 2400 50  0001 C CNN "Manufacturer Part Number"
+F 7 "A129633CT-ND" H 2400 2400 50  0001 C CNN "Digi-Key Part Number"
+	1    2400 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Library:R R?
+U 1 1 5FE62AC0
+P 2600 1250
+AR Path="/5FE20DA8/5FE62AC0" Ref="R?"  Part="1" 
+AR Path="/5FE379B8/5FE62AC0" Ref="R9"  Part="1" 
+F 0 "R9" H 2650 1200 50  0000 L BNN
+F 1 "47K" H 2600 1300 50  0000 L BNN
+F 2 "Librray:R_0402_1005Metric" H 2600 1250 50  0001 C CNN
+F 3 "" H 2600 1250 50  0001 C CNN
+F 4 "CRGCQ 0402 47K 1%" H 2600 1250 50  0001 C CNN "Description"
+F 5 "TE Connectivity Passive Product" H 2600 1250 50  0001 C CNN "Manufacturer"
+F 6 "CRGCQ0402F47K" H 2600 1250 50  0001 C CNN "Manufacturer Part Number"
+F 7 "A129647CT-ND" H 2600 1250 50  0001 C CNN "Digi-Key Part Number"
+	1    2600 1250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Library:R R?
+U 1 1 5FE65E04
+P 2600 2500
+AR Path="/5FE20DA8/5FE65E04" Ref="R?"  Part="1" 
+AR Path="/5FE379B8/5FE65E04" Ref="R10"  Part="1" 
+F 0 "R10" H 2600 2450 50  0000 L BNN
+F 1 "47K" H 2600 2550 50  0000 L BNN
+F 2 "Librray:R_0402_1005Metric" H 2600 2500 50  0001 C CNN
+F 3 "" H 2600 2500 50  0001 C CNN
+F 4 "CRGCQ 0402 47K 1%" H 2600 2500 50  0001 C CNN "Description"
+F 5 "TE Connectivity Passive Product" H 2600 2500 50  0001 C CNN "Manufacturer"
+F 6 "CRGCQ0402F47K" H 2600 2500 50  0001 C CNN "Manufacturer Part Number"
+F 7 "A129647CT-ND" H 2600 2500 50  0001 C CNN "Digi-Key Part Number"
+	1    2600 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GNDA #PWR017
+U 1 1 5FE66B1E
+P 2700 1500
+F 0 "#PWR017" H 2700 1250 50  0001 C CNN
+F 1 "GNDA" H 2705 1327 50  0000 C CNN
+F 2 "" H 2700 1500 50  0001 C CNN
+F 3 "" H 2700 1500 50  0001 C CNN
+	1    2700 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR018
+U 1 1 5FE66D72
+P 2700 2750
+F 0 "#PWR018" H 2700 2500 50  0001 C CNN
+F 1 "GNDA" H 2705 2577 50  0000 C CNN
+F 2 "" H 2700 2750 50  0001 C CNN
+F 3 "" H 2700 2750 50  0001 C CNN
+	1    2700 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Library:C C?
+U 1 1 5FE695D3
+P 3300 1500
+AR Path="/5FE20DA8/5FE695D3" Ref="C?"  Part="1" 
+AR Path="/5FE379B8/5FE695D3" Ref="C11"  Part="1" 
+F 0 "C11" H 3350 1550 50  0000 L BNN
+F 1 "47" H 3350 1400 50  0000 L BNN
+F 2 "Librray:C_0402_1005Metric" H 3150 1700 50  0001 C CNN
+F 3 "" H 3150 1700 50  0001 C CNN
+F 4 "CAP CER SMD 0402 47PF 5% X7R 25V" V 3300 1500 50  0001 C CNN "Description"
+F 5 "KEMET" V 3300 1500 50  0001 C CNN "Manufacturer"
+F 6 "C0402C470J3RACAUTO" V 3300 1500 50  0001 C CNN "Manufacturer Part Number"
+F 7 "399-17558-1-ND" V 3300 1500 50  0001 C CNN "Digi-Key Part Number"
+	1    3300 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 1500 3700 1300
+Connection ~ 3700 1300
+Wire Wire Line
+	3150 1500 2900 1500
+Wire Wire Line
+	2900 1500 2900 1300
+Connection ~ 2900 1300
+$Comp
+L Library:C C?
+U 1 1 5FE715D7
+P 3300 2750
+AR Path="/5FE20DA8/5FE715D7" Ref="C?"  Part="1" 
+AR Path="/5FE379B8/5FE715D7" Ref="C12"  Part="1" 
+F 0 "C12" H 3350 2800 50  0000 L BNN
+F 1 "47" H 3350 2650 50  0000 L BNN
+F 2 "Librray:C_0402_1005Metric" H 3150 2950 50  0001 C CNN
+F 3 "" H 3150 2950 50  0001 C CNN
+F 4 "CAP CER SMD 0402 47PF 5% X7R 25V" V 3300 2750 50  0001 C CNN "Description"
+F 5 "KEMET" V 3300 2750 50  0001 C CNN "Manufacturer"
+F 6 "C0402C470J3RACAUTO" V 3300 2750 50  0001 C CNN "Manufacturer Part Number"
+F 7 "399-17558-1-ND" V 3300 2750 50  0001 C CNN "Digi-Key Part Number"
+	1    3300 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2750 2900 2750
+Wire Wire Line
+	2900 2750 2900 2550
+Connection ~ 2900 2550
+Wire Wire Line
+	3700 2200 3700 2550
+Connection ~ 3700 2550
+Wire Wire Line
+	3700 2550 3700 2750
+$Comp
+L Library:R R?
+U 1 1 5FE769F7
+P 1350 1250
+AR Path="/5FE20DA8/5FE769F7" Ref="R?"  Part="1" 
+AR Path="/5FE379B8/5FE769F7" Ref="R5"  Part="1" 
+F 0 "R5" H 1400 1200 50  0000 L BNN
+F 1 "680" H 1350 1300 50  0000 L BNN
+F 2 "Librray:R_0402_1005Metric" H 1350 1250 50  0001 C CNN
+F 3 "" H 1350 1250 50  0001 C CNN
+F 4 "CRGCQ 0402 680R 1%" H 1350 1250 50  0001 C CNN "Description"
+F 5 "TE Connectivity Passive Product" H 1350 1250 50  0001 C CNN "Manufacturer"
+F 6 "CRGCQ0402F680R" H 1350 1250 50  0001 C CNN "Manufacturer Part Number"
+F 7 "A129625CT-ND" H 1350 1250 50  0001 C CNN "Digi-Key Part Number"
+	1    1350 1250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GNDA #PWR013
+U 1 1 5FE77AFC
+P 1450 1500
+F 0 "#PWR013" H 1450 1250 50  0001 C CNN
+F 1 "GNDA" H 1455 1327 50  0000 C CNN
+F 2 "" H 1450 1500 50  0001 C CNN
+F 3 "" H 1450 1500 50  0001 C CNN
+	1    1450 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Library:R R?
+U 1 1 5FE7D5BA
+P 1350 2500
+AR Path="/5FE20DA8/5FE7D5BA" Ref="R?"  Part="1" 
+AR Path="/5FE379B8/5FE7D5BA" Ref="R6"  Part="1" 
+F 0 "R6" H 1400 2450 50  0000 L BNN
+F 1 "680" H 1350 2550 50  0000 L BNN
+F 2 "Librray:R_0402_1005Metric" H 1350 2500 50  0001 C CNN
+F 3 "" H 1350 2500 50  0001 C CNN
+F 4 "CRGCQ 0402 680R 1%" H 1350 2500 50  0001 C CNN "Description"
+F 5 "TE Connectivity Passive Product" H 1350 2500 50  0001 C CNN "Manufacturer"
+F 6 "CRGCQ0402F680R" H 1350 2500 50  0001 C CNN "Manufacturer Part Number"
+F 7 "A129625CT-ND" H 1350 2500 50  0001 C CNN "Digi-Key Part Number"
+	1    1350 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GNDA #PWR014
+U 1 1 5FE7D5C0
+P 1450 2750
+F 0 "#PWR014" H 1450 2500 50  0001 C CNN
+F 1 "GNDA" H 1455 2577 50  0000 C CNN
+F 2 "" H 1450 2750 50  0001 C CNN
+F 3 "" H 1450 2750 50  0001 C CNN
+	1    1450 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Library:C C?
+U 1 1 5FE7EC6B
+P 2100 1250
+AR Path="/5FE20DA8/5FE7EC6B" Ref="C?"  Part="1" 
+AR Path="/5FE379B8/5FE7EC6B" Ref="C9"  Part="1" 
+F 0 "C9" V 2050 950 50  0000 L BNN
+F 1 "150" V 2150 950 50  0000 L BNN
+F 2 "Librray:C_0402_1005Metric" H 1950 1450 50  0001 C CNN
+F 3 "" H 1950 1450 50  0001 C CNN
+F 4 "CAP CER 150PF 50V X7R 0402" V 2100 1250 50  0001 C CNN "Description"
+F 5 "AVX Corporation" V 2100 1250 50  0001 C CNN "Manufacturer"
+F 6 "04025C151KAT2A" V 2100 1250 50  0001 C CNN "Manufacturer Part Number"
+F 7 "478-1091-1-ND" V 2100 1250 50  0001 C CNN "Digi-Key Part Number"
+	1    2100 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR015
+U 1 1 5FE95A67
+P 2100 1500
+F 0 "#PWR015" H 2100 1250 50  0001 C CNN
+F 1 "GNDA" H 2105 1327 50  0000 C CNN
+F 2 "" H 2100 1500 50  0001 C CNN
+F 3 "" H 2100 1500 50  0001 C CNN
+	1    2100 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 1100 2100 1050
+$Comp
+L Library:C C?
+U 1 1 5FE99CC6
+P 2100 2500
+AR Path="/5FE20DA8/5FE99CC6" Ref="C?"  Part="1" 
+AR Path="/5FE379B8/5FE99CC6" Ref="C10"  Part="1" 
+F 0 "C10" V 2050 2200 50  0000 L BNN
+F 1 "150" V 2150 2200 50  0000 L BNN
+F 2 "Librray:C_0402_1005Metric" H 1950 2700 50  0001 C CNN
+F 3 "" H 1950 2700 50  0001 C CNN
+F 4 "CAP CER 150PF 50V X7R 0402" V 2100 2500 50  0001 C CNN "Description"
+F 5 "AVX Corporation" V 2100 2500 50  0001 C CNN "Manufacturer"
+F 6 "04025C151KAT2A" V 2100 2500 50  0001 C CNN "Manufacturer Part Number"
+F 7 "478-1091-1-ND" V 2100 2500 50  0001 C CNN "Digi-Key Part Number"
+	1    2100 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR016
+U 1 1 5FE99CCC
+P 2100 2750
+F 0 "#PWR016" H 2100 2500 50  0001 C CNN
+F 1 "GNDA" H 2105 2577 50  0000 C CNN
+F 2 "" H 2100 2750 50  0001 C CNN
+F 3 "" H 2100 2750 50  0001 C CNN
+	1    2100 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 2350 2100 2300
+Wire Wire Line
+	1450 1050 850  1050
+Wire Wire Line
+	1450 2300 850  2300
+Text Label 850  1050 0    50   ~ 0
+AUDIO_LEFT_IN
+Text Label 850  2300 0    50   ~ 0
+AUDIO_RIGHT_IN
+Connection ~ 3700 950 
+Connection ~ 3700 2200
+Text Label 4650 950  2    50   ~ 0
+AUDIO_LEFT_PREAMP
+Text Label 4650 2200 2    50   ~ 0
+AUDIO_RIGHT_PREAMP
+Wire Wire Line
+	3700 950  4650 950 
+Wire Wire Line
+	3700 2200 4650 2200
+Text Label 7650 2300 0    50   ~ 0
+AUDIO_LEFT_PREAMP
+Wire Wire Line
+	2900 1050 3100 1050
+Wire Wire Line
+	3000 850  3000 1750
+Connection ~ 3000 1750
+Wire Wire Line
+	2900 1300 3150 1300
+Wire Wire Line
+	3450 1300 3700 1300
+Wire Wire Line
+	3450 1500 3700 1500
+Wire Wire Line
+	3450 2750 3700 2750
+Wire Wire Line
+	3450 2550 3700 2550
+Wire Wire Line
+	2900 2550 3150 2550
+Wire Wire Line
+	2700 2650 2700 2750
+Wire Wire Line
+	2700 2350 2700 2300
+Connection ~ 2700 2300
+Wire Wire Line
+	2700 2300 2900 2300
+Wire Wire Line
+	2550 2300 2700 2300
+Wire Wire Line
+	2100 2300 2250 2300
+Wire Wire Line
+	2100 2650 2100 2750
+Wire Wire Line
+	1450 2300 1450 2350
+Wire Wire Line
+	1450 2650 1450 2750
+Wire Wire Line
+	1450 1050 1450 1100
+Wire Wire Line
+	1450 1400 1450 1500
+Wire Wire Line
+	2100 1050 2250 1050
+Wire Wire Line
+	2100 1400 2100 1500
+Wire Wire Line
+	2550 1050 2700 1050
+Wire Wire Line
+	2700 1100 2700 1050
+Connection ~ 2700 1050
+Wire Wire Line
+	2700 1050 2900 1050
+Wire Wire Line
+	2700 1400 2700 1500
+Wire Wire Line
+	7600 1200 7600 1250
+Wire Wire Line
+	6750 1200 7050 1200
+Wire Wire Line
+	7050 1200 7050 1250
+Connection ~ 7050 1200
+Wire Wire Line
+	7050 1200 7600 1200
+$Comp
+L Library:CP C13
+U 1 1 5FF094EE
+P 1700 1050
+F 0 "C13" H 1650 1250 50  0000 L BNN
+F 1 "10uF" H 1650 1150 50  0000 L BNN
+F 2 "Librray:CP_Elec_5x5.4" H 1550 1250 50  0001 C CNN
+F 3 "" H 1550 1250 50  0001 C CNN
+F 4 "CAP ALUM 10UF 20% 25V SMD" H 1700 1050 50  0001 C CNN "Description"
+F 5 "Nichicon" H 1700 1050 50  0001 C CNN "Manufacturer"
+F 6 "UUQ1E100MCL1GB" H 1700 1050 50  0001 C CNN "Manufacturer Part Number"
+F 7 "493-3202-1-ND" H 1700 1050 50  0001 C CNN "Digi-Key Part Number"
+	1    1700 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 1050 1450 1050
+Connection ~ 1450 1050
+Wire Wire Line
+	1850 1050 2100 1050
+Connection ~ 2100 1050
+$Comp
+L Library:CP C14
+U 1 1 5FE433AF
+P 1700 2300
+F 0 "C14" H 1650 2500 50  0000 L BNN
+F 1 "10uF" H 1650 2400 50  0000 L BNN
+F 2 "Librray:CP_Elec_5x5.4" H 1550 2500 50  0001 C CNN
+F 3 "" H 1550 2500 50  0001 C CNN
+F 4 "CAP ALUM 10UF 20% 25V SMD" H 1700 2300 50  0001 C CNN "Description"
+F 5 "Nichicon" H 1700 2300 50  0001 C CNN "Manufacturer"
+F 6 "UUQ1E100MCL1GB" H 1700 2300 50  0001 C CNN "Manufacturer Part Number"
+F 7 "493-3202-1-ND" H 1700 2300 50  0001 C CNN "Digi-Key Part Number"
+	1    1700 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 2300 1550 2300
+Connection ~ 1450 2300
+Wire Wire Line
+	1850 2300 2100 2300
+Connection ~ 2100 2300
+Text Label 10500 2300 2    50   ~ 0
+AUDIO_RIGHT_PREAMP
+Wire Wire Line
+	9600 2300 10500 2300
+Wire Wire Line
+	7650 2300 8500 2300
+Text Notes 1600 700  0    50   ~ 0
+Input buffer and pre-amp
+Text Notes 8500 900  0    50   ~ 0
+Digital potentiometer
+$Comp
+L Library:C C?
+U 1 1 5FED3D46
+P 4800 2700
+AR Path="/5FE20DA8/5FED3D46" Ref="C?"  Part="1" 
+AR Path="/5FE379B8/5FED3D46" Ref="C15"  Part="1" 
+F 0 "C15" V 4821 2565 50  0000 R CNN
+F 1 "0.1uF" V 4730 2565 50  0000 R CNN
+F 2 "Librray:C_0402_1005Metric" H 4650 2900 50  0001 C CNN
+F 3 "" H 4650 2900 50  0001 C CNN
+F 4 "CAP CER 0.1UF 25V X7R 0402" V 4800 2700 50  0001 C CNN "Description"
+F 5 "KEMET" V 4800 2700 50  0001 C CNN "Manufacturer"
+F 6 "C0402C104K3RAC7411" V 4800 2700 50  0001 C CNN "Manufacturer Part Number"
+F 7 "399-C0402C104K3RAC7411CT-ND" V 4800 2700 50  0001 C CNN "Digi-Key Part Number"
+	1    4800 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Library:C C?
+U 1 1 5FED5F8D
+P 4800 3100
+AR Path="/5FE20DA8/5FED5F8D" Ref="C?"  Part="1" 
+AR Path="/5FE379B8/5FED5F8D" Ref="C16"  Part="1" 
+F 0 "C16" V 4821 2965 50  0000 R CNN
+F 1 "0.1uF" V 4730 2965 50  0000 R CNN
+F 2 "Librray:C_0402_1005Metric" H 4650 3300 50  0001 C CNN
+F 3 "" H 4650 3300 50  0001 C CNN
+F 4 "CAP CER 0.1UF 25V X7R 0402" V 4800 3100 50  0001 C CNN "Description"
+F 5 "KEMET" V 4800 3100 50  0001 C CNN "Manufacturer"
+F 6 "C0402C104K3RAC7411" V 4800 3100 50  0001 C CNN "Manufacturer Part Number"
+F 7 "399-C0402C104K3RAC7411CT-ND" V 4800 3100 50  0001 C CNN "Digi-Key Part Number"
+	1    4800 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4150 2550 4150 2600
+Wire Wire Line
+	4150 3150 4150 3200
+$Comp
+L power:+5VA #PWR0114
+U 1 1 5FE42241
+P 4150 2550
+F 0 "#PWR0114" H 4150 2400 50  0001 C CNN
+F 1 "+5VA" H 4165 2723 50  0000 C CNN
+F 2 "" H 4150 2550 50  0001 C CNN
+F 3 "" H 4150 2550 50  0001 C CNN
+	1    4150 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5VA #PWR0113
+U 1 1 5FE41061
+P 4150 3200
+F 0 "#PWR0113" H 4150 3300 50  0001 C CNN
+F 1 "-5VA" H 4165 3373 50  0000 C CNN
+F 2 "" H 4150 3200 50  0001 C CNN
+F 3 "" H 4150 3200 50  0001 C CNN
+	1    4150 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Library:OPA2134 U5
+U 3 1 5FE3CC4F
+P 4150 2750
+F 0 "U5" H 4208 2671 50  0000 L CNN
+F 1 "OPA2134" H 4208 2580 50  0000 L CNN
+F 2 "Librray:SOIC-8_Width3.9mm_Pitch1.27mm" H 4150 2750 50  0001 C CNN
+F 3 "${KIPRJMOD}/../../Datasheet/OPAx134 SoundPlus High Performance Audio Operational Amplifiers.pdf" H 4150 2750 50  0001 C CNN
+	3    4150 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VA #PWR020
+U 1 1 5FEF7F77
+P 4800 2500
+F 0 "#PWR020" H 4800 2350 50  0001 C CNN
+F 1 "+5VA" H 4815 2673 50  0000 C CNN
+F 2 "" H 4800 2500 50  0001 C CNN
+F 3 "" H 4800 2500 50  0001 C CNN
+	1    4800 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5VA #PWR021
+U 1 1 5FEF854C
+P 4800 3300
+F 0 "#PWR021" H 4800 3400 50  0001 C CNN
+F 1 "-5VA" H 4815 3473 50  0000 C CNN
+F 2 "" H 4800 3300 50  0001 C CNN
+F 3 "" H 4800 3300 50  0001 C CNN
+	1    4800 3300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4800 2500 4800 2550
+Wire Wire Line
+	4800 2850 4800 2900
+Wire Wire Line
+	4800 3250 4800 3300
+$Comp
+L power:GNDA #PWR022
+U 1 1 5FF03611
+P 5250 2900
+F 0 "#PWR022" H 5250 2650 50  0001 C CNN
+F 1 "GNDA" H 5255 2727 50  0000 C CNN
+F 2 "" H 5250 2900 50  0001 C CNN
+F 3 "" H 5250 2900 50  0001 C CNN
+	1    5250 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2900 5250 2900
+Connection ~ 4800 2900
+Wire Wire Line
+	4800 2900 4800 2950
+Wire Wire Line
+	9600 2400 10500 2400
+Wire Wire Line
+	8500 2400 7650 2400
+Text Label 7650 2400 0    50   ~ 0
+AUDIO_LEFT_ATT
+Text Label 10500 2400 2    50   ~ 0
+AUDIO_RIGHT_ATT
+$Comp
+L Library:OPA2134 U6
+U 1 1 5FF481BD
+P 2450 4200
+F 0 "U6" H 2750 4150 50  0000 L BNN
+F 1 "OPA2134" H 2750 4050 50  0000 L BNN
+F 2 "Librray:SOIC-8_Width3.9mm_Pitch1.27mm" H 2450 4200 50  0001 C CNN
+F 3 "${KIPRJMOD}/../../Datasheet/OPAx134 SoundPlus High Performance Audio Operational Amplifiers.pdf" H 2450 4200 50  0001 C CNN
+F 4 "IC AUDIO 2 CIRCUIT 8SOIC" H 2450 4200 50  0001 C CNN "Description"
+F 5 "Texas Instruments" H 2450 4200 50  0001 C CNN "Manufacturer"
+F 6 "OPA2134UA/2K5" H 2450 4200 50  0001 C CNN "Manufacturer Part Number"
+F 7 "296-22024-1-ND" H 2450 4200 50  0001 C CNN "Digi-Key Part Number"
+	1    2450 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Library:OPA2134 U6
+U 2 1 5FF481C3
+P 2450 6300
+F 0 "U6" H 2750 6250 50  0000 L BNN
+F 1 "OPA2134" H 2750 6150 50  0000 L BNN
+F 2 "Librray:SOIC-8_Width3.9mm_Pitch1.27mm" H 2450 6300 50  0001 C CNN
+F 3 "${KIPRJMOD}/../../Datasheet/OPAx134 SoundPlus High Performance Audio Operational Amplifiers.pdf" H 2450 6300 50  0001 C CNN
+	2    2450 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Library:R R?
+U 1 1 5FF481CD
+P 2850 3800
+AR Path="/5FE20DA8/5FF481CD" Ref="R?"  Part="1" 
+AR Path="/5FE379B8/5FF481CD" Ref="R15"  Part="1" 
+F 0 "R15" V 2700 3700 50  0000 L BNN
+F 1 "3.3K" V 2700 3900 50  0000 L BNN
+F 2 "Librray:R_0402_1005Metric" H 2850 3800 50  0001 C CNN
+F 3 "" H 2850 3800 50  0001 C CNN
+F 4 "CRGCQ 0402 3K3 1%" H 2850 3800 50  0001 C CNN "Description"
+F 5 "TE Connectivity Passive Product" H 2850 3800 50  0001 C CNN "Manufacturer"
+F 6 "CRGCQ0402F3K3" H 2850 3800 50  0001 C CNN "Manufacturer Part Number"
+F 7 "A129633CT-ND" H 2850 3800 50  0001 C CNN "Digi-Key Part Number"
+	1    2850 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR023
+U 1 1 5FF481D3
+P 2500 5200
+F 0 "#PWR023" H 2500 4950 50  0001 C CNN
+F 1 "GNDA" H 2505 5027 50  0000 C CNN
+F 2 "" H 2500 5200 50  0001 C CNN
+F 3 "" H 2500 5200 50  0001 C CNN
+	1    2500 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 4350 2350 4350
+Wire Wire Line
+	2350 6450 2250 6450
+$Comp
+L Library:R R?
+U 1 1 5FF481DF
+P 1650 4650
+AR Path="/5FE20DA8/5FF481DF" Ref="R?"  Part="1" 
+AR Path="/5FE379B8/5FF481DF" Ref="R13"  Part="1" 
+F 0 "R13" V 1500 4550 50  0000 L BNN
+F 1 "33K" V 1500 4750 50  0000 L BNN
+F 2 "Librray:R_0402_1005Metric" H 1650 4650 50  0001 C CNN
+F 3 "" H 1650 4650 50  0001 C CNN
+F 4 "CRGCQ 0402 33K 1%" H 1650 4650 50  0001 C CNN "Description"
+F 5 "TE Connectivity Passive Product" H 1650 4650 50  0001 C CNN "Manufacturer"
+F 6 "CRGCQ0402F33K" H 1650 4650 50  0001 C CNN "Manufacturer Part Number"
+F 7 "A129645CT-ND" H 1650 4650 50  0001 C CNN "Digi-Key Part Number"
+	1    1650 4650
+	0    1    1    0   
+$EndComp
+Connection ~ 2150 4550
+$Comp
+L Library:R R?
+U 1 1 5FF481F1
+P 1650 6750
+AR Path="/5FE20DA8/5FF481F1" Ref="R?"  Part="1" 
+AR Path="/5FE379B8/5FF481F1" Ref="R14"  Part="1" 
+F 0 "R14" V 1500 6650 50  0000 L BNN
+F 1 "33K" V 1500 6850 50  0000 L BNN
+F 2 "Librray:R_0402_1005Metric" H 1650 6750 50  0001 C CNN
+F 3 "" H 1650 6750 50  0001 C CNN
+F 4 "CRGCQ 0402 33K 1%" H 1650 6750 50  0001 C CNN "Description"
+F 5 "TE Connectivity Passive Product" H 1650 6750 50  0001 C CNN "Manufacturer"
+F 6 "CRGCQ0402F33K" H 1650 6750 50  0001 C CNN "Manufacturer Part Number"
+F 7 "A129645CT-ND" H 1650 6750 50  0001 C CNN "Digi-Key Part Number"
+	1    1650 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L Library:R R?
+U 1 1 5FF481FB
+P 2850 5900
+AR Path="/5FE20DA8/5FF481FB" Ref="R?"  Part="1" 
+AR Path="/5FE379B8/5FF481FB" Ref="R16"  Part="1" 
+F 0 "R16" V 2700 5800 50  0000 L BNN
+F 1 "3.3K" V 2700 6000 50  0000 L BNN
+F 2 "Librray:R_0402_1005Metric" H 2850 5900 50  0001 C CNN
+F 3 "" H 2850 5900 50  0001 C CNN
+F 4 "CRGCQ 0402 3K3 1%" H 2850 5900 50  0001 C CNN "Description"
+F 5 "TE Connectivity Passive Product" H 2850 5900 50  0001 C CNN "Manufacturer"
+F 6 "CRGCQ0402F3K3" H 2850 5900 50  0001 C CNN "Manufacturer Part Number"
+F 7 "A129633CT-ND" H 2850 5900 50  0001 C CNN "Digi-Key Part Number"
+	1    2850 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L Library:C C?
+U 1 1 5FF48225
+P 2850 3900
+AR Path="/5FE20DA8/5FF48225" Ref="C?"  Part="1" 
+AR Path="/5FE379B8/5FF48225" Ref="C17"  Part="1" 
+F 0 "C17" H 2900 3950 50  0000 L BNN
+F 1 "47" H 2900 3800 50  0000 L BNN
+F 2 "Librray:C_0402_1005Metric" H 2700 4100 50  0001 C CNN
+F 3 "" H 2700 4100 50  0001 C CNN
+F 4 "CAP CER SMD 0402 47PF 5% X7R 25V" V 2850 3900 50  0001 C CNN "Description"
+F 5 "KEMET" V 2850 3900 50  0001 C CNN "Manufacturer"
+F 6 "C0402C470J3RACAUTO" V 2850 3900 50  0001 C CNN "Manufacturer Part Number"
+F 7 "399-17558-1-ND" V 2850 3900 50  0001 C CNN "Digi-Key Part Number"
+	1    2850 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Library:C C?
+U 1 1 5FF48234
+P 2850 6000
+AR Path="/5FE20DA8/5FF48234" Ref="C?"  Part="1" 
+AR Path="/5FE379B8/5FF48234" Ref="C18"  Part="1" 
+F 0 "C18" H 2900 6050 50  0000 L BNN
+F 1 "47" H 2900 5900 50  0000 L BNN
+F 2 "Librray:C_0402_1005Metric" H 2700 6200 50  0001 C CNN
+F 3 "" H 2700 6200 50  0001 C CNN
+F 4 "CAP CER SMD 0402 47PF 5% X7R 25V" V 2850 6000 50  0001 C CNN "Description"
+F 5 "KEMET" V 2850 6000 50  0001 C CNN "Manufacturer"
+F 6 "C0402C470J3RACAUTO" V 2850 6000 50  0001 C CNN "Manufacturer Part Number"
+F 7 "399-17558-1-ND" V 2850 6000 50  0001 C CNN "Digi-Key Part Number"
+	1    2850 6000
+	1    0    0    -1  
+$EndComp
+Text Label 800  4550 0    50   ~ 0
+AUDIO_LEFT_ATT
+Text Label 800  6650 0    50   ~ 0
+AUDIO_RIGHT_ATT
+Text Label 5200 4450 2    50   ~ 0
+AUDIO_LEFT_OUT
+Text Label 5200 6550 2    50   ~ 0
+AUDIO_RIGHT_OUT
+Wire Wire Line
+	2150 4550 2350 4550
+Text Notes 850  3500 0    50   ~ 0
+Output buffer
+$Comp
+L Library:C C?
+U 1 1 5FF482C8
+P 1600 5250
+AR Path="/5FE20DA8/5FF482C8" Ref="C?"  Part="1" 
+AR Path="/5FE379B8/5FF482C8" Ref="C19"  Part="1" 
+F 0 "C19" V 1621 5115 50  0000 R CNN
+F 1 "0.1uF" V 1530 5115 50  0000 R CNN
+F 2 "Librray:C_0402_1005Metric" H 1450 5450 50  0001 C CNN
+F 3 "" H 1450 5450 50  0001 C CNN
+F 4 "CAP CER 0.1UF 25V X7R 0402" V 1600 5250 50  0001 C CNN "Description"
+F 5 "KEMET" V 1600 5250 50  0001 C CNN "Manufacturer"
+F 6 "C0402C104K3RAC7411" V 1600 5250 50  0001 C CNN "Manufacturer Part Number"
+F 7 "399-C0402C104K3RAC7411CT-ND" V 1600 5250 50  0001 C CNN "Digi-Key Part Number"
+	1    1600 5250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Library:C C?
+U 1 1 5FF482D2
+P 1600 5650
+AR Path="/5FE20DA8/5FF482D2" Ref="C?"  Part="1" 
+AR Path="/5FE379B8/5FF482D2" Ref="C20"  Part="1" 
+F 0 "C20" V 1621 5515 50  0000 R CNN
+F 1 "0.1uF" V 1530 5515 50  0000 R CNN
+F 2 "Librray:C_0402_1005Metric" H 1450 5850 50  0001 C CNN
+F 3 "" H 1450 5850 50  0001 C CNN
+F 4 "CAP CER 0.1UF 25V X7R 0402" V 1600 5650 50  0001 C CNN "Description"
+F 5 "KEMET" V 1600 5650 50  0001 C CNN "Manufacturer"
+F 6 "C0402C104K3RAC7411" V 1600 5650 50  0001 C CNN "Manufacturer Part Number"
+F 7 "399-C0402C104K3RAC7411CT-ND" V 1600 5650 50  0001 C CNN "Digi-Key Part Number"
+	1    1600 5650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	950  5100 950  5150
+Wire Wire Line
+	950  5700 950  5750
+$Comp
+L power:+5VA #PWR024
+U 1 1 5FF482DA
+P 950 5100
+F 0 "#PWR024" H 950 4950 50  0001 C CNN
+F 1 "+5VA" H 965 5273 50  0000 C CNN
+F 2 "" H 950 5100 50  0001 C CNN
+F 3 "" H 950 5100 50  0001 C CNN
+	1    950  5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5VA #PWR025
+U 1 1 5FF482E0
+P 950 5750
+F 0 "#PWR025" H 950 5850 50  0001 C CNN
+F 1 "-5VA" H 965 5923 50  0000 C CNN
+F 2 "" H 950 5750 50  0001 C CNN
+F 3 "" H 950 5750 50  0001 C CNN
+	1    950  5750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Library:OPA2134 U6
+U 3 1 5FF482E6
+P 950 5300
+F 0 "U6" H 1008 5221 50  0000 L CNN
+F 1 "OPA2134" H 1008 5130 50  0000 L CNN
+F 2 "Librray:SOIC-8_Width3.9mm_Pitch1.27mm" H 950 5300 50  0001 C CNN
+F 3 "${KIPRJMOD}/../../Datasheet/OPAx134 SoundPlus High Performance Audio Operational Amplifiers.pdf" H 950 5300 50  0001 C CNN
+	3    950  5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VA #PWR026
+U 1 1 5FF482EC
+P 1600 5050
+F 0 "#PWR026" H 1600 4900 50  0001 C CNN
+F 1 "+5VA" H 1615 5223 50  0000 C CNN
+F 2 "" H 1600 5050 50  0001 C CNN
+F 3 "" H 1600 5050 50  0001 C CNN
+	1    1600 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5VA #PWR027
+U 1 1 5FF482F2
+P 1600 5850
+F 0 "#PWR027" H 1600 5950 50  0001 C CNN
+F 1 "-5VA" H 1615 6023 50  0000 C CNN
+F 2 "" H 1600 5850 50  0001 C CNN
+F 3 "" H 1600 5850 50  0001 C CNN
+	1    1600 5850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1600 5050 1600 5100
+Wire Wire Line
+	1600 5400 1600 5450
+Wire Wire Line
+	1600 5800 1600 5850
+$Comp
+L power:GNDA #PWR028
+U 1 1 5FF482FB
+P 2050 5450
+F 0 "#PWR028" H 2050 5200 50  0001 C CNN
+F 1 "GNDA" H 2055 5277 50  0000 C CNN
+F 2 "" H 2050 5450 50  0001 C CNN
+F 3 "" H 2050 5450 50  0001 C CNN
+	1    2050 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 5450 2050 5450
+Connection ~ 1600 5450
+Wire Wire Line
+	1600 5450 1600 5500
+Wire Wire Line
+	800  4550 1500 4550
+Wire Wire Line
+	800  6650 1500 6650
+Wire Wire Line
+	1800 4550 2150 4550
+$Comp
+L Library:CP C22
+U 1 1 5FFB43FD
+P 4300 6550
+F 0 "C22" H 4250 6750 50  0000 L BNN
+F 1 "470uF" H 4250 6650 50  0000 L BNN
+F 2 "Librray:CP_Elec_8x10" H 4150 6750 50  0001 C CNN
+F 3 "" H 4150 6750 50  0001 C CNN
+F 4 "CAP ALUM 470UF 20% 10V SMD" H 4300 6550 50  0001 C CNN "Description"
+F 5 "Nichicon" H 4300 6550 50  0001 C CNN "Manufacturer"
+F 6 "UUQ1A471MCL1GS" H 4300 6550 50  0001 C CNN "Manufacturer Part Number"
+F 7 "493-16097-1-ND" H 4300 6550 50  0001 C CNN "Digi-Key Part Number"
+	1    4300 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 6550 5200 6550
+$Comp
+L IR-Digipot-rescue:NPN_BEC-Library Q1
+U 1 1 5FE4DCB4
+P 3700 4050
+AR Path="/5FE4DCB4" Ref="Q1"  Part="1" 
+AR Path="/5FE379B8/5FE4DCB4" Ref="Q1"  Part="1" 
+F 0 "Q1" H 3750 4300 50  0000 R BNN
+F 1 "MMBT3904" H 3750 4200 50  0000 R BNN
+F 2 "Librray:SOT-23" H 3700 4050 50  0001 C CNN
+F 3 "${KIPRJMOD}/../../Datasheet/MMBT3904L SMMBT3904L General Purpose Transistor NPN Silicon.pdf" H 3700 4050 50  0001 C CNN
+F 4 "TRANS NPN 40V 200MA SOT23-3" H 3700 4050 50  0001 C CNN "Description"
+F 5 "ON Semiconductor" H 3700 4050 50  0001 C CNN "Manufacturer"
+F 6 "MMBT3904LT1G" H 3700 4050 50  0001 C CNN "Manufacturer Part Number"
+F 7 "MMBT3904LT1GOSCT-ND" H 3700 4050 50  0001 C CNN "Digi-Key Part Number"
+	1    3700 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VA #PWR029
+U 1 1 5FE65625
+P 3800 3650
+F 0 "#PWR029" H 3800 3500 50  0001 C CNN
+F 1 "+5VA" H 3815 3823 50  0000 C CNN
+F 2 "" H 3800 3650 50  0001 C CNN
+F 3 "" H 3800 3650 50  0001 C CNN
+	1    3800 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5VA #PWR030
+U 1 1 5FE65E52
+P 3800 5300
+F 0 "#PWR030" H 3800 5400 50  0001 C CNN
+F 1 "-5VA" H 3815 5473 50  0000 C CNN
+F 2 "" H 3800 5300 50  0001 C CNN
+F 3 "" H 3800 5300 50  0001 C CNN
+	1    3800 5300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Library:R R?
+U 1 1 5FE7121F
+P 3050 5050
+AR Path="/5FE20DA8/5FE7121F" Ref="R?"  Part="1" 
+AR Path="/5FE379B8/5FE7121F" Ref="R17"  Part="1" 
+F 0 "R17" H 3100 5000 50  0000 L BNN
+F 1 "10K" H 3050 5100 50  0000 L BNN
+F 2 "Librray:R_0402_1005Metric" H 3050 5050 50  0001 C CNN
+F 3 "" H 3050 5050 50  0001 C CNN
+F 4 "CRGCQ 0402 10K 1%" H 3050 5050 50  0001 C CNN "Description"
+F 5 "TE Connectivity Passive Product" H 3050 5050 50  0001 C CNN "Manufacturer"
+F 6 "CRGCQ0402F10K" H 3050 5050 50  0001 C CNN "Manufacturer Part Number"
+F 7 "A129639CT-ND" H 3050 5050 50  0001 C CNN "Digi-Key Part Number"
+	1    3050 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L IR-Digipot-rescue:PNP_BEC-Library Q2
+U 1 1 5FE4CB88
+P 3700 4850
+F 0 "Q2" H 3750 5000 50  0000 R BNN
+F 1 "MMBT3906" H 3750 5100 50  0000 R BNN
+F 2 "Librray:SOT-23" H 3700 4850 50  0001 C CNN
+F 3 "${KIPRJMOD}/../../Datasheet/MMBT3906L SMMBT3906L General Purpose Transistor PNP Silicon.pdf" H 3700 4850 50  0001 C CNN
+F 4 "TRANS PNP 40V 200MA SOT23-3" H 3700 4850 50  0001 C CNN "Description"
+F 5 "ON Semiconductor" H 3700 4850 50  0001 C CNN "Manufacturer"
+F 6 "MMBT3906LT1G" H 3700 4850 50  0001 C CNN "Manufacturer Part Number"
+F 7 "MMBT3906LT1GOSCT-ND" H 3700 4850 50  0001 C CNN "Digi-Key Part Number"
+	1    3700 4850
+	1    0    0    1   
+$EndComp
+$Comp
+L Library:C C?
+U 1 1 5FE996DD
+P 3350 4450
+AR Path="/5FE20DA8/5FE996DD" Ref="C?"  Part="1" 
+AR Path="/5FE379B8/5FE996DD" Ref="C23"  Part="1" 
+F 0 "C23" H 3400 4500 50  0000 L BNN
+F 1 "0.22 uF" H 3400 4350 50  0000 L BNN
+F 2 "Librray:C_0402_1005Metric" H 3200 4650 50  0001 C CNN
+F 3 "" H 3200 4650 50  0001 C CNN
+F 4 "CAP CER 0.22UF 16V X7R 0402" V 3350 4450 50  0001 C CNN "Description"
+F 5 "AVX Corporation" V 3350 4450 50  0001 C CNN "Manufacturer"
+F 6 "0402YC224KAT2A" V 3350 4450 50  0001 C CNN "Manufacturer Part Number"
+F 7 "478-0402YC224KAT2ACT-ND" V 3350 4450 50  0001 C CNN "Digi-Key Part Number"
+	1    3350 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 4450 3800 4450
+Connection ~ 3800 4450
+Wire Wire Line
+	3800 5050 3800 5250
+Connection ~ 3800 5250
+Wire Wire Line
+	3800 5250 3800 5300
+Wire Wire Line
+	3800 4250 3800 4450
+Wire Wire Line
+	3800 4450 3800 4650
+$Comp
+L Library:CP C21
+U 1 1 5FFB2799
+P 4300 4450
+F 0 "C21" H 4250 4650 50  0000 L BNN
+F 1 "470uF" H 4250 4550 50  0000 L BNN
+F 2 "Librray:CP_Elec_8x10" H 4150 4650 50  0001 C CNN
+F 3 "" H 4150 4650 50  0001 C CNN
+F 4 "CAP ALUM 470UF 20% 10V SMD" H 4300 4450 50  0001 C CNN "Description"
+F 5 "Nichicon" H 4300 4450 50  0001 C CNN "Manufacturer"
+F 6 "UUQ1A471MCL1GS" H 4300 4450 50  0001 C CNN "Manufacturer Part Number"
+F 7 "493-16097-1-ND" H 4300 4450 50  0001 C CNN "Digi-Key Part Number"
+	1    4300 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 4450 4100 4450
+Wire Wire Line
+	2700 3700 2650 3700
+Wire Wire Line
+	2700 3900 2650 3900
+Wire Wire Line
+	2650 3900 2650 3700
+Connection ~ 2650 3700
+Wire Wire Line
+	2650 3700 2150 3700
+Wire Wire Line
+	3000 3900 3050 3900
+Wire Wire Line
+	3050 3900 3050 3700
+Wire Wire Line
+	3050 3700 3000 3700
+Wire Wire Line
+	3150 4050 3150 4450
+Wire Wire Line
+	3150 4050 3500 4050
+Wire Wire Line
+	3150 4450 3200 4450
+Wire Wire Line
+	3150 5200 3150 5250
+Wire Wire Line
+	3150 5250 3800 5250
+Wire Wire Line
+	3150 4900 3150 4850
+Wire Wire Line
+	3150 4850 3500 4850
+Wire Wire Line
+	4100 4450 4150 4450
+Connection ~ 4100 4450
+Wire Wire Line
+	2950 4450 3150 4450
+Connection ~ 3150 4450
+Wire Wire Line
+	3800 3650 3800 3850
+Wire Wire Line
+	2150 3700 2150 4550
+Wire Wire Line
+	3050 3700 4100 3700
+Wire Wire Line
+	4100 3700 4100 4450
+Connection ~ 3050 3700
+$Comp
+L Library:D D1
+U 1 1 5FFD0310
+P 3150 4650
+F 0 "D1" V 3150 4550 50  0000 R CNN
+F 1 "1N914" V 3050 4550 50  0000 R CNN
+F 2 "Librray:SOD-523" H 3160 4800 50  0001 C CNN
+F 3 "" H 3160 4800 50  0001 C CNN
+F 4 "DIODE GEN PURP 75V 200MA SOD523F" V 3150 4650 50  0001 C CNN "Description"
+F 5 "ON Semiconductor" V 3150 4650 50  0001 C CNN "Manufacturer"
+F 6 "1N914BWT" V 3150 4650 50  0001 C CNN "Manufacturer Part Number"
+F 7 "1N914BWTCT-ND" V 3150 4650 50  0001 C CNN "Digi-Key Part Number"
+	1    3150 4650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3150 4450 3150 4500
+Wire Wire Line
+	3150 4800 3150 4850
+Connection ~ 3150 4850
+$Comp
+L IR-Digipot-rescue:NPN_BEC-Library Q3
+U 1 1 5FFEA0FD
+P 3700 6150
+AR Path="/5FFEA0FD" Ref="Q3"  Part="1" 
+AR Path="/5FE379B8/5FFEA0FD" Ref="Q3"  Part="1" 
+F 0 "Q3" H 3750 6400 50  0000 R BNN
+F 1 "MMBT3904" H 3750 6300 50  0000 R BNN
+F 2 "Librray:SOT-23" H 3700 6150 50  0001 C CNN
+F 3 "${KIPRJMOD}/../../Datasheet/MMBT3904L SMMBT3904L General Purpose Transistor NPN Silicon.pdf" H 3700 6150 50  0001 C CNN
+F 4 "TRANS NPN 40V 200MA SOT23-3" H 3700 6150 50  0001 C CNN "Description"
+F 5 "ON Semiconductor" H 3700 6150 50  0001 C CNN "Manufacturer"
+F 6 "MMBT3904LT1G" H 3700 6150 50  0001 C CNN "Manufacturer Part Number"
+F 7 "MMBT3904LT1GOSCT-ND" H 3700 6150 50  0001 C CNN "Digi-Key Part Number"
+	1    3700 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5VA #PWR032
+U 1 1 5FFEA103
+P 3800 7400
+F 0 "#PWR032" H 3800 7500 50  0001 C CNN
+F 1 "-5VA" H 3815 7573 50  0000 C CNN
+F 2 "" H 3800 7400 50  0001 C CNN
+F 3 "" H 3800 7400 50  0001 C CNN
+	1    3800 7400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Library:R R?
+U 1 1 5FFEA10D
+P 3050 7150
+AR Path="/5FE20DA8/5FFEA10D" Ref="R?"  Part="1" 
+AR Path="/5FE379B8/5FFEA10D" Ref="R18"  Part="1" 
+F 0 "R18" H 3100 7100 50  0000 L BNN
+F 1 "10K" H 3050 7200 50  0000 L BNN
+F 2 "Librray:R_0402_1005Metric" H 3050 7150 50  0001 C CNN
+F 3 "" H 3050 7150 50  0001 C CNN
+F 4 "CRGCQ 0402 10K 1%" H 3050 7150 50  0001 C CNN "Description"
+F 5 "TE Connectivity Passive Product" H 3050 7150 50  0001 C CNN "Manufacturer"
+F 6 "CRGCQ0402F10K" H 3050 7150 50  0001 C CNN "Manufacturer Part Number"
+F 7 "A129639CT-ND" H 3050 7150 50  0001 C CNN "Digi-Key Part Number"
+	1    3050 7150
+	-1   0    0    1   
+$EndComp
+$Comp
+L IR-Digipot-rescue:PNP_BEC-Library Q4
+U 1 1 5FFEA117
+P 3700 6950
+F 0 "Q4" H 3750 7100 50  0000 R BNN
+F 1 "MMBT3906" H 3750 7200 50  0000 R BNN
+F 2 "Librray:SOT-23" H 3700 6950 50  0001 C CNN
+F 3 "${KIPRJMOD}/../../Datasheet/MMBT3906L SMMBT3906L General Purpose Transistor PNP Silicon.pdf" H 3700 6950 50  0001 C CNN
+F 4 "TRANS PNP 40V 200MA SOT23-3" H 3700 6950 50  0001 C CNN "Description"
+F 5 "ON Semiconductor" H 3700 6950 50  0001 C CNN "Manufacturer"
+F 6 "MMBT3906LT1G" H 3700 6950 50  0001 C CNN "Manufacturer Part Number"
+F 7 "MMBT3906LT1GOSCT-ND" H 3700 6950 50  0001 C CNN "Digi-Key Part Number"
+	1    3700 6950
+	1    0    0    1   
+$EndComp
+$Comp
+L Library:C C?
+U 1 1 5FFEA121
+P 3350 6550
+AR Path="/5FE20DA8/5FFEA121" Ref="C?"  Part="1" 
+AR Path="/5FE379B8/5FFEA121" Ref="C24"  Part="1" 
+F 0 "C24" H 3400 6600 50  0000 L BNN
+F 1 "0.22 uF" H 3400 6450 50  0000 L BNN
+F 2 "Librray:C_0402_1005Metric" H 3200 6750 50  0001 C CNN
+F 3 "" H 3200 6750 50  0001 C CNN
+F 4 "CAP CER 0.22UF 16V X7R 0402" V 3350 6550 50  0001 C CNN "Description"
+F 5 "AVX Corporation" V 3350 6550 50  0001 C CNN "Manufacturer"
+F 6 "0402YC224KAT2A" V 3350 6550 50  0001 C CNN "Manufacturer Part Number"
+F 7 "478-0402YC224KAT2ACT-ND" V 3350 6550 50  0001 C CNN "Digi-Key Part Number"
+	1    3350 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 6550 3800 6550
+Connection ~ 3800 6550
+Wire Wire Line
+	3800 7150 3800 7350
+Connection ~ 3800 7350
+Wire Wire Line
+	3800 7350 3800 7400
+Wire Wire Line
+	3800 6350 3800 6550
+Wire Wire Line
+	3800 6550 3800 6750
+Wire Wire Line
+	3150 6150 3150 6550
+Wire Wire Line
+	3150 6150 3500 6150
+Wire Wire Line
+	3150 6550 3200 6550
+Wire Wire Line
+	3150 7300 3150 7350
+Wire Wire Line
+	3150 7350 3800 7350
+Wire Wire Line
+	3150 7000 3150 6950
+Wire Wire Line
+	3150 6950 3500 6950
+Wire Wire Line
+	2950 6550 3150 6550
+Connection ~ 3150 6550
+Wire Wire Line
+	3800 5750 3800 5950
+$Comp
+L Library:D D2
+U 1 1 5FFEA13D
+P 3150 6750
+F 0 "D2" V 3150 6650 50  0000 R CNN
+F 1 "1N914" V 3050 6650 50  0000 R CNN
+F 2 "Librray:SOD-523" H 3160 6900 50  0001 C CNN
+F 3 "" H 3160 6900 50  0001 C CNN
+F 4 "DIODE GEN PURP 75V 200MA SOD523F" V 3150 6750 50  0001 C CNN "Description"
+F 5 "ON Semiconductor" V 3150 6750 50  0001 C CNN "Manufacturer"
+F 6 "1N914BWT" V 3150 6750 50  0001 C CNN "Manufacturer Part Number"
+F 7 "1N914BWTCT-ND" V 3150 6750 50  0001 C CNN "Digi-Key Part Number"
+	1    3150 6750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3150 6550 3150 6600
+Wire Wire Line
+	3150 6900 3150 6950
+Connection ~ 3150 6950
+$Comp
+L power:+5VA #PWR031
+U 1 1 5FFFC017
+P 3800 5750
+F 0 "#PWR031" H 3800 5600 50  0001 C CNN
+F 1 "+5VA" H 3815 5923 50  0000 C CNN
+F 2 "" H 3800 5750 50  0001 C CNN
+F 3 "" H 3800 5750 50  0001 C CNN
+	1    3800 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 6550 4100 6550
+Wire Wire Line
+	4100 6550 4100 5800
+Connection ~ 4100 6550
+Wire Wire Line
+	4100 6550 4150 6550
+Wire Wire Line
+	1800 6650 2150 6650
+Wire Wire Line
+	3000 6000 3050 6000
+Wire Wire Line
+	3050 6000 3050 5800
+Wire Wire Line
+	3050 5800 4100 5800
+Wire Wire Line
+	3050 5800 3000 5800
+Connection ~ 3050 5800
+Wire Wire Line
+	2700 6000 2650 6000
+Wire Wire Line
+	2650 6000 2650 5800
+Wire Wire Line
+	2650 5800 2700 5800
+Wire Wire Line
+	2650 5800 2150 5800
+Wire Wire Line
+	2150 5800 2150 6650
+Connection ~ 2650 5800
+Connection ~ 2150 6650
+Wire Wire Line
+	2150 6650 2350 6650
+Wire Wire Line
+	2250 4350 2250 5100
+Wire Wire Line
+	2250 5100 2500 5100
+Wire Wire Line
+	2500 5100 2500 5200
+Connection ~ 2250 5100
+Wire Wire Line
+	2250 5100 2250 6450
+Wire Wire Line
+	4450 4450 5200 4450
+$Comp
+L power:GNDA #PWR033
+U 1 1 5FEA97A1
+P 8400 6000
+F 0 "#PWR033" H 8400 5750 50  0001 C CNN
+F 1 "GNDA" H 8405 5827 50  0000 C CNN
+F 2 "" H 8400 6000 50  0001 C CNN
+F 3 "" H 8400 6000 50  0001 C CNN
+	1    8400 6000
+	1    0    0    -1  
+$EndComp
+Text Label 8400 5500 0    50   ~ 0
+AUDIO_LEFT_OUT
+Text Label 8400 5800 0    50   ~ 0
+AUDIO_RIGHT_OUT
+Wire Wire Line
+	8400 5800 9150 5800
+Wire Wire Line
+	8400 5900 8400 6000
+Wire Wire Line
+	8400 5900 9150 5900
+Wire Wire Line
+	8400 5500 9150 5500
+Wire Wire Line
+	8450 4350 9200 4350
+Wire Wire Line
+	8450 4650 9200 4650
+Wire Wire Line
+	8450 4750 9200 4750
+Wire Wire Line
+	8450 4750 8450 4850
+Text Label 8450 4650 0    50   ~ 0
+AUDIO_RIGHT_IN
+Text Label 8450 4350 0    50   ~ 0
+AUDIO_LEFT_IN
+$Comp
+L power:GNDA #PWR034
+U 1 1 5FE75350
+P 8450 4850
+F 0 "#PWR034" H 8450 4600 50  0001 C CNN
+F 1 "GNDA" H 8455 4677 50  0000 C CNN
+F 2 "" H 8450 4850 50  0001 C CNN
+F 3 "" H 8450 4850 50  0001 C CNN
+	1    8450 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Library:STX-3500-5NTR J3
+U 1 1 5FE5ABD5
+P 9400 4500
+F 0 "J3" H 9479 4169 50  0000 C CNN
+F 1 "STX-3500-5NTR" H 9479 4260 50  0000 C CNN
+F 2 "Librray:STX-3500-5NTR" H 9300 4850 50  0001 C CNN
+F 3 "${KIPRJMOD}/../../Datasheet/STX-3500-5N.pdf" H 9300 4850 50  0001 C CNN
+F 4 "CONN JACK STEREO 3.5MM SMD R/A" H 9400 4500 50  0001 C CNN "Description"
+F 5 "Kycon, Inc." H 9400 4500 50  0001 C CNN "Manufacturer"
+F 6 "STX-3500-5NTR" H 9400 4500 50  0001 C CNN "Manufacturer Part Number"
+F 7 "2092-STX-3500-5NCT-ND" H 9400 4500 50  0001 C CNN "Digi-Key Part Number"
+	1    9400 4500
+	1    0    0    1   
+$EndComp
+Text Notes 8400 5300 0    50   ~ 0
+Output jack
+Text Notes 8400 4150 0    50   ~ 0
+Input jack
+$Comp
+L Library:STX-3500-5NTR J4
+U 1 1 5FEF747B
+P 9350 5650
+F 0 "J4" H 9429 5319 50  0000 C CNN
+F 1 "STX-3500-5NTR" H 9429 5410 50  0000 C CNN
+F 2 "Librray:STX-3500-5NTR" H 9250 6000 50  0001 C CNN
+F 3 "${KIPRJMOD}/../../Datasheet/STX-3500-5N.pdf" H 9250 6000 50  0001 C CNN
+F 4 "CONN JACK STEREO 3.5MM SMD R/A" H 9350 5650 50  0001 C CNN "Description"
+F 5 "Kycon, Inc." H 9350 5650 50  0001 C CNN "Manufacturer"
+F 6 "STX-3500-5NTR" H 9350 5650 50  0001 C CNN "Manufacturer Part Number"
+F 7 "2092-STX-3500-5NCT-ND" H 9350 5650 50  0001 C CNN "Digi-Key Part Number"
+	1    9350 5650
+	1    0    0    1   
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,201 @@
+#VRML V2.0 utf8
+
+
+Group {
+  children 
+    DEF o0 Group {
+      children [ 
+        DEF o1 Group {
+          children 
+            DEF o2 Transform {
+              translation 0 0 0
+              rotation 0 0 1  0
+              scale 1 1 1
+              scaleOrientation 0 0 1  0
+              center 0 0 0
+              children 
+                DEF o3 Shape {
+                  appearance 
+                  Appearance {
+                    material 
+                    Material {
+                      diffuseColor 0.23529412 0.23529412 0.23529412
+
+                    }
+
+                  }
+                  geometry 
+                  DEF SoFCIndexedFaceSet IndexedFaceSet {
+                    coord 
+                    Coordinate {
+                      point [ -1.117801 0.68040103 0.02,
+                          1.117801 0.68040103 0.02,
+                          1.117801 -0.68040103 0.02,
+                          -1.117801 -0.68040103 0.02,
+                          1.121733 -0.68279397 0.75,
+                          1.15 -0.69999999 0.2,
+                          1.15 0.69999999 0.2,
+                          1.121733 0.68279397 0.75,
+                          -1.15 0.69999999 0.2,
+                          -1.15 -0.69999999 0.2,
+                          -1.121733 -0.68279397 0.75,
+                          -1.121733 0.68279397 0.75 ]
+
+                    }
+                    normal 
+                    Normal {
+                      vector [  ]
+
+                    }
+                    coordIndex [ 0, 1, 2, -1, 0, 2, 3, -1,
+                        4, 5, 6, -1, 4, 6, 7, -1,
+                        6, 1, 0, -1, 6, 0, 8, -1,
+                        2, 5, 9, -1, 2, 9, 3, -1,
+                        5, 2, 1, -1, 5, 1, 6, -1,
+                        3, 9, 8, -1, 3, 8, 0, -1,
+                        7, 10, 4, -1, 7, 11, 10, -1,
+                        9, 10, 11, -1, 9, 11, 8, -1,
+                        7, 6, 8, -1, 7, 8, 11, -1,
+                        5, 4, 10, -1, 5, 10, 9, -1 ]
+                    ccw TRUE
+                    solid FALSE
+                    convex TRUE
+                    creaseAngle 0
+
+                  }
+
+                }
+
+            }
+
+        },
+          
+        DEF o4 Group {
+          children 
+            DEF o5 Transform {
+              translation 0 0 0
+              rotation 0 0 1  0
+              scale 1 1 1
+              scaleOrientation 0 0 1  0
+              center 0 0 0
+              children 
+                DEF o6 Shape {
+                  appearance 
+                  Appearance {
+                    material 
+                    Material {
+
+                    }
+
+                  }
+                  geometry 
+                  DEF SoFCIndexedFaceSet IndexedFaceSet {
+                    coord 
+                    Coordinate {
+                      point [ 0.55000001 0.42500001 0,
+                          1.35 0.42500001 0,
+                          1.35 -0.42500001 0,
+                          0.55000001 -0.42500001 0,
+                          -1.35 0.47499999 0,
+                          0.2 0.47499999 0,
+                          0.2 -0.47499999 0,
+                          -1.35 -0.47499999 0,
+                          1.35 0.42500001 0.2,
+                          0.55000001 -0.42500001 0.2,
+                          1.35 -0.42500001 0.2,
+                          0.55000001 0.42500001 0.2,
+                          0.2 0.47499999 0.2,
+                          -1.35 -0.47499999 0.2,
+                          0.2 -0.47499999 0.2,
+                          -1.35 0.47499999 0.2 ]
+
+                    }
+                    normal 
+                    Normal {
+                      vector [  ]
+
+                    }
+                    coordIndex [ 0, 1, 2, -1, 0, 2, 3, -1,
+                        4, 5, 6, -1, 4, 6, 7, -1,
+                        8, 9, 10, -1, 8, 11, 9, -1,
+                        12, 13, 14, -1, 12, 15, 13, -1,
+                        2, 10, 9, -1, 2, 9, 3, -1,
+                        14, 6, 5, -1, 14, 5, 12, -1,
+                        13, 4, 7, -1, 13, 15, 4, -1,
+                        10, 2, 1, -1, 10, 1, 8, -1,
+                        3, 9, 11, -1, 3, 11, 0, -1,
+                        12, 5, 4, -1, 12, 4, 15, -1,
+                        6, 14, 13, -1, 6, 13, 7, -1,
+                        8, 1, 0, -1, 8, 0, 11, -1 ]
+                    ccw TRUE
+                    solid FALSE
+                    convex TRUE
+                    creaseAngle 0
+
+                  }
+
+                }
+
+            }
+
+        },
+          
+        DEF o7 Group {
+          children 
+            DEF o8 Transform {
+              translation 0 0 0
+              rotation 0 0 1  0
+              scale 1 1 1
+              scaleOrientation 0 0 1  0
+              center 0 0 0
+              children 
+                DEF o9 Shape {
+                  appearance 
+                  Appearance {
+                    material 
+                    Material {
+
+                    }
+
+                  }
+                  geometry 
+                  DEF SoFCIndexedFaceSet IndexedFaceSet {
+                    coord 
+                    Coordinate {
+                      point [ -0.75317502 0.65884 0.75001001,
+                          -0.57909298 0.65884 0.75001001,
+                          -0.57909298 -0.65884 0.75001001,
+                          -0.75317502 -0.65884 0.75001001,
+                          -0.57909298 0.65884 0.75199699,
+                          -0.75317502 -0.65884 0.75199699,
+                          -0.57909298 -0.65884 0.75199699,
+                          -0.75317502 0.65884 0.75199699 ]
+
+                    }
+                    normal 
+                    Normal {
+                      vector [  ]
+
+                    }
+                    coordIndex [ 0, 1, 2, -1, 0, 2, 3, -1,
+                        4, 5, 6, -1, 4, 7, 5, -1,
+                        2, 6, 5, -1, 2, 5, 3, -1,
+                        6, 2, 1, -1, 6, 1, 4, -1,
+                        3, 5, 7, -1, 3, 7, 0, -1,
+                        4, 1, 0, -1, 4, 0, 7, -1 ]
+                    ccw TRUE
+                    solid FALSE
+                    convex TRUE
+                    creaseAngle 0
+
+                  }
+
+                }
+
+            }
+
+        } ]
+
+    }
+
+}

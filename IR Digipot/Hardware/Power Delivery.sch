@@ -1,0 +1,948 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Library:Molex_1054500101 J5
+U 1 1 5FF178F8
+P 4250 2000
+F 0 "J5" H 4250 2115 50  0000 C CNN
+F 1 "Molex_1054500101" H 4250 2024 50  0000 C CNN
+F 2 "Librray:Molex_1054500101" H 4250 2000 50  0001 C CNN
+F 3 "${KIPRJMOD}/../../Datasheet/Molex 1054500101.pdf" H 4250 2000 50  0001 C CNN
+F 4 "CONN RCP USB3.1 TYPEC 24P SMD RA" H 4250 2000 50  0001 C CNN "Description"
+F 5 "Molex" H 4250 2000 50  0001 C CNN "Manufacturer"
+F 6 "1054500101" H 4250 2000 50  0001 C CNN "Manufacturer Part Number"
+F 7 "WM12856CT-ND" H 4250 2000 50  0001 C CNN "Digi-Key Part Number"
+	1    4250 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3350 5100 3350
+Wire Wire Line
+	5100 3350 5100 3450
+Wire Wire Line
+	4900 3450 5100 3450
+Connection ~ 5100 3450
+Wire Wire Line
+	5100 3450 5100 3550
+Wire Wire Line
+	4900 3550 5100 3550
+Connection ~ 5100 3550
+Wire Wire Line
+	5100 3550 5100 3650
+Wire Wire Line
+	4900 3650 5100 3650
+Connection ~ 5100 3650
+$Comp
+L power:GND #PWR0115
+U 1 1 5FF1C970
+P 5100 4150
+F 0 "#PWR0115" H 5100 3900 50  0001 C CNN
+F 1 "GND" H 5105 3977 50  0000 C CNN
+F 2 "" H 5100 4150 50  0001 C CNN
+F 3 "" H 5100 4150 50  0001 C CNN
+	1    5100 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR0116
+U 1 1 5FF1DE8F
+P 2400 1900
+F 0 "#PWR0116" H 2400 1750 50  0001 C CNN
+F 1 "VBUS" H 2415 2073 50  0000 C CNN
+F 2 "" H 2400 1900 50  0001 C CNN
+F 3 "" H 2400 1900 50  0001 C CNN
+	1    2400 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5FF1F2BB
+P 3400 4200
+F 0 "#PWR0117" H 3400 3950 50  0001 C CNN
+F 1 "GND" H 3405 4027 50  0000 C CNN
+F 2 "" H 3400 4200 50  0001 C CNN
+F 3 "" H 3400 4200 50  0001 C CNN
+	1    3400 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 3850 3400 3850
+$Comp
+L Library:C C?
+U 1 1 5FF24732
+P 2400 4000
+AR Path="/5FE20DA8/5FF24732" Ref="C?"  Part="1" 
+AR Path="/5FE379B8/5FF24732" Ref="C?"  Part="1" 
+AR Path="/5FF173B2/5FF24732" Ref="C25"  Part="1" 
+F 0 "C25" V 2421 3865 50  0000 R CNN
+F 1 "4.7uF" V 2330 3865 50  0000 R CNN
+F 2 "Librray:C_1206_3216Metric" H 2250 4200 50  0001 C CNN
+F 3 "" H 2250 4200 50  0001 C CNN
+F 4 "CAP CER 4.7UF 50V X7R 1206" V 2400 4000 50  0001 C CNN "Description"
+F 5 "KEMET" V 2400 4000 50  0001 C CNN "Manufacturer"
+F 6 "C1206C475K5RACTU" V 2400 4000 50  0001 C CNN "Manufacturer Part Number"
+F 7 "399-11685-1-ND" V 2400 4000 50  0001 C CNN "Digi-Key Part Number"
+	1    2400 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5FF27E72
+P 2400 4200
+F 0 "#PWR0118" H 2400 3950 50  0001 C CNN
+F 1 "GND" H 2405 4027 50  0000 C CNN
+F 2 "" H 2400 4200 50  0001 C CNN
+F 3 "" H 2400 4200 50  0001 C CNN
+	1    2400 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3650 5100 4150
+Wire Wire Line
+	3400 3850 3400 4200
+Wire Wire Line
+	2400 4150 2400 4200
+$Comp
+L Library:D_ZENNER D3
+U 1 1 5FF29B69
+P 2850 4000
+F 0 "D3" V 2804 4078 50  0000 L CNN
+F 1 "ESDA25P35" V 2895 4078 50  0000 L CNN
+F 2 "Librray:UDFN-2" H 2860 4150 50  0001 C CNN
+F 3 "${KIPRJMOD}/../../Datasheet/ESDA25P35-1U1M.pdf" H 2860 4150 50  0001 C CNN
+F 4 "TVS DIODE 22V 41V 1610" V 2850 4000 50  0001 C CNN "Description"
+F 5 "STMicroelectronics" V 2850 4000 50  0001 C CNN "Manufacturer"
+F 6 "ESDA25P35-1U1M" V 2850 4000 50  0001 C CNN "Manufacturer Part Number"
+F 7 "497-16913-1-ND" V 2850 4000 50  0001 C CNN "Digi-Key Part Number"
+	1    2850 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2400 1900 2400 3350
+Wire Wire Line
+	2400 3650 2850 3650
+Connection ~ 2400 3650
+Wire Wire Line
+	2400 3650 2400 3850
+Wire Wire Line
+	2400 3550 3600 3550
+Connection ~ 2400 3550
+Wire Wire Line
+	2400 3550 2400 3650
+Wire Wire Line
+	2400 3450 3600 3450
+Connection ~ 2400 3450
+Wire Wire Line
+	2400 3450 2400 3550
+Wire Wire Line
+	2400 3350 3600 3350
+Connection ~ 2400 3350
+Wire Wire Line
+	2400 3350 2400 3450
+Wire Wire Line
+	2850 3850 2850 3650
+Connection ~ 2850 3650
+Wire Wire Line
+	2850 3650 3600 3650
+$Comp
+L power:GND #PWR0119
+U 1 1 5FF2EA95
+P 2850 4200
+F 0 "#PWR0119" H 2850 3950 50  0001 C CNN
+F 1 "GND" H 2855 4027 50  0000 C CNN
+F 2 "" H 2850 4200 50  0001 C CNN
+F 3 "" H 2850 4200 50  0001 C CNN
+	1    2850 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 4150 2850 4200
+$Comp
+L power:GND #PWR0120
+U 1 1 5FE4B886
+P 3450 5250
+F 0 "#PWR0120" H 3450 5000 50  0001 C CNN
+F 1 "GND" H 3455 5077 50  0000 C CNN
+F 2 "" H 3450 5250 50  0001 C CNN
+F 3 "" H 3450 5250 50  0001 C CNN
+	1    3450 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 5200 3450 5250
+Wire Wire Line
+	3600 3050 2150 3050
+Wire Wire Line
+	2150 3050 2150 4650
+Wire Wire Line
+	3600 3150 2100 3150
+$Comp
+L Library:STUSB4500QTR U7
+U 1 1 5FE5C56B
+P 6900 4450
+F 0 "U7" H 7200 5250 50  0000 L BNN
+F 1 "STUSB4500QTR" H 7200 5150 50  0000 L BNN
+F 2 "Librray:QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm" H 6200 4450 50  0001 C CNN
+F 3 "${KIPRJMOD}/../../Datasheet/STUSB4500 Standalone USB PD sink controller with short-to-VBUS protections.pdf" H 6200 4450 50  0001 C CNN
+F 4 "IC USB CONTROLLER I2C 24QFN" H 6900 4450 50  0001 C CNN "Description"
+F 5 "STMicroelectronics" H 6900 4450 50  0001 C CNN "Manufacturer"
+F 6 "STUSB4500QTR" H 6900 4450 50  0001 C CNN "Manufacturer Part Number"
+F 7 "497-18060-1-ND" H 6900 4450 50  0001 C CNN "Digi-Key Part Number"
+	1    6900 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Library:D_ZENNER_DUAL_CATHODE D4
+U 1 1 5FF329A1
+P 3550 5050
+F 0 "D4" V 3504 5128 50  0000 L CNN
+F 1 "ESDA25W" V 3595 5128 50  0000 L CNN
+F 2 "Librray:SOT-323" H 3560 5200 50  0001 C CNN
+F 3 "${KIPRJMOD}/../../Datasheet/ESDAxxxWx Array for data protection.pdf" H 3560 5200 50  0001 C CNN
+F 4 "TVS DIODE 24V SOT323" V 3550 5050 50  0001 C CNN "Description"
+F 5 "STMicroelectronics" V 3550 5050 50  0001 C CNN "Manufacturer"
+F 6 "ESDA25W" V 3550 5050 50  0001 C CNN "Manufacturer Part Number"
+F 7 "497-6689-1-ND" V 3550 5050 50  0001 C CNN "Digi-Key Part Number"
+	1    3550 5050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2100 3150 2100 4750
+Wire Wire Line
+	2150 4650 3550 4650
+Wire Wire Line
+	2100 4750 3350 4750
+Wire Wire Line
+	3550 4900 3550 4650
+Connection ~ 3550 4650
+Wire Wire Line
+	3350 4900 3350 4750
+Connection ~ 3350 4750
+Wire Wire Line
+	3350 4750 6000 4750
+Wire Wire Line
+	6050 4550 6000 4550
+Wire Wire Line
+	6000 4550 6000 4650
+Wire Wire Line
+	3550 4650 6000 4650
+Connection ~ 6000 4650
+Wire Wire Line
+	6000 4650 6050 4650
+Wire Wire Line
+	6050 4850 6000 4850
+Wire Wire Line
+	6000 4850 6000 4750
+Connection ~ 6000 4750
+Wire Wire Line
+	6000 4750 6050 4750
+$Comp
+L Library:R R?
+U 1 1 5FE70C64
+P 5750 5550
+AR Path="/5FE20DA8/5FE70C64" Ref="R?"  Part="1" 
+AR Path="/5FE379B8/5FE70C64" Ref="R?"  Part="1" 
+AR Path="/5FF173B2/5FE70C64" Ref="R22"  Part="1" 
+F 0 "R22" H 5750 5500 50  0000 L BNN
+F 1 "100K" H 5750 5600 50  0000 L BNN
+F 2 "Librray:R_0402_1005Metric" H 5750 5550 50  0001 C CNN
+F 3 "" H 5750 5550 50  0001 C CNN
+F 4 "CRGCQ 0402 100K 1%" H 5750 5550 50  0001 C CNN "Description"
+F 5 "TE Connectivity Passive Product" H 5750 5550 50  0001 C CNN "Manufacturer"
+F 6 "CRGCQ0402F100K" H 5750 5550 50  0001 C CNN "Manufacturer Part Number"
+F 7 "A129651CT-ND" H 5750 5550 50  0001 C CNN "Digi-Key Part Number"
+	1    5750 5550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Library:R R?
+U 1 1 5FE71411
+P 5300 5550
+AR Path="/5FE20DA8/5FE71411" Ref="R?"  Part="1" 
+AR Path="/5FE379B8/5FE71411" Ref="R?"  Part="1" 
+AR Path="/5FF173B2/5FE71411" Ref="R21"  Part="1" 
+F 0 "R21" H 5300 5500 50  0000 L BNN
+F 1 "100K" H 5300 5600 50  0000 L BNN
+F 2 "Librray:R_0402_1005Metric" H 5300 5550 50  0001 C CNN
+F 3 "" H 5300 5550 50  0001 C CNN
+F 4 "CRGCQ 0402 100K 1%" H 5300 5550 50  0001 C CNN "Description"
+F 5 "TE Connectivity Passive Product" H 5300 5550 50  0001 C CNN "Manufacturer"
+F 6 "CRGCQ0402F100K" H 5300 5550 50  0001 C CNN "Manufacturer Part Number"
+F 7 "A129651CT-ND" H 5300 5550 50  0001 C CNN "Digi-Key Part Number"
+	1    5300 5550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5850 5400 5850 5050
+Wire Wire Line
+	5850 5050 6050 5050
+Wire Wire Line
+	6050 5150 5400 5150
+Wire Wire Line
+	5400 5150 5400 5400
+$Comp
+L power:GND #PWR037
+U 1 1 5FE73088
+P 5850 5750
+F 0 "#PWR037" H 5850 5500 50  0001 C CNN
+F 1 "GND" H 5855 5577 50  0000 C CNN
+F 2 "" H 5850 5750 50  0001 C CNN
+F 3 "" H 5850 5750 50  0001 C CNN
+	1    5850 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR036
+U 1 1 5FE7359E
+P 5400 5750
+F 0 "#PWR036" H 5400 5500 50  0001 C CNN
+F 1 "GND" H 5405 5577 50  0000 C CNN
+F 2 "" H 5400 5750 50  0001 C CNN
+F 3 "" H 5400 5750 50  0001 C CNN
+	1    5400 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 5700 5400 5750
+Wire Wire Line
+	5850 5700 5850 5750
+$Comp
+L Library:R R?
+U 1 1 5FE750A4
+P 5150 4950
+AR Path="/5FE20DA8/5FE750A4" Ref="R?"  Part="1" 
+AR Path="/5FE379B8/5FE750A4" Ref="R?"  Part="1" 
+AR Path="/5FF173B2/5FE750A4" Ref="R19"  Part="1" 
+F 0 "R19" V 5150 5000 50  0000 L BNN
+F 1 "NC" V 5150 4800 50  0000 L BNN
+F 2 "Librray:R_0402_1005Metric" H 5150 4950 50  0001 C CNN
+F 3 "" H 5150 4950 50  0001 C CNN
+	1    5150 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Library:R R?
+U 1 1 5FE766C4
+P 5150 5050
+AR Path="/5FE20DA8/5FE766C4" Ref="R?"  Part="1" 
+AR Path="/5FE379B8/5FE766C4" Ref="R?"  Part="1" 
+AR Path="/5FF173B2/5FE766C4" Ref="R20"  Part="1" 
+F 0 "R20" V 5000 5100 50  0000 L BNN
+F 1 "NC" V 5000 4900 50  0000 L BNN
+F 2 "Librray:R_0402_1005Metric" H 5150 5050 50  0001 C CNN
+F 3 "" H 5150 5050 50  0001 C CNN
+	1    5150 5050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5300 5050 5850 5050
+Connection ~ 5850 5050
+Wire Wire Line
+	5400 5150 5300 5150
+Connection ~ 5400 5150
+$Comp
+L Library:+2V7 #PWR035
+U 1 1 5FE7A16F
+P 4750 5000
+F 0 "#PWR035" H 4750 4850 50  0001 C CNN
+F 1 "+2V7" H 4765 5173 50  0000 C CNN
+F 2 "" H 4750 5000 50  0001 C CNN
+F 3 "" H 4750 5000 50  0001 C CNN
+	1    4750 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 5000 4750 5050
+Wire Wire Line
+	4750 5050 5000 5050
+Wire Wire Line
+	4750 5050 4750 5150
+Wire Wire Line
+	4750 5150 5000 5150
+Connection ~ 4750 5050
+$Comp
+L Library:R R?
+U 1 1 5FE8004B
+P 7800 5550
+AR Path="/5FE20DA8/5FE8004B" Ref="R?"  Part="1" 
+AR Path="/5FE379B8/5FE8004B" Ref="R?"  Part="1" 
+AR Path="/5FF173B2/5FE8004B" Ref="R23"  Part="1" 
+F 0 "R23" H 7800 5500 50  0000 L BNN
+F 1 "100K" H 7800 5600 50  0000 L BNN
+F 2 "Librray:R_0402_1005Metric" H 7800 5550 50  0001 C CNN
+F 3 "" H 7800 5550 50  0001 C CNN
+F 4 "CRGCQ 0402 100K 1%" H 7800 5550 50  0001 C CNN "Description"
+F 5 "TE Connectivity Passive Product" H 7800 5550 50  0001 C CNN "Manufacturer"
+F 6 "CRGCQ0402F100K" H 7800 5550 50  0001 C CNN "Manufacturer Part Number"
+F 7 "A129651CT-ND" H 7800 5550 50  0001 C CNN "Digi-Key Part Number"
+	1    7800 5550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7850 5000 7900 5000
+Wire Wire Line
+	7900 5000 7900 5400
+$Comp
+L power:GND #PWR038
+U 1 1 5FE819A8
+P 7900 5750
+F 0 "#PWR038" H 7900 5500 50  0001 C CNN
+F 1 "GND" H 7905 5577 50  0000 C CNN
+F 2 "" H 7900 5750 50  0001 C CNN
+F 3 "" H 7900 5750 50  0001 C CNN
+	1    7900 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 5700 7900 5750
+$Comp
+L power:GND #PWR0121
+U 1 1 5FE84B21
+P 6800 5700
+F 0 "#PWR0121" H 6800 5450 50  0001 C CNN
+F 1 "GND" H 6805 5527 50  0000 C CNN
+F 2 "" H 6800 5700 50  0001 C CNN
+F 3 "" H 6800 5700 50  0001 C CNN
+	1    6800 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 5300 6800 5400
+Wire Wire Line
+	6950 5300 6950 5400
+Wire Wire Line
+	6950 5400 6800 5400
+Connection ~ 6800 5400
+Wire Wire Line
+	6800 5400 6800 5700
+Wire Wire Line
+	6950 3700 6950 3250
+Wire Wire Line
+	6950 3250 6850 3250
+Wire Wire Line
+	6650 3250 6650 3350
+$Comp
+L power:GND #PWR041
+U 1 1 5FE88E61
+P 6650 3350
+F 0 "#PWR041" H 6650 3100 50  0001 C CNN
+F 1 "GND" H 6655 3177 50  0000 C CNN
+F 2 "" H 6650 3350 50  0001 C CNN
+F 3 "" H 6650 3350 50  0001 C CNN
+	1    6650 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 3700 6850 3250
+Connection ~ 6850 3250
+Wire Wire Line
+	6850 3250 6650 3250
+Wire Wire Line
+	6350 3700 6350 3500
+$Comp
+L Library:+2V7 #PWR040
+U 1 1 5FE8BDBC
+P 6350 2450
+F 0 "#PWR040" H 6350 2300 50  0001 C CNN
+F 1 "+2V7" H 6365 2623 50  0000 C CNN
+F 2 "" H 6350 2450 50  0001 C CNN
+F 3 "" H 6350 2450 50  0001 C CNN
+	1    6350 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Library:C C?
+U 1 1 5FE4CDF4
+P 5950 3250
+AR Path="/5FE20DA8/5FE4CDF4" Ref="C?"  Part="1" 
+AR Path="/5FE379B8/5FE4CDF4" Ref="C?"  Part="1" 
+AR Path="/5FF173B2/5FE4CDF4" Ref="C27"  Part="1" 
+F 0 "C27" H 6200 3400 50  0000 R CNN
+F 1 "1uF" H 6200 3300 50  0000 R CNN
+F 2 "Librray:C_0603_1608Metric" H 5800 3450 50  0001 C CNN
+F 3 "" H 5800 3450 50  0001 C CNN
+F 4 "CAP CER 1UF 50V X7R 0603" V 5950 3250 50  0001 C CNN "Description"
+F 5 "Taiyo Yuden" V 5950 3250 50  0001 C CNN "Manufacturer"
+F 6 "UMK107AB7105KA-T" V 5950 3250 50  0001 C CNN "Manufacturer Part Number"
+F 7 "587-3247-1-ND" V 5950 3250 50  0001 C CNN "Digi-Key Part Number"
+	1    5950 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Library:C C?
+U 1 1 5FE4EF88
+P 5950 3500
+AR Path="/5FE20DA8/5FE4EF88" Ref="C?"  Part="1" 
+AR Path="/5FE379B8/5FE4EF88" Ref="C?"  Part="1" 
+AR Path="/5FF173B2/5FE4EF88" Ref="C28"  Part="1" 
+F 0 "C28" H 6200 3650 50  0000 R CNN
+F 1 "1uF" H 6200 3550 50  0000 R CNN
+F 2 "Librray:C_0603_1608Metric" H 5800 3700 50  0001 C CNN
+F 3 "" H 5800 3700 50  0001 C CNN
+F 4 "CAP CER 1UF 50V X7R 0603" V 5950 3500 50  0001 C CNN "Description"
+F 5 "Taiyo Yuden" V 5950 3500 50  0001 C CNN "Manufacturer"
+F 6 "UMK107AB7105KA-T" V 5950 3500 50  0001 C CNN "Manufacturer Part Number"
+F 7 "587-3247-1-ND" V 5950 3500 50  0001 C CNN "Digi-Key Part Number"
+	1    5950 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Library:C C?
+U 1 1 5FE4F5F4
+P 5950 3000
+AR Path="/5FE20DA8/5FE4F5F4" Ref="C?"  Part="1" 
+AR Path="/5FE379B8/5FE4F5F4" Ref="C?"  Part="1" 
+AR Path="/5FF173B2/5FE4F5F4" Ref="C26"  Part="1" 
+F 0 "C26" H 6200 3150 50  0000 R CNN
+F 1 "1uF" H 6200 3050 50  0000 R CNN
+F 2 "Librray:C_0603_1608Metric" H 5800 3200 50  0001 C CNN
+F 3 "" H 5800 3200 50  0001 C CNN
+F 4 "CAP CER 1UF 50V X7R 0603" V 5950 3000 50  0001 C CNN "Description"
+F 5 "Taiyo Yuden" V 5950 3000 50  0001 C CNN "Manufacturer"
+F 6 "UMK107AB7105KA-T" V 5950 3000 50  0001 C CNN "Manufacturer Part Number"
+F 7 "587-3247-1-ND" V 5950 3000 50  0001 C CNN "Digi-Key Part Number"
+	1    5950 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 3500 6350 3500
+Connection ~ 6350 3500
+Wire Wire Line
+	6100 3250 6450 3250
+Wire Wire Line
+	6450 3250 6450 3700
+Wire Wire Line
+	6350 2450 6350 3500
+Wire Wire Line
+	7050 3700 7050 3000
+Wire Wire Line
+	7050 3000 6100 3000
+Wire Wire Line
+	5800 3000 5550 3000
+$Comp
+L power:GND #PWR039
+U 1 1 5FE57E10
+P 5550 3600
+F 0 "#PWR039" H 5550 3350 50  0001 C CNN
+F 1 "GND" H 5555 3427 50  0000 C CNN
+F 2 "" H 5550 3600 50  0001 C CNN
+F 3 "" H 5550 3600 50  0001 C CNN
+	1    5550 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3000 5550 3250
+Wire Wire Line
+	5800 3500 5550 3500
+Connection ~ 5550 3500
+Wire Wire Line
+	5550 3500 5550 3600
+Wire Wire Line
+	5800 3250 5550 3250
+Connection ~ 5550 3250
+Wire Wire Line
+	5550 3250 5550 3500
+$Comp
+L Library:R R?
+U 1 1 5FE63994
+P 5700 2250
+AR Path="/5FE20DA8/5FE63994" Ref="R?"  Part="1" 
+AR Path="/5FE379B8/5FE63994" Ref="R?"  Part="1" 
+AR Path="/5FF173B2/5FE63994" Ref="R25"  Part="1" 
+F 0 "R25" H 5700 2200 50  0000 L BNN
+F 1 "1K" H 5700 2300 50  0000 L BNN
+F 2 "Librray:R_0402_1005Metric" H 5700 2250 50  0001 C CNN
+F 3 "" H 5700 2250 50  0001 C CNN
+F 4 "CRGCQ 0402 1K0 1%" H 5700 2250 50  0001 C CNN "Description"
+F 5 "TE Connectivity Passive Product" H 5700 2250 50  0001 C CNN "Manufacturer"
+F 6 "CRGCQ0402F1K0" H 5700 2250 50  0001 C CNN "Manufacturer Part Number"
+F 7 "A129627CT-ND" H 5700 2250 50  0001 C CNN "Digi-Key Part Number"
+	1    5700 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Library:R R?
+U 1 1 5FE661AD
+P 5700 1850
+AR Path="/5FE20DA8/5FE661AD" Ref="R?"  Part="1" 
+AR Path="/5FE379B8/5FE661AD" Ref="R?"  Part="1" 
+AR Path="/5FF173B2/5FE661AD" Ref="R24"  Part="1" 
+F 0 "R24" H 5700 1800 50  0000 L BNN
+F 1 "470" H 5700 1900 50  0000 L BNN
+F 2 "Librray:R_0402_1005Metric" H 5700 1850 50  0001 C CNN
+F 3 "" H 5700 1850 50  0001 C CNN
+F 4 "CRGCQ 0402 470R 1%" H 5700 1850 50  0001 C CNN "Description"
+F 5 "TE Connectivity Passive Product" H 5700 1850 50  0001 C CNN "Manufacturer"
+F 6 "CRGCQ0402F470R" H 5700 1850 50  0001 C CNN "Manufacturer Part Number"
+F 7 "A129623CT-ND" H 5700 1850 50  0001 C CNN "Digi-Key Part Number"
+	1    5700 1850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6050 4350 5350 4350
+Wire Wire Line
+	5350 4350 5350 2800
+Wire Wire Line
+	5800 2100 5800 2050
+$Comp
+L Library:C C?
+U 1 1 5FE6B082
+P 5400 2250
+AR Path="/5FE20DA8/5FE6B082" Ref="C?"  Part="1" 
+AR Path="/5FE379B8/5FE6B082" Ref="C?"  Part="1" 
+AR Path="/5FF173B2/5FE6B082" Ref="C29"  Part="1" 
+F 0 "C29" V 5300 1950 50  0000 L BNN
+F 1 "1uF" V 5400 1950 50  0000 L BNN
+F 2 "Librray:C_0603_1608Metric" H 5250 2450 50  0001 C CNN
+F 3 "" H 5250 2450 50  0001 C CNN
+F 4 "CAP CER 1UF 50V X7R 0603" V 5400 2250 50  0001 C CNN "Description"
+F 5 "Taiyo Yuden" V 5400 2250 50  0001 C CNN "Manufacturer"
+F 6 "UMK107AB7105KA-T" V 5400 2250 50  0001 C CNN "Manufacturer Part Number"
+F 7 "587-3247-1-ND" V 5400 2250 50  0001 C CNN "Digi-Key Part Number"
+	1    5400 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR043
+U 1 1 5FE6C4E7
+P 5400 2450
+F 0 "#PWR043" H 5400 2200 50  0001 C CNN
+F 1 "GND" H 5405 2277 50  0000 C CNN
+F 2 "" H 5400 2450 50  0001 C CNN
+F 3 "" H 5400 2450 50  0001 C CNN
+	1    5400 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 2800 5350 2800
+Wire Wire Line
+	5800 2400 5800 2800
+Wire Wire Line
+	5400 2400 5400 2450
+Wire Wire Line
+	5800 2050 5400 2050
+Wire Wire Line
+	5400 2050 5400 2100
+Connection ~ 5800 2050
+Wire Wire Line
+	5800 2050 5800 2000
+Wire Wire Line
+	5800 1700 5800 1650
+Wire Wire Line
+	5800 1650 5400 1650
+Wire Wire Line
+	5400 1650 5400 1600
+$Comp
+L power:VBUS #PWR042
+U 1 1 5FE75BD4
+P 5400 1600
+F 0 "#PWR042" H 5400 1450 50  0001 C CNN
+F 1 "VBUS" H 5415 1773 50  0000 C CNN
+F 2 "" H 5400 1600 50  0001 C CNN
+F 3 "" H 5400 1600 50  0001 C CNN
+	1    5400 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Library:D_SCHOTTKY D5
+U 1 1 5FE776B2
+P 5400 1850
+F 0 "D5" V 5450 2150 50  0000 R CNN
+F 1 "BAT54" V 5350 2150 50  0000 R CNN
+F 2 "Librray:SOD-523" H 5410 2000 50  0001 C CNN
+F 3 "${KIPRJMOD}/../../Datasheet/BAT54 Small signal Schottky diodes.pdf" H 5410 2000 50  0001 C CNN
+F 4 "DIODE SCHOTTKY 40V 300MA SOD523" V 5400 1850 50  0001 C CNN "Description"
+F 5 "STMicroelectronics" V 5400 1850 50  0001 C CNN "Manufacturer"
+F 6 "BAT54KFILM" V 5400 1850 50  0001 C CNN "Manufacturer Part Number"
+F 7 "497-5561-1-ND" V 5400 1850 50  0001 C CNN "Digi-Key Part Number"
+	1    5400 1850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5400 1700 5400 1650
+Connection ~ 5400 1650
+Wire Wire Line
+	5400 2000 5400 2050
+Connection ~ 5400 2050
+$Comp
+L Library:P-CHANNEL-SGD Q5
+U 1 1 5FE8B3EC
+P 7450 2600
+F 0 "Q5" V 7779 2600 50  0000 C CNN
+F 1 "STL6P3LLH6" V 7688 2600 50  0000 C CNN
+F 2 "Librray:8-PowerVDFN" H 7450 2600 50  0001 C CNN
+F 3 "${KIPRJMOD}/../../Datasheet/STL6P3LLH6.pdf" H 7450 2600 50  0001 C CNN
+F 4 "MOSFET P-CH 30V 6A POWERFLAT" V 7450 2600 50  0001 C CNN "Description"
+F 5 "STMicroelectronics" V 7450 2600 50  0001 C CNN "Manufacturer"
+F 6 "STL6P3LLH6" V 7450 2600 50  0001 C CNN "Manufacturer Part Number"
+F 7 "497-15315-1-ND" V 7450 2600 50  0001 C CNN "Digi-Key Part Number"
+	1    7450 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7650 2500 7800 2500
+$Comp
+L Library:P-CHANNEL-SGD Q6
+U 1 1 5FE92388
+P 8350 2600
+F 0 "Q6" V 8679 2600 50  0000 C CNN
+F 1 "STL6P3LLH6" V 8588 2600 50  0000 C CNN
+F 2 "Librray:8-PowerVDFN" H 8350 2600 50  0001 C CNN
+F 3 "${KIPRJMOD}/../../Datasheet/STL6P3LLH6.pdf" H 8350 2600 50  0001 C CNN
+F 4 "MOSFET P-CH 30V 6A POWERFLAT" V 8350 2600 50  0001 C CNN "Description"
+F 5 "STMicroelectronics" V 8350 2600 50  0001 C CNN "Manufacturer"
+F 6 "STL6P3LLH6" V 8350 2600 50  0001 C CNN "Manufacturer Part Number"
+F 7 "497-15315-1-ND" V 8350 2600 50  0001 C CNN "Digi-Key Part Number"
+	1    8350 2600
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7450 2800 7450 2900
+Wire Wire Line
+	7450 2900 7800 2900
+Wire Wire Line
+	8350 2900 8350 2800
+$Comp
+L Library:R R?
+U 1 1 5FE97F6D
+P 7700 2700
+AR Path="/5FE20DA8/5FE97F6D" Ref="R?"  Part="1" 
+AR Path="/5FE379B8/5FE97F6D" Ref="R?"  Part="1" 
+AR Path="/5FF173B2/5FE97F6D" Ref="R27"  Part="1" 
+F 0 "R27" H 7700 2650 50  0000 L BNN
+F 1 "100K" H 7700 2750 50  0000 L BNN
+F 2 "Librray:R_0402_1005Metric" H 7700 2700 50  0001 C CNN
+F 3 "" H 7700 2700 50  0001 C CNN
+F 4 "CRGCQ 0402 100K 1%" H 7700 2700 50  0001 C CNN "Description"
+F 5 "TE Connectivity Passive Product" H 7700 2700 50  0001 C CNN "Manufacturer"
+F 6 "CRGCQ0402F100K" H 7700 2700 50  0001 C CNN "Manufacturer Part Number"
+F 7 "A129651CT-ND" H 7700 2700 50  0001 C CNN "Digi-Key Part Number"
+	1    7700 2700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7800 2550 7800 2500
+Connection ~ 7800 2500
+Wire Wire Line
+	7800 2500 8000 2500
+Wire Wire Line
+	7800 2850 7800 2900
+Connection ~ 7800 2900
+Wire Wire Line
+	7800 2900 8350 2900
+Wire Wire Line
+	7050 3000 8000 3000
+Wire Wire Line
+	8000 3000 8000 2500
+Connection ~ 7050 3000
+Connection ~ 8000 2500
+Wire Wire Line
+	8000 2500 8150 2500
+$Comp
+L Library:R R?
+U 1 1 5FEACB3A
+P 7350 3250
+AR Path="/5FE20DA8/5FEACB3A" Ref="R?"  Part="1" 
+AR Path="/5FE379B8/5FEACB3A" Ref="R?"  Part="1" 
+AR Path="/5FF173B2/5FEACB3A" Ref="R26"  Part="1" 
+F 0 "R26" H 7350 3200 50  0000 L BNN
+F 1 "22K" H 7350 3300 50  0000 L BNN
+F 2 "Librray:R_0402_1005Metric" H 7350 3250 50  0001 C CNN
+F 3 "" H 7350 3250 50  0001 C CNN
+F 4 "CRGCQ 0402 22K 1%" H 7350 3250 50  0001 C CNN "Description"
+F 5 "TE Connectivity Passive Product" H 7350 3250 50  0001 C CNN "Manufacturer"
+F 6 "CRGCQ0402F22K" H 7350 3250 50  0001 C CNN "Manufacturer Part Number"
+F 7 "A129643CT-ND" H 7350 3250 50  0001 C CNN "Digi-Key Part Number"
+	1    7350 3250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7450 3100 7450 2900
+Connection ~ 7450 2900
+Wire Wire Line
+	7850 4000 7900 4000
+$Comp
+L Library:R R?
+U 1 1 5FEB88DC
+P 8600 3000
+AR Path="/5FE20DA8/5FEB88DC" Ref="R?"  Part="1" 
+AR Path="/5FE379B8/5FEB88DC" Ref="R?"  Part="1" 
+AR Path="/5FF173B2/5FEB88DC" Ref="R28"  Part="1" 
+F 0 "R28" V 8400 2900 50  0000 L BNN
+F 1 "100" V 8650 2900 50  0000 L BNN
+F 2 "Librray:R_0402_1005Metric" H 8600 3000 50  0001 C CNN
+F 3 "" H 8600 3000 50  0001 C CNN
+F 4 "CRGCQ 0402 100R 1%" H 8600 3000 50  0001 C CNN "Description"
+F 5 "TE Connectivity Passive Product" H 8600 3000 50  0001 C CNN "Manufacturer"
+F 6 "CRGCQ0402F100R" H 8600 3000 50  0001 C CNN "Manufacturer Part Number"
+F 7 "A129615CT-ND" H 8600 3000 50  0001 C CNN "Digi-Key Part Number"
+	1    8600 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8350 2900 8450 2900
+Connection ~ 8350 2900
+$Comp
+L Library:C C?
+U 1 1 5FEC7852
+P 8800 2700
+AR Path="/5FE20DA8/5FEC7852" Ref="C?"  Part="1" 
+AR Path="/5FE379B8/5FEC7852" Ref="C?"  Part="1" 
+AR Path="/5FF173B2/5FEC7852" Ref="C30"  Part="1" 
+F 0 "C30" V 8821 2565 50  0000 R CNN
+F 1 "0.1uF" V 8730 2565 50  0000 R CNN
+F 2 "Librray:C_0402_1005Metric" H 8650 2900 50  0001 C CNN
+F 3 "" H 8650 2900 50  0001 C CNN
+F 4 "CAP CER 0.1UF 50V X7R 0402" V 8800 2700 50  0001 C CNN "Description"
+F 5 "Taiyo Yuden" V 8800 2700 50  0001 C CNN "Manufacturer"
+F 6 "UMK105B7104KV-FR" V 8800 2700 50  0001 C CNN "Manufacturer Part Number"
+F 7 "587-3498-1-ND" V 8800 2700 50  0001 C CNN "Digi-Key Part Number"
+	1    8800 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8750 2900 8800 2900
+Wire Wire Line
+	8800 2900 8800 2850
+Wire Wire Line
+	8550 2500 8800 2500
+Wire Wire Line
+	8800 2500 8800 2550
+$Comp
+L Library:VSNK #PWR0123
+U 1 1 5FED16DA
+P 9400 2450
+F 0 "#PWR0123" H 9400 2300 50  0001 C CNN
+F 1 "VSNK" H 9415 2623 50  0000 C CNN
+F 2 "" H 9400 2450 50  0001 C CNN
+F 3 "" H 9400 2450 50  0001 C CNN
+	1    9400 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 2500 9200 2500
+Connection ~ 8800 2500
+$Comp
+L Library:R R?
+U 1 1 5FED8F31
+P 8650 3350
+AR Path="/5FE20DA8/5FED8F31" Ref="R?"  Part="1" 
+AR Path="/5FE379B8/5FED8F31" Ref="R?"  Part="1" 
+AR Path="/5FF173B2/5FED8F31" Ref="R29"  Part="1" 
+F 0 "R29" V 8700 3300 50  0000 L BNN
+F 1 "1K" V 8450 3300 50  0000 L BNN
+F 2 "Librray:R_0402_1005Metric" H 8650 3350 50  0001 C CNN
+F 3 "" H 8650 3350 50  0001 C CNN
+F 4 "CRGCQ 0402 1K0 1%" H 8650 3350 50  0001 C CNN "Description"
+F 5 "TE Connectivity Passive Product" H 8650 3350 50  0001 C CNN "Manufacturer"
+F 6 "CRGCQ0402F1K0" H 8650 3350 50  0001 C CNN "Manufacturer Part Number"
+F 7 "A129627CT-ND" H 8650 3350 50  0001 C CNN "Digi-Key Part Number"
+	1    8650 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7850 4100 8150 4100
+Wire Wire Line
+	8150 4100 8150 3450
+Wire Wire Line
+	8150 3450 8500 3450
+Wire Wire Line
+	8800 3450 9200 3450
+Wire Wire Line
+	9200 3450 9200 2500
+Connection ~ 9200 2500
+Wire Wire Line
+	7450 3400 7450 3450
+Wire Wire Line
+	7450 3450 7900 3450
+Wire Wire Line
+	7900 3450 7900 4000
+$Comp
+L Library:D_ZENNER D6
+U 1 1 5FEF03A0
+P 9400 2700
+F 0 "D6" V 9354 2778 50  0000 L CNN
+F 1 "ESDA25P35" V 9445 2778 50  0000 L CNN
+F 2 "Librray:UDFN-2" H 9410 2850 50  0001 C CNN
+F 3 "${KIPRJMOD}/../../Datasheet/ESDA25P35-1U1M.pdf" H 9410 2850 50  0001 C CNN
+F 4 "TVS DIODE 22V 41V 1610" V 9400 2700 50  0001 C CNN "Description"
+F 5 "STMicroelectronics" V 9400 2700 50  0001 C CNN "Manufacturer"
+F 6 "ESDA25P35-1U1M" V 9400 2700 50  0001 C CNN "Manufacturer Part Number"
+F 7 "497-16913-1-ND" V 9400 2700 50  0001 C CNN "Digi-Key Part Number"
+	1    9400 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0124
+U 1 1 5FEF1505
+P 9400 2900
+F 0 "#PWR0124" H 9400 2650 50  0001 C CNN
+F 1 "GND" H 9405 2727 50  0000 C CNN
+F 2 "" H 9400 2900 50  0001 C CNN
+F 3 "" H 9400 2900 50  0001 C CNN
+	1    9400 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 2850 9400 2900
+Wire Wire Line
+	9400 2500 9400 2550
+Wire Wire Line
+	9200 2500 9400 2500
+Wire Wire Line
+	9400 2450 9400 2500
+Connection ~ 9400 2500
+$Comp
+L Library:R R?
+U 1 1 5FF1E2C7
+P 7450 2050
+AR Path="/5FE20DA8/5FF1E2C7" Ref="R?"  Part="1" 
+AR Path="/5FE379B8/5FF1E2C7" Ref="R?"  Part="1" 
+AR Path="/5FF173B2/5FF1E2C7" Ref="R30"  Part="1" 
+F 0 "R30" V 7450 2100 50  0000 L BNN
+F 1 "NC" V 7450 1900 50  0000 L BNN
+F 2 "Librray:R_0402_1005Metric" H 7450 2050 50  0001 C CNN
+F 3 "" H 7450 2050 50  0001 C CNN
+	1    7450 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VBUS #PWR044
+U 1 1 5FF1F437
+P 6950 2200
+F 0 "#PWR044" H 6950 2050 50  0001 C CNN
+F 1 "VBUS" H 6965 2373 50  0000 C CNN
+F 2 "" H 6950 2200 50  0001 C CNN
+F 3 "" H 6950 2200 50  0001 C CNN
+	1    6950 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 2200 6950 2500
+Wire Wire Line
+	6950 2500 7150 2500
+Wire Wire Line
+	7300 2150 7150 2150
+Wire Wire Line
+	7150 2150 7150 2500
+Connection ~ 7150 2500
+Wire Wire Line
+	7150 2500 7250 2500
+Wire Wire Line
+	7600 2150 7800 2150
+Wire Wire Line
+	7800 2150 7800 2500
+$EndSCHEMATC

@@ -1,0 +1,53 @@
+# Generic files to ignore
+.*
+.*.swp
+
+# Editors
+*~
+*.swp
+*.swo
+*#
+*.000
+*.bak
+*.bck
+*.tmp
+_autosave-*
+.vscode
+
+# ms-windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Local patches
+/*.patch
+/*.diff
+
+# KiCAD backup files
+*.sch-bak
+*.kicad_pcb-bak
+
+# KiCAD cache files.
+fp-info-cache
+
+
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
+
+# Netlist files (exported from Eeschema).
+*.net
+
+# Autorouter files (exported from Pcbnew).
+*.dsn
+*.ses
+
+# Exported BOM files.
+*.xml
+*.csv
+
+# FreeCAD backup files.
+*.FCStd1
+
+# Blender backup files.
+*.blend?

@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Library)(type Legacy)(uri ${KIPRJMOD}/../../Library/Library.lib)(options "")(descr ""))
+  (lib (name IR-Digipot-rescue)(type Legacy)(uri "${KIPRJMOD}/IR Digipot-rescue.lib")(options "")(descr ""))
+)
