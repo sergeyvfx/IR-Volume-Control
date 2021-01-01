@@ -190,9 +190,11 @@ Wire Wire Line
 Wire Wire Line
 	3600 3150 2100 3150
 $Comp
-L IR-Digipot-rescue:STUSB4500QTR-Library U7
+L IR-Digipot-rescue:STUSB4500QTR-Library-IR-Digipot-rescue U7
 U 1 1 5FE5C56B
 P 6900 4450
+AR Path="/5FE5C56B" Ref="U7"  Part="1" 
+AR Path="/5FF173B2/5FE5C56B" Ref="U7"  Part="1" 
 F 0 "U7" H 7200 5250 50  0000 L BNN
 F 1 "STUSB4500QTR" H 7200 5150 50  0000 L BNN
 F 2 "Librray:QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm" H 6200 4450 50  0001 C CNN

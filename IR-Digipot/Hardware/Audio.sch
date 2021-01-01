@@ -54,17 +54,6 @@ F 3 "" H 8950 3350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8950 3300 8950 3350
-$Comp
-L power:+5VA #PWR0110
-U 1 1 5FE3C7B2
-P 8950 1600
-F 0 "#PWR0110" H 8950 1450 50  0001 C CNN
-F 1 "+5VA" H 8965 1773 50  0000 C CNN
-F 2 "" H 8950 1600 50  0001 C CNN
-F 3 "" H 8950 1600 50  0001 C CNN
-	1    8950 1600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8950 1600 8950 1850
 $Comp
@@ -91,22 +80,14 @@ Wire Wire Line
 	9150 1950 9250 1950
 Wire Wire Line
 	9250 1950 9250 1850
-Text GLabel 7650 2650 0    50   Input ~ 0
+Text GLabel 7050 2650 0    50   Input ~ 0
 DIGIPOT_SHDN
-Text GLabel 7650 2900 0    50   Input ~ 0
+Text GLabel 7050 2900 0    50   Input ~ 0
 SPI_CS_DIGIPOT
-Text GLabel 7650 3000 0    50   Input ~ 0
+Text GLabel 7050 3000 0    50   Input ~ 0
 SPI_CLK
-Text GLabel 7650 3100 0    50   Input ~ 0
+Text GLabel 7050 3100 0    50   Input ~ 0
 SPI_MOSI
-Wire Wire Line
-	7650 2650 8500 2650
-Wire Wire Line
-	7650 2900 8500 2900
-Wire Wire Line
-	7650 3000 8500 3000
-Wire Wire Line
-	7650 3100 8500 3100
 $Comp
 L power:GNDA #PWR0111
 U 1 1 5FE5BE15
@@ -892,23 +873,6 @@ F 3 "${KIPRJMOD}/../../Datasheet/OPAx134 SoundPlus High Performance Audio Operat
 	1    0    0    -1  
 $EndComp
 $Comp
-L Library:R R?
-U 1 1 5FF481CD
-P 2850 3800
-AR Path="/5FE20DA8/5FF481CD" Ref="R?"  Part="1" 
-AR Path="/5FE379B8/5FF481CD" Ref="R15"  Part="1" 
-F 0 "R15" V 2700 3700 50  0000 L BNN
-F 1 "3.3K" V 2700 3900 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 2850 3800 50  0001 C CNN
-F 3 "" H 2850 3800 50  0001 C CNN
-F 4 "CRGCQ 0402 3K3 1%" H 2850 3800 50  0001 C CNN "Description"
-F 5 "TE Connectivity Passive Product" H 2850 3800 50  0001 C CNN "Manufacturer"
-F 6 "CRGCQ0402F3K3" H 2850 3800 50  0001 C CNN "Manufacturer Part Number"
-F 7 "A129633CT-ND" H 2850 3800 50  0001 C CNN "Digi-Key Part Number"
-	1    2850 3800
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GNDA #PWR023
 U 1 1 5FF481D3
 P 2500 5200
@@ -1160,7 +1124,7 @@ $EndComp
 Wire Wire Line
 	4450 6550 5200 6550
 $Comp
-L IR-Digipot-rescue:NPN_BEC-Library Q1
+L IR-Digipot-rescue:NPN_BEC-Library-IR-Digipot-rescue Q1
 U 1 1 5FE4DCB4
 P 3700 4050
 AR Path="/5FE4DCB4" Ref="Q1"  Part="1" 
@@ -1216,7 +1180,7 @@ F 7 "A129639CT-ND" H 3050 5050 50  0001 C CNN "Digi-Key Part Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L IR-Digipot-rescue:PNP_BEC-Library Q2
+L IR-Digipot-rescue:PNP_BEC-Library-IR-Digipot-rescue Q2
 U 1 1 5FE4CB88
 P 3700 4850
 F 0 "Q2" H 3750 5000 50  0000 R BNN
@@ -1341,7 +1305,7 @@ Wire Wire Line
 	3150 4800 3150 4850
 Connection ~ 3150 4850
 $Comp
-L IR-Digipot-rescue:NPN_BEC-Library Q3
+L IR-Digipot-rescue:NPN_BEC-Library-IR-Digipot-rescue Q3
 U 1 1 5FFEA0FD
 P 3700 6150
 AR Path="/5FFEA0FD" Ref="Q3"  Part="1" 
@@ -1386,7 +1350,7 @@ F 7 "A129639CT-ND" H 3050 7150 50  0001 C CNN "Digi-Key Part Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L IR-Digipot-rescue:PNP_BEC-Library Q4
+L IR-Digipot-rescue:PNP_BEC-Library-IR-Digipot-rescue Q4
 U 1 1 5FFEA117
 P 3700 6950
 F 0 "Q4" H 3750 7100 50  0000 R BNN
@@ -1568,21 +1532,6 @@ F 3 "" H 8450 4850 50  0001 C CNN
 	1    8450 4850
 	1    0    0    -1  
 $EndComp
-$Comp
-L Library:STX-3500-5NTR J3
-U 1 1 5FE5ABD5
-P 9400 4500
-F 0 "J3" H 9479 4169 50  0000 C CNN
-F 1 "STX-3500-5NTR" H 9479 4260 50  0000 C CNN
-F 2 "Librray:STX-3500-5NTR" H 9300 4850 50  0001 C CNN
-F 3 "${KIPRJMOD}/../../Datasheet/STX-3500-5N.pdf" H 9300 4850 50  0001 C CNN
-F 4 "CONN JACK STEREO 3.5MM SMD R/A" H 9400 4500 50  0001 C CNN "Description"
-F 5 "Kycon, Inc." H 9400 4500 50  0001 C CNN "Manufacturer"
-F 6 "STX-3500-5NTR" H 9400 4500 50  0001 C CNN "Manufacturer Part Number"
-F 7 "2092-STX-3500-5NCT-ND" H 9400 4500 50  0001 C CNN "Digi-Key Part Number"
-	1    9400 4500
-	1    0    0    1   
-$EndComp
 Text Notes 8400 5300 0    50   ~ 0
 Output jack
 Text Notes 8400 4150 0    50   ~ 0
@@ -1602,4 +1551,162 @@ F 7 "2092-STX-3500-5NCT-ND" H 9350 5650 50  0001 C CNN "Digi-Key Part Number"
 	1    9350 5650
 	1    0    0    1   
 $EndComp
+$Comp
+L Library:STX-3500-5NTR J3
+U 1 1 5FE5ABD5
+P 9400 4500
+F 0 "J3" H 9479 4169 50  0000 C CNN
+F 1 "STX-3500-5NTR" H 9479 4260 50  0000 C CNN
+F 2 "Librray:STX-3500-5NTR" H 9300 4850 50  0001 C CNN
+F 3 "${KIPRJMOD}/../../Datasheet/STX-3500-5N.pdf" H 9300 4850 50  0001 C CNN
+F 4 "CONN JACK STEREO 3.5MM SMD R/A" H 9400 4500 50  0001 C CNN "Description"
+F 5 "Kycon, Inc." H 9400 4500 50  0001 C CNN "Manufacturer"
+F 6 "STX-3500-5NTR" H 9400 4500 50  0001 C CNN "Manufacturer Part Number"
+F 7 "2092-STX-3500-5NCT-ND" H 9400 4500 50  0001 C CNN "Digi-Key Part Number"
+	1    9400 4500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9200 4450 9100 4450
+Wire Wire Line
+	9100 4450 9100 4550
+Wire Wire Line
+	9200 4550 9100 4550
+Connection ~ 9100 4550
+Wire Wire Line
+	9100 4550 9100 4850
+$Comp
+L Library:R R?
+U 1 1 5FF481CD
+P 2850 3800
+AR Path="/5FE20DA8/5FF481CD" Ref="R?"  Part="1" 
+AR Path="/5FE379B8/5FF481CD" Ref="R15"  Part="1" 
+F 0 "R15" V 2700 3700 50  0000 L BNN
+F 1 "3.3K" V 2700 3900 50  0000 L BNN
+F 2 "Librray:R_0402_1005Metric" H 2850 3800 50  0001 C CNN
+F 3 "" H 2850 3800 50  0001 C CNN
+F 4 "CRGCQ 0402 3K3 1%" H 2850 3800 50  0001 C CNN "Description"
+F 5 "TE Connectivity Passive Product" H 2850 3800 50  0001 C CNN "Manufacturer"
+F 6 "CRGCQ0402F3K3" H 2850 3800 50  0001 C CNN "Manufacturer Part Number"
+F 7 "A129633CT-ND" H 2850 3800 50  0001 C CNN "Digi-Key Part Number"
+	1    2850 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR064
+U 1 1 5FF47B80
+P 7350 3550
+F 0 "#PWR064" H 7350 3300 50  0001 C CNN
+F 1 "GNDA" H 7355 3377 50  0000 C CNN
+F 2 "" H 7350 3550 50  0001 C CNN
+F 3 "" H 7350 3550 50  0001 C CNN
+	1    7350 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Library:C C?
+U 1 1 5FF4710D
+P 7350 3350
+AR Path="/5FE20DA8/5FF4710D" Ref="C?"  Part="1" 
+AR Path="/5FE379B8/5FF4710D" Ref="C49"  Part="1" 
+F 0 "C49" V 7371 3215 50  0000 R CNN
+F 1 "0.1uF" V 7280 3215 50  0000 R CNN
+F 2 "Librray:C_0402_1005Metric" H 7200 3550 50  0001 C CNN
+F 3 "" H 7200 3550 50  0001 C CNN
+F 4 "CAP CER 0.1UF 25V X7R 0402" V 7350 3350 50  0001 C CNN "Description"
+F 5 "KEMET" V 7350 3350 50  0001 C CNN "Manufacturer"
+F 6 "C0402C104K3RAC7411" V 7350 3350 50  0001 C CNN "Manufacturer Part Number"
+F 7 "399-C0402C104K3RAC7411CT-ND" V 7350 3350 50  0001 C CNN "Digi-Key Part Number"
+	1    7350 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5VA #PWR0110
+U 1 1 5FE3C7B2
+P 8950 1600
+F 0 "#PWR0110" H 8950 1450 50  0001 C CNN
+F 1 "+5VA" H 8965 1773 50  0000 C CNN
+F 2 "" H 8950 1600 50  0001 C CNN
+F 3 "" H 8950 1600 50  0001 C CNN
+	1    8950 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VA #PWR063
+U 1 1 5FF77FA3
+P 7350 2250
+F 0 "#PWR063" H 7350 2100 50  0001 C CNN
+F 1 "+5VA" H 7365 2423 50  0000 C CNN
+F 2 "" H 7350 2250 50  0001 C CNN
+F 3 "" H 7350 2250 50  0001 C CNN
+	1    7350 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Library:R R?
+U 1 1 5FF44F9D
+P 7450 2450
+AR Path="/5FE20DA8/5FF44F9D" Ref="R?"  Part="1" 
+AR Path="/5FE379B8/5FF44F9D" Ref="R42"  Part="1" 
+F 0 "R42" H 7450 2450 50  0000 L BNN
+F 1 "3.3K" H 7450 2350 50  0000 L BNN
+F 2 "Librray:R_0402_1005Metric" H 7450 2450 50  0001 C CNN
+F 3 "" H 7450 2450 50  0001 C CNN
+F 4 "CRGCQ 0402 3K3 1%" H 7450 2450 50  0001 C CNN "Description"
+F 5 "TE Connectivity Passive Product" H 7450 2450 50  0001 C CNN "Manufacturer"
+F 6 "CRGCQ0402F3K3" H 7450 2450 50  0001 C CNN "Manufacturer Part Number"
+F 7 "A129633CT-ND" H 7450 2450 50  0001 C CNN "Digi-Key Part Number"
+	1    7450 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 2650 8500 2650
+Wire Wire Line
+	7050 2900 8500 2900
+Wire Wire Line
+	7050 3000 8500 3000
+Wire Wire Line
+	7050 3100 8500 3100
+Wire Wire Line
+	7350 2250 7350 2300
+Wire Wire Line
+	7350 2600 7350 2750
+Wire Wire Line
+	8500 2750 7350 2750
+Connection ~ 7350 2750
+Wire Wire Line
+	7350 2750 7350 3200
+Wire Wire Line
+	7350 3500 7350 3550
+$Comp
+L power:GNDA #PWR0131
+U 1 1 5FF0BD63
+P 9100 4850
+F 0 "#PWR0131" H 9100 4600 50  0001 C CNN
+F 1 "GNDA" H 9105 4677 50  0000 C CNN
+F 2 "" H 9100 4850 50  0001 C CNN
+F 3 "" H 9100 4850 50  0001 C CNN
+	1    9100 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 600230ED
+P 9100 6000
+F 0 "#PWR?" H 9100 5750 50  0001 C CNN
+F 1 "GNDA" H 9105 5827 50  0000 C CNN
+F 2 "" H 9100 6000 50  0001 C CNN
+F 3 "" H 9100 6000 50  0001 C CNN
+	1    9100 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 6000 9100 5700
+Wire Wire Line
+	9100 5600 9150 5600
+Wire Wire Line
+	9150 5700 9100 5700
+Connection ~ 9100 5700
+Wire Wire Line
+	9100 5700 9100 5600
 $EndSCHEMATC

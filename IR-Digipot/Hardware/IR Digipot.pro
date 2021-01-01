@@ -1,4 +1,4 @@
-update=12/24/20 23:38:45
+update=01/01/21 21:08:11
 version=1
 last_client=kicad
 [general]
@@ -12,6 +12,16 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=pdf
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -31,10 +41,13 @@ MinHoleToHole=0.25
 TrackWidth1=0.1524
 TrackWidth2=0.2032
 TrackWidth3=0.3048
-ViaDiameter1=0.2032
-ViaDrill1=0.1524
-ViaDiameter2=0.2032
-ViaDrill2=0.1524
+TrackWidth4=0.4064
+TrackWidth5=0.6096
+TrackWidth6=0.8128
+ViaDiameter1=0.508
+ViaDrill1=0.3048
+ViaDiameter2=0.508
+ViaDrill2=0.3048
 dPairWidth1=0.1524
 dPairGap1=0.2032
 dPairViaGap1=0.25
@@ -233,8 +246,8 @@ Enabled=0
 Name=Default
 Clearance=0.1
 TrackWidth=0.1524
-ViaDiameter=0.2032
-ViaDrill=0.1524
+ViaDiameter=0.508
+ViaDrill=0.3048
 uViaDiameter=0.3
 uViaDrill=0.1016
 dPairWidth=0.1524

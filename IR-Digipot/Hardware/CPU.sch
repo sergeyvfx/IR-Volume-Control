@@ -315,38 +315,6 @@ Wire Wire Line
 Wire Wire Line
 	6050 2800 6800 2800
 $Comp
-L Library:Conn_1x03_Generic J2
-U 1 1 5FE58490
-P 6950 3600
-F 0 "J2" H 7078 3451 50  0000 L CNN
-F 1 "Conn_1x03_Generic" H 7078 3360 50  0000 L CNN
-F 2 "Librray:Conn_1x03_D0.65mm_Pitch2.54mm_staggered" H 6950 3600 50  0001 C CNN
-F 3 "" H 6950 3600 50  0001 C CNN
-	1    6950 3600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6050 3700 6800 3700
-Wire Wire Line
-	6050 3800 6800 3800
-$Comp
-L power:GNDD #PWR06
-U 1 1 5FE5ACFD
-P 6750 4000
-F 0 "#PWR06" H 6750 3750 50  0001 C CNN
-F 1 "GNDD" H 6754 3845 50  0000 C CNN
-F 2 "" H 6750 4000 50  0001 C CNN
-F 3 "" H 6750 4000 50  0001 C CNN
-	1    6750 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6750 4000 6750 3900
-Wire Wire Line
-	6750 3900 6800 3900
-Text Notes 6900 3600 0    50   ~ 0
-UART
-$Comp
 L Library:TSOP754 U3
 U 1 1 5FE45339
 P 8550 5000
@@ -495,8 +463,6 @@ Text GLabel 4050 4900 2    50   Input ~ 0
 SPI_CS_DIGIPOT
 Text GLabel 4050 5100 2    50   Input ~ 0
 SPI_MOSI
-Text GLabel 2950 3100 0    50   Input ~ 0
-DIGIPOT_SHDN
 Wire Wire Line
 	2950 3100 3250 3100
 Wire Wire Line
@@ -549,6 +515,40 @@ Wire Wire Line
 Wire Wire Line
 	2100 3600 3250 3600
 Text GLabel 2950 3200 0    50   Input ~ 0
+DIGIPOT_SHDN
+Text Notes 6900 3600 0    50   ~ 0
+UART
+Wire Wire Line
+	6750 3900 6800 3900
+Wire Wire Line
+	6750 4000 6750 3900
+$Comp
+L power:GNDD #PWR06
+U 1 1 5FE5ACFD
+P 6750 4000
+F 0 "#PWR06" H 6750 3750 50  0001 C CNN
+F 1 "GNDD" H 6754 3845 50  0000 C CNN
+F 2 "" H 6750 4000 50  0001 C CNN
+F 3 "" H 6750 4000 50  0001 C CNN
+	1    6750 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3800 6800 3800
+Wire Wire Line
+	6050 3700 6800 3700
+$Comp
+L Library:Conn_1x03_Generic J2
+U 1 1 5FE58490
+P 6950 3600
+F 0 "J2" H 7078 3451 50  0000 L CNN
+F 1 "Conn_1x03_Generic" H 7078 3360 50  0000 L CNN
+F 2 "Librray:Conn_1x03_D0.65mm_Pitch2.54mm_staggered" H 6950 3600 50  0001 C CNN
+F 3 "" H 6950 3600 50  0001 C CNN
+	1    6950 3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 2950 3100 0    50   Input ~ 0
 +5VA_SHTDN
 Wire Wire Line
 	2950 3200 3250 3200

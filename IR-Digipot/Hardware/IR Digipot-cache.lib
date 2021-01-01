@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# IR-Digipot-rescue_NPN_BEC-Library
+# IR-Digipot-rescue_NPN_BEC-Library-IR-Digipot-rescue
 #
-DEF IR-Digipot-rescue_NPN_BEC-Library Q 0 40 N Y 1 F N
+DEF IR-Digipot-rescue_NPN_BEC-Library-IR-Digipot-rescue Q 0 40 N Y 1 F N
 F0 "Q" 190 70 50 H V L BNN
-F1 "IR-Digipot-rescue_NPN_BEC-Library" 190 0 50 H V L BNN
+F1 "IR-Digipot-rescue_NPN_BEC-Library-IR-Digipot-rescue" 190 0 50 H V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -20,11 +20,11 @@ X ~ 3 100 200 100 D 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# IR-Digipot-rescue_PNP_BEC-Library
+# IR-Digipot-rescue_PNP_BEC-Library-IR-Digipot-rescue
 #
-DEF IR-Digipot-rescue_PNP_BEC-Library Q 0 40 N Y 1 F N
+DEF IR-Digipot-rescue_PNP_BEC-Library-IR-Digipot-rescue Q 0 40 N Y 1 F N
 F0 "Q" 190 70 50 H V L BNN
-F1 "IR-Digipot-rescue_PNP_BEC-Library" 190 0 50 H V L BNN
+F1 "IR-Digipot-rescue_PNP_BEC-Library-IR-Digipot-rescue" 190 0 50 H V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -39,11 +39,11 @@ X ~ 3 100 200 100 D 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# IR-Digipot-rescue_STUSB4500QTR-Library
+# IR-Digipot-rescue_STUSB4500QTR-Library-IR-Digipot-rescue
 #
-DEF IR-Digipot-rescue_STUSB4500QTR-Library U 0 40 Y Y 1 F N
+DEF IR-Digipot-rescue_STUSB4500QTR-Library-IR-Digipot-rescue U 0 40 Y Y 1 F N
 F0 "U" 300 800 50 H V L BNN
-F1 "IR-Digipot-rescue_STUSB4500QTR-Library" 300 700 50 H V L BNN
+F1 "IR-Digipot-rescue_STUSB4500QTR-Library-IR-Digipot-rescue" 300 700 50 H V L BNN
 F2 "" -700 0 50 H I C CNN
 F3 "" -700 0 50 H I C CNN
 DRAW
