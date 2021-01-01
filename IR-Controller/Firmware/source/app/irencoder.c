@@ -20,25 +20,13 @@
 //
 // Author: Sergey Sharybin (sergey.vfx@gmail.com)
 
-#include "time/time.h"
+#include "app/irencoder.h"
 
-#include <xc.h>
+#include "app/irencoder_rc6.h"
 
-#include "system/configuration.h"
-
-void DelayMilliseconds(int milliseconds) {
-  static const int max_delay_in_ms = 8;
-
-  const int num_iterations = milliseconds / max_delay_in_ms;
-  for (int i = 0; i < num_iterations; ++i) {
-    __delay_ms(max_delay_in_ms);
-  }
-
-  // NOTE: XC8 expects a constant value passed to __delay_ms, so work it around
-  // by loop which does fixed delay. This technically leads to longer delay than
-  // requested.
-  int delay_remainder = milliseconds % max_delay_in_ms;
-  while (delay_remainder--) {
-    __delay_ms(1);
+void IRENCODER_Transmit(IRTransmission* transmission) {
+  switch (transmission->protocol) {
+    case PROTOCOL_UNKNOWN: break;
+    case PROTOCOL_RC6: IRENCODER_Transmit_RC6(transmission); break;
   }
 }

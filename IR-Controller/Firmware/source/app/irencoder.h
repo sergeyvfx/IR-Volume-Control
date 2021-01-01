@@ -20,25 +20,33 @@
 //
 // Author: Sergey Sharybin (sergey.vfx@gmail.com)
 
-#include "time/time.h"
+#ifndef APP_IRENCODER_H_
+#define APP_IRENCODER_H_
 
-#include <xc.h>
+#include <stdint.h>
 
-#include "system/configuration.h"
+// Protocol used by the remote to transmit data.
+typedef enum IRProtocol {
+  PROTOCOL_UNKNOWN,
+  PROTOCOL_RC6,
+} IRProtocol;
 
-void DelayMilliseconds(int milliseconds) {
-  static const int max_delay_in_ms = 8;
+// Transmission definition.
+// Provides higher level access to the transmission data from the remote.
+typedef struct IRTransmission {
+  // Protocol used by the remote.
+  IRProtocol protocol;
 
-  const int num_iterations = milliseconds / max_delay_in_ms;
-  for (int i = 0; i < num_iterations; ++i) {
-    __delay_ms(max_delay_in_ms);
-  }
+  struct {
+    uint8_t start_bit;
+    uint8_t field;
+    uint8_t t;
+    uint8_t address;
+    uint8_t command;
+  } rc6;
+} IRTransmission;
 
-  // NOTE: XC8 expects a constant value passed to __delay_ms, so work it around
-  // by loop which does fixed delay. This technically leads to longer delay than
-  // requested.
-  int delay_remainder = milliseconds % max_delay_in_ms;
-  while (delay_remainder--) {
-    __delay_ms(1);
-  }
-}
+// Blocking call which transmits IR command.
+void IRENCODER_Transmit(IRTransmission* transmission);
+
+#endif  // APP_IRENCODER_H_

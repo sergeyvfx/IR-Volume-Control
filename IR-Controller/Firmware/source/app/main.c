@@ -22,6 +22,7 @@
 
 #include <xc.h>
 
+#include "app/irencoder.h"
 #include "system/configuration.h"
 #include "time/time.h"
 
@@ -55,7 +56,7 @@ static void APP_ConfigureOnStartup(void) {
   APP_ResetAllPortsToOPutput0();
   APP_DisableInterrupts();
 
-  KEY_TRIS = 0;
+  HEARTBEAT_LED_TRIS = 0;
 
   // TODO(sergey): In the final design keep all interrupts disabled until
   // entering the sleep.
@@ -65,7 +66,7 @@ static void APP_ConfigureOnStartup(void) {
 }
 
 // Configure the chip for minimal power draw during sleep, keeping required
-// for wake-up peripherials running. At the end issue the SLEEP command.
+// for wake-up peripherals running. At the end issue the SLEEP command.
 static void APP_ConfigureAndSleep(void) {
   // Configure device to go to sleep on `SLEEP` instruction.
   OSCCONbits.IDLEN = 0;
@@ -73,10 +74,10 @@ static void APP_ConfigureAndSleep(void) {
   // Configure all multiplexed ADC pins (AN0 to AN12) as digital inputs.
   ADCON1bits.PCFG = 0b1111;
 
-  // Disale internal pull-ups, avoiding current draw through them.
+  // Disable internal pull-ups, avoiding current draw through them.
   INTCON2bits.RBPU = 1;
 
-  // Configure all peripherials as outputs and latch it on 0, avoiding
+  // Configure all peripherals as outputs and latch it on 0, avoiding
   // unforeseen power draw from unconnected input pins.
   APP_ResetAllPortsToOPutput0();
 
@@ -107,9 +108,18 @@ void main(void) {
 
   flag = 1;
   while (flag) {
-    LATAbits.LATA0 = 1;
+    IRTransmission transmission;
+    transmission.protocol = PROTOCOL_RC6;
+    transmission.rc6.start_bit = 1;
+    transmission.rc6.field = 0;
+    transmission.rc6.t = 0;
+    transmission.rc6.address = 0;
+    transmission.rc6.command = 0x10;
+    IRENCODER_Transmit(&transmission);
+
+    HEARTBEAT_LED_LAT = 1;
     DelayMilliseconds(500);
-    LATAbits.LATA0 = 0;
+    HEARTBEAT_LED_LAT = 0;
     DelayMilliseconds(500);
   }
 

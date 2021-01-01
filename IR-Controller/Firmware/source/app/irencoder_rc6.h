@@ -20,25 +20,12 @@
 //
 // Author: Sergey Sharybin (sergey.vfx@gmail.com)
 
-#include "time/time.h"
+#ifndef APP_IRENCODER_RC6_H_
+#define APP_IRENCODER_RC6_H_
 
-#include <xc.h>
+struct IRTransmission;
 
-#include "system/configuration.h"
+// Blocking call which transmits IR command in RC6 encoding.
+void IRENCODER_Transmit_RC6(struct IRTransmission* transmission);
 
-void DelayMilliseconds(int milliseconds) {
-  static const int max_delay_in_ms = 8;
-
-  const int num_iterations = milliseconds / max_delay_in_ms;
-  for (int i = 0; i < num_iterations; ++i) {
-    __delay_ms(max_delay_in_ms);
-  }
-
-  // NOTE: XC8 expects a constant value passed to __delay_ms, so work it around
-  // by loop which does fixed delay. This technically leads to longer delay than
-  // requested.
-  int delay_remainder = milliseconds % max_delay_in_ms;
-  while (delay_remainder--) {
-    __delay_ms(1);
-  }
-}
+#endif  // APP_IRENCODER_RC6_H_
