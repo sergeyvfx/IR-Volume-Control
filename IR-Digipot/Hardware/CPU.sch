@@ -459,9 +459,9 @@ Wire Wire Line
 	3200 3900 3200 5100
 Text GLabel 4050 4700 2    50   Input ~ 0
 SPI_CLK
-Text GLabel 4050 4900 2    50   Input ~ 0
-SPI_CS_DIGIPOT
 Text GLabel 4050 5100 2    50   Input ~ 0
+SPI_CS_DIGIPOT
+Text GLabel 4050 4900 2    50   Input ~ 0
 SPI_MOSI
 Wire Wire Line
 	2950 3100 3250 3100
