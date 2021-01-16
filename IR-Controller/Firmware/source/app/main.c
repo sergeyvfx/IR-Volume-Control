@@ -30,7 +30,7 @@
 // will be waken up, it'll handle the transmission and go back to sleep.
 static int flag;
 
-static void APP_ResetAllPortsToOPutput0(void) {
+static void APP_ResetAllPortsToOutput0(void) {
   TRISA = 0;
   TRISB = 0;
   TRISC = 0;
@@ -53,7 +53,7 @@ static void APP_ConfigureOnStartup(void) {
   // Configure for 8 MHz internal oscillator.
   OSCCONbits.IRCF = 0b111;
 
-  APP_ResetAllPortsToOPutput0();
+  APP_ResetAllPortsToOutput0();
   APP_DisableInterrupts();
 
   HEARTBEAT_LED_TRIS = 0;
@@ -79,7 +79,7 @@ static void APP_ConfigureAndSleep(void) {
 
   // Configure all peripherals as outputs and latch it on 0, avoiding
   // unforeseen power draw from unconnected input pins.
-  APP_ResetAllPortsToOPutput0();
+  APP_ResetAllPortsToOutput0();
 
   // Disable USB transceiver.
   UTRDIS = 1;
