@@ -237,8 +237,6 @@ Wire Wire Line
 Wire Wire Line
 	1750 3800 1750 3850
 Wire Wire Line
-	1550 3350 1550 3850
-Wire Wire Line
 	1550 3850 1750 3850
 Wire Wire Line
 	1550 3350 1750 3350
@@ -247,8 +245,6 @@ Wire Wire Line
 	1750 3850 1750 4100
 Wire Wire Line
 	1400 3600 1400 3650
-Wire Wire Line
-	1400 3600 1600 3600
 Wire Wire Line
 	1400 3600 1400 3250
 Wire Wire Line
@@ -552,4 +548,8 @@ Text GLabel 2950 3100 0    50   Input ~ 0
 +5VA_SHTDN
 Wire Wire Line
 	2950 3200 3250 3200
+Wire Wire Line
+	1400 3600 1600 3600
+Wire Wire Line
+	1550 3350 1550 3850
 $EndSCHEMATC
