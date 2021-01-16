@@ -61,4 +61,45 @@ F 3 "" H 4250 2050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4250 2050 4250 2150
+$Comp
+L Library:Battery BT1
+U 1 1 60036241
+P 1550 1600
+F 0 "BT1" H 1703 1596 50  0000 L CNN
+F 1 "Battery" H 1703 1505 50  0000 L CNN
+F 2 "Librray:BC-2003" H 1550 1600 50  0001 C CNN
+F 3 "${KIPRJMOD}/../../Datasheet/BC-2003.pdf" H 1550 1600 50  0001 C CNN
+F 4 "Battery Retainer Coin, 20.0mm 1 Cell SMD (SMT) Tab" H 1550 1600 50  0001 C CNN "Description"
+F 5 "MPD (Memory Protection Devices)" H 1550 1600 50  0001 C CNN "Manufacturer"
+F 6 "BC-2003" H 1550 1600 50  0001 C CNN "Manufacturer Part Number"
+F 7 "BC-2003-ND" H 1550 1600 50  0001 C CNN "Digi-Key Part Number"
+	1    1550 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V0 #PWR01
+U 1 1 600382A6
+P 1550 1450
+F 0 "#PWR01" H 1550 1300 50  0001 C CNN
+F 1 "+3V0" H 1565 1623 50  0000 C CNN
+F 2 "" H 1550 1450 50  0001 C CNN
+F 3 "" H 1550 1450 50  0001 C CNN
+	1    1550 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 60038C3B
+P 1550 1850
+F 0 "#PWR02" H 1550 1600 50  0001 C CNN
+F 1 "GND" H 1555 1677 50  0000 C CNN
+F 2 "" H 1550 1850 50  0001 C CNN
+F 3 "" H 1550 1850 50  0001 C CNN
+	1    1550 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 1450 1550 1500
+Wire Wire Line
+	1550 1800 1550 1850
 $EndSCHEMATC
