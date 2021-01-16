@@ -1,0 +1,64 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Library:PIC18F2550 U1
+U 1 1 6002E7CC
+P 4250 3050
+F 0 "U1" H 5150 4000 50  0000 L BNN
+F 1 "PIC18LF2550" H 5150 3900 50  0000 L BNN
+F 2 "Librray:SOIC-28_Width7.50mm_Pitch1.27mm" H 5700 4000 50  0001 C CNN
+F 3 "${KIPRJMOD}/../../Datasheet/PIC18F2455-2550-4455-4550 Data Sheet.pdf" H 6100 4300 50  0001 C CNN
+F 4 "PIC PIC® 18F Microcontroller IC 8-Bit 48MHz 32KB (16K x 16) FLASH 28-SOIC" H 4650 3350 50  0001 C CNN "Description"
+F 5 "Microchip Technology" H 4650 3350 50  0001 C CNN "Manufacturer"
+F 6 "PIC18LF2550-I/SO" H 4650 3350 50  0001 C CNN "Manufacturer Part Number"
+F 7 "PIC18LF2550-I/SO-ND" H 4650 3350 50  0001 C CNN "Digi-Key Part Number"
+	1    4250 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 60030E14
+P 4200 4050
+F 0 "#PWR0101" H 4200 3800 50  0001 C CNN
+F 1 "GND" H 4205 3877 50  0000 C CNN
+F 2 "" H 4200 4050 50  0001 C CNN
+F 3 "" H 4200 4050 50  0001 C CNN
+	1    4200 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4050 4200 4000
+Wire Wire Line
+	4200 4000 4300 4000
+Wire Wire Line
+	4300 4000 4300 3950
+Connection ~ 4200 4000
+Wire Wire Line
+	4200 4000 4200 3950
+$Comp
+L power:+3V0 #PWR0102
+U 1 1 60031C1A
+P 4250 2050
+F 0 "#PWR0102" H 4250 1900 50  0001 C CNN
+F 1 "+3V0" H 4265 2223 50  0000 C CNN
+F 2 "" H 4250 2050 50  0001 C CNN
+F 3 "" H 4250 2050 50  0001 C CNN
+	1    4250 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2050 4250 2150
+$EndSCHEMATC
