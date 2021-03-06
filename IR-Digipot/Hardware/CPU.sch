@@ -43,27 +43,28 @@ Wire Wire Line
 Wire Wire Line
 	4600 4250 4700 4250
 $Comp
-L Library:PIC18F2550 U2
+L Microcontroller:PIC18F2550T-ISO U2
 U 1 1 5FE29C8E
 P 4650 3350
 F 0 "U2" H 5200 4350 50  0000 L BNN
-F 1 "PIC18F2550T-I/SO" H 5200 4250 50  0000 L BNN
-F 2 "Librray:SOIC-28_Width7.50mm_Pitch1.27mm" H 6100 4300 50  0001 C CNN
-F 3 "${KIPRJMOD}/../../Datasheet/PIC18F2455-2550-4455-4550 Data Sheet.pdf" H 6100 4300 50  0001 C CNN
+F 1 "PIC18F2550T-ISO" H 5200 4250 50  0000 L BNN
+F 2 "Package_SO:SOIC-28_Width7.50mm_Pitch1.27mm" H 6100 4300 50  0001 C CNN
+F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/39632e.pdf" H 6100 4300 50  0001 C CNN
 F 4 "IC MCU 8BIT 32KB FLASH 28SOIC" H 4650 3350 50  0001 C CNN "Description"
-F 5 "Microchip Technology" H 4650 3350 50  0001 C CNN "Manufacturer"
-F 6 "PIC18F2550T-I/SO" H 4650 3350 50  0001 C CNN "Manufacturer Part Number"
-F 7 "PIC18F2550T-I/SOCT-ND" H 4650 3350 50  0001 C CNN "Digi-Key Part Number"
+F 5 "PIC PIC® 18F Microcontroller IC 8-Bit 48MHz 32KB (16K x 16) FLASH 28-SOIC" H 4650 3350 50  0001 C CNN "Detailed Description"
+F 6 "PIC18LF2550-I/SO-ND" H 4650 3350 50  0001 C CNN "Digi-Key Part Number"
+F 7 "Microchip Technology" H 4650 3350 50  0001 C CNN "Manufacturer"
+F 8 "PIC18LF2550-I/SO" H 4650 3350 50  0001 C CNN "Manufacturer Part Number"
 	1    4650 3350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Library:C C3
+L Capacitor_Ceramic:C C3
 U 1 1 5FE20484
 P 3550 1550
 F 0 "C3" V 3571 1415 50  0000 R CNN
 F 1 "0.1uF" V 3480 1415 50  0000 R CNN
-F 2 "Librray:C_0402_1005Metric" H 3400 1750 50  0001 C CNN
+F 2 "Capacitor_Ceramic:C_0402_1005Metric" H 3400 1750 50  0001 C CNN
 F 3 "" H 3400 1750 50  0001 C CNN
 F 4 "CAP CER 0.1UF 25V X7R 0402" V 3550 1550 50  0001 C CNN "Description"
 F 5 "KEMET" V 3550 1550 50  0001 C CNN "Manufacturer"
@@ -97,17 +98,18 @@ $EndComp
 Wire Wire Line
 	3550 1700 3550 1750
 $Comp
-L Library:TCM809 U1
+L Power_Supervisor:TCM809LVNB713 U1
 U 1 1 5FE25880
 P 2200 1750
 F 0 "U1" H 2072 1746 50  0000 R CNN
-F 1 "TCM809" H 2072 1655 50  0000 R CNN
-F 2 "Librray:SOT-23" H 2650 1950 50  0001 C CNN
-F 3 "${KIPRJMOD}/../../Datasheet/TCM809-TCM810 3-Pin Microcontroller Reset Monitors.pdf" H 2650 1950 50  0001 C CNN
+F 1 "TCM809LVNB713" H 2072 1655 50  0000 R CNN
+F 2 "Package_TO_SOT:SOT-23" H 2650 1950 50  0001 C CNN
+F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/21661E.pdf" H 2650 1950 50  0001 C CNN
 F 4 "IC SUPERVISOR 1 CHANNEL SOT23-3" H 2200 1750 50  0001 C CNN "Description"
-F 5 "Microchip Technology" H 2200 1750 50  0001 C CNN "Manufacturer"
-F 6 "TCM809LVNB713" H 2200 1750 50  0001 C CNN "Manufacturer Part Number"
-F 7 "TCM809LVNB713CT-ND" H 2200 1750 50  0001 C CNN "Digi-Key Part Number"
+F 5 "Supervisor Push-Pull, Totem Pole 1 Channel SOT-23-3" H 2200 1750 50  0001 C CNN "Detailed Description"
+F 6 "TCM809LVNB713CT-ND" H 2200 1750 50  0001 C CNN "Digi-Key Part Number"
+F 7 "Microchip Technology" H 2200 1750 50  0001 C CNN "Manufacturer"
+F 8 "TCM809LVNB713" H 2200 1750 50  0001 C CNN "Manufacturer Part Number"
 	1    2200 1750
 	1    0    0    -1  
 $EndComp
@@ -138,12 +140,12 @@ Wire Wire Line
 Wire Wire Line
 	3050 1800 3050 2700
 $Comp
-L Library:R R1
+L Resistor:R R1
 U 1 1 5FE4251D
 P 2850 2000
 F 0 "R1" H 2820 2046 50  0000 L CNN
 F 1 "100K" H 2820 1955 50  0000 L CNN
-F 2 "Librray:R_0402_1005Metric" H 2850 2000 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 2850 2000 50  0001 C CNN
 F 3 "" H 2850 2000 50  0001 C CNN
 F 4 "CRGCQ 0402 100K 1%" H 2850 2000 50  0001 C CNN "Description"
 F 5 "TE Connectivity Passive Product" H 2850 2000 50  0001 C CNN "Manufacturer"
@@ -168,29 +170,31 @@ $EndComp
 Wire Wire Line
 	2200 2150 2200 2250
 $Comp
-L Library:Crystal_GND24 X1
+L Crystal:ABM8W-20.0000MHZ-4-K1Z-T3 X1
 U 1 1 5FE286DC
 P 1750 3600
-F 0 "X1" H 1950 3750 50  0000 L CNN
-F 1 "20 MHz" H 1950 3650 50  0000 L CNN
-F 2 "Librray:Crystal_SMD_4Pin_3.2x2.5mm" H 2150 3600 50  0001 C CNN
-F 3 "${KIPRJMOD}/../../Datasheet/ABM10W SERIES IoT OPTIMIZED LOW PROFILE QUARTZ CRYSTAL.pdf" H 2150 3600 50  0001 C CNN
+F 0 "X1" H 1900 3800 50  0000 L CNN
+F 1 "ABM8W-20.0000MHZ-4-K1Z-T3" H 1900 3875 50  0001 L BNN
+F 2 "Crystal:Crystal_SMD_4Pin_3.2x2.5mm" H 2150 3600 50  0001 C CNN
+F 3 "https://abracon.com/Resonators/ABM8W.pdf" H 2150 3600 50  0001 C CNN
 F 4 "CRYSTAL 20.0000MHZ 4PF SMD" H 1750 3600 50  0001 C CNN "Description"
-F 5 "Abracon LLC" H 1750 3600 50  0001 C CNN "Manufacturer"
-F 6 "ABM8W-20.0000MHZ-4-K1Z-T3" H 1750 3600 50  0001 C CNN "Manufacturer Part Number"
-F 7 "535-14037-1-ND" H 1750 3600 50  0001 C CNN "Digi-Key Part Number"
+F 5 "20MHz ±10ppm Crystal 4pF 50 Ohms 4-SMD, No Lead" H 1750 3600 50  0001 C CNN "Detailed Description"
+F 6 "535-14037-1-ND" H 1750 3600 50  0001 C CNN "Digi-Key Part Number"
+F 7 "Abracon LLC" H 1750 3600 50  0001 C CNN "Manufacturer"
+F 8 "ABM8W-20.0000MHZ-4-K1Z-T3" H 1750 3600 50  0001 C CNN "Manufacturer Part Number"
+F 9 "20MHz" H 1900 3700 50  0000 L BNN "Frequency"
 	1    1750 3600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2200 3500 2200 3250
 $Comp
-L Library:C C2
+L Capacitor_Ceramic:C C2
 U 1 1 5FE2C5B6
 P 2100 3800
 F 0 "C2" V 2121 3665 50  0000 R CNN
 F 1 "4 pF" V 2030 3665 50  0000 R CNN
-F 2 "Librray:C_0402_1005Metric" H 1950 4000 50  0001 C CNN
+F 2 "Capacitor_Ceramic:C_0402_1005Metric" H 1950 4000 50  0001 C CNN
 F 3 "" H 1950 4000 50  0001 C CNN
 F 4 "CAP CER 4PF 50V C0G/NP0 0402" V 2100 3800 50  0001 C CNN "Description"
 F 5 "KEMET" V 2100 3800 50  0001 C CNN "Manufacturer"
@@ -258,12 +262,12 @@ Wire Wire Line
 Text Notes 1050 4500 0    50   ~ 0
 Capacitors are calculated for 4pF load\ncapacitors and 2pF stray capacitance.
 $Comp
-L Library:Conn_1x06_Generic J1
+L Connector_Generic:Conn_1x06_Generic J1
 U 1 1 5FE3A765
 P 6950 2300
 F 0 "J1" H 7078 2001 50  0000 L CNN
 F 1 "Conn_1x06_Generic" H 7078 1910 50  0000 L CNN
-F 2 "Librray:Conn_1x06_D0.65mm_Pitch2.54mm_staggered" H 6950 2300 50  0001 C CNN
+F 2 "Connector_Generic:Conn_1x06_D0.65mm_Pitch2.54mm_staggered" H 6950 2300 50  0001 C CNN
 F 3 "" H 6950 2300 50  0001 C CNN
 	1    6950 2300
 	1    0    0    -1  
@@ -311,17 +315,18 @@ Wire Wire Line
 Wire Wire Line
 	6050 2800 6800 2800
 $Comp
-L Library:TSOP754 U3
+L Interface_Optical:TSOP75438TR U3
 U 1 1 5FE45339
 P 8550 5000
 F 0 "U3" H 8728 4751 50  0000 L CNN
-F 1 "TSOP754" H 8728 4660 50  0000 L CNN
-F 2 "Librray:TSOP754" H 8550 5000 50  0001 C CNN
-F 3 "${KIPRJMOD}/../../Datasheet/TSOP752-TSOP754 IR Receiver Modules for Remote Control Systems.pdf" H 8550 5000 50  0001 C CNN
+F 1 "TSOP75438TR" H 8728 4660 50  0000 L CNN
+F 2 "Interface_Optical:TSOP754" H 8550 5000 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/82494/tsop752.pdf" H 8550 5000 50  0001 C CNN
 F 4 "SENSOR REMOTE REC 38.0KHZ 45M" H 8550 5000 50  0001 C CNN "Description"
 F 5 "Vishay Semiconductor Opto Division" H 8550 5000 50  0001 C CNN "Manufacturer"
 F 6 "TSOP75438TR" H 8550 5000 50  0001 C CNN "Manufacturer Part Number"
 F 7 "TSOP75438CT-ND" H 8550 5000 50  0001 C CNN "Digi-Key Part Number"
+F 8 "Remote Receiver Sensor, 38.0kHz 45m Surface Mount" H 8550 5000 50  0001 C CNN "Detailed Description"
 	1    8550 5000
 	1    0    0    -1  
 $EndComp
@@ -369,12 +374,12 @@ Wire Wire Line
 Wire Wire Line
 	7850 5500 8300 5500
 $Comp
-L Library:C C4
+L Capacitor_Ceramic:C C4
 U 1 1 5FE59FAB
 P 7500 5300
 F 0 "C4" V 7521 5165 50  0000 R CNN
 F 1 "0.1uF" V 7430 5165 50  0000 R CNN
-F 2 "Librray:C_0402_1005Metric" H 7350 5500 50  0001 C CNN
+F 2 "Capacitor_Ceramic:C_0402_1005Metric" H 7350 5500 50  0001 C CNN
 F 3 "" H 7350 5500 50  0001 C CNN
 F 4 "CAP CER 0.1UF 25V X7R 0402" V 7500 5300 50  0001 C CNN "Description"
 F 5 "KEMET" V 7500 5300 50  0001 C CNN "Manufacturer"
@@ -397,12 +402,12 @@ $EndComp
 Wire Wire Line
 	7500 5450 7500 5700
 $Comp
-L Library:R R2
+L Resistor:R R2
 U 1 1 5FE392EE
 P 3650 4600
 F 0 "R2" V 3650 4650 50  0000 L BNN
 F 1 "0" V 3650 4500 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 3650 4600 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 3650 4600 50  0001 C CNN
 F 3 "" H 3650 4600 50  0001 C CNN
 F 4 "RES SMD 0 OHM JUMPER 1/16W 0402" H 3650 4600 50  0001 C CNN "Description"
 F 5 "TE Connectivity Passive Product" H 3650 4600 50  0001 C CNN "Manufacturer"
@@ -412,12 +417,12 @@ F 7 "A106025CT-ND" H 3650 4600 50  0001 C CNN "Digi-Key Part Number"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Library:R R3
+L Resistor:R R3
 U 1 1 5FE3B9CC
 P 3650 4800
 F 0 "R3" V 3650 4850 50  0000 L BNN
 F 1 "0" V 3650 4700 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 3650 4800 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 3650 4800 50  0001 C CNN
 F 3 "" H 3650 4800 50  0001 C CNN
 F 4 "RES SMD 0 OHM JUMPER 1/16W 0402" H 3650 4800 50  0001 C CNN "Description"
 F 5 "TE Connectivity Passive Product" H 3650 4800 50  0001 C CNN "Manufacturer"
@@ -427,12 +432,12 @@ F 7 "A106025CT-ND" H 3650 4800 50  0001 C CNN "Digi-Key Part Number"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Library:R R4
+L Resistor:R R4
 U 1 1 5FE3C3BD
 P 3650 5000
 F 0 "R4" V 3650 5050 50  0000 L BNN
 F 1 "0" V 3650 4900 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 3650 5000 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 3650 5000 50  0001 C CNN
 F 3 "" H 3650 5000 50  0001 C CNN
 F 4 "RES SMD 0 OHM JUMPER 1/16W 0402" H 3650 5000 50  0001 C CNN "Description"
 F 5 "TE Connectivity Passive Product" H 3650 5000 50  0001 C CNN "Manufacturer"
@@ -473,12 +478,12 @@ Wire Wire Line
 Wire Wire Line
 	2750 2150 2750 2250
 $Comp
-L Library:C C1
+L Capacitor_Ceramic:C C1
 U 1 1 5FE2B3B5
 P 1400 3800
 F 0 "C1" V 1421 3665 50  0000 R CNN
 F 1 "4 pF" V 1330 3665 50  0000 R CNN
-F 2 "Librray:C_0402_1005Metric" H 1250 4000 50  0001 C CNN
+F 2 "Capacitor_Ceramic:C_0402_1005Metric" H 1250 4000 50  0001 C CNN
 F 3 "" H 1250 4000 50  0001 C CNN
 F 4 "CAP CER 4PF 50V C0G/NP0 0402" V 1400 3800 50  0001 C CNN "Description"
 F 5 "KEMET" V 1400 3800 50  0001 C CNN "Manufacturer"
@@ -534,12 +539,12 @@ Wire Wire Line
 Wire Wire Line
 	6050 3700 6800 3700
 $Comp
-L Library:Conn_1x03_Generic J2
+L Connector_Generic:Conn_1x03_Generic J2
 U 1 1 5FE58490
 P 6950 3600
 F 0 "J2" H 7078 3451 50  0000 L CNN
 F 1 "Conn_1x03_Generic" H 7078 3360 50  0000 L CNN
-F 2 "Librray:Conn_1x03_D0.65mm_Pitch2.54mm_staggered" H 6950 3600 50  0001 C CNN
+F 2 "Connector_Generic:Conn_1x03_D0.65mm_Pitch2.54mm_staggered" H 6950 3600 50  0001 C CNN
 F 3 "" H 6950 3600 50  0001 C CNN
 	1    6950 3600
 	1    0    0    -1  
@@ -573,27 +578,28 @@ Wire Wire Line
 Wire Wire Line
 	6000 4850 6000 5100
 $Comp
-L Library:LED D2
+L LED:HSMG-C170 D2
 U 1 1 6018F3C2
 P 6350 5600
 F 0 "D2" V 6450 5650 50  0000 L CNN
-F 1 "HSMG-C170" V 6300 5500 50  0001 R CNN
-F 2 "Librray:HSMx-C170" H 6360 5750 50  0001 C CNN
-F 3 "" H 6360 5750 50  0001 C CNN
-F 4 "LED GREEN DIFFUSED CHIP SMD" V 6350 5600 50  0001 C CNN "Description"
-F 5 "Broadcom Limited" V 6350 5600 50  0001 C CNN "Manufacturer"
-F 6 "HSMG-C170" V 6350 5600 50  0001 C CNN "Manufacturer Part Number"
-F 7 "516-1434-1-ND" V 6350 5600 50  0001 C CNN "Digi-Key Part Number"
+F 1 "HSMG-C170" H 6350 5475 50  0001 C CNN
+F 2 "LED:HSMx-C170" H 6360 5750 50  0001 C CNN
+F 3 "https://docs.broadcom.com/doc/AV02-0551EN" H 6360 5750 50  0001 C CNN
+F 4 "LED GREEN DIFFUSED CHIP SMD" H 6350 5600 50  0001 C CNN "Description"
+F 5 "Green 572nm LED Indication - Discrete 2.2V 0805 (2012 Metric)" H 6350 5600 50  0001 C CNN "Detailed Description"
+F 6 "516-1434-1-ND" H 6350 5600 50  0001 C CNN "Digi-Key Part Number"
+F 7 "Broadcom Limited" H 6350 5600 50  0001 C CNN "Manufacturer"
+F 8 "HSMG-C170" H 6350 5600 50  0001 C CNN "Manufacturer Part Number"
 	1    6350 5600
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Library:R R5
+L Resistor:R R5
 U 1 1 6019487D
 P 6100 5250
 F 0 "R5" H 6070 5296 50  0000 L CNN
 F 1 "150" H 6070 5205 50  0000 L CNN
-F 2 "Librray:R_0402_1005Metric" H 6100 5250 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 6100 5250 50  0001 C CNN
 F 3 "" H 6100 5250 50  0001 C CNN
 F 4 "CRGCQ 0402 150R 1%" H 6100 5250 50  0001 C CNN "Description"
 F 5 "TE Connectivity Passive Product" H 6100 5250 50  0001 C CNN "Manufacturer"
@@ -603,12 +609,12 @@ F 7 "A129617CT-ND" H 6100 5250 50  0001 C CNN "Digi-Key Part Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Library:R R6
+L Resistor:R R6
 U 1 1 6019624A
 P 6450 5250
 F 0 "R6" H 6420 5296 50  0000 L CNN
 F 1 "150" H 6420 5205 50  0000 L CNN
-F 2 "Librray:R_0402_1005Metric" H 6450 5250 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 6450 5250 50  0001 C CNN
 F 3 "" H 6450 5250 50  0001 C CNN
 F 4 "CRGCQ 0402 150R 1%" H 6450 5250 50  0001 C CNN "Description"
 F 5 "TE Connectivity Passive Product" H 6450 5250 50  0001 C CNN "Manufacturer"
@@ -648,17 +654,18 @@ Wire Wire Line
 Wire Wire Line
 	6350 5400 6350 5450
 $Comp
-L Library:LED D1
+L LED:HSMG-C170 D1
 U 1 1 60180CAB
 P 6000 5600
 F 0 "D1" V 6100 5650 50  0000 L CNN
-F 1 "HSMG-C170" V 5950 5700 50  0001 L CNN
-F 2 "Librray:HSMx-C170" H 6010 5750 50  0001 C CNN
-F 3 "" H 6010 5750 50  0001 C CNN
-F 4 "LED GREEN DIFFUSED CHIP SMD" V 6000 5600 50  0001 C CNN "Description"
-F 5 "Broadcom Limited" V 6000 5600 50  0001 C CNN "Manufacturer"
-F 6 "HSMG-C170" V 6000 5600 50  0001 C CNN "Manufacturer Part Number"
-F 7 "516-1434-1-ND" V 6000 5600 50  0001 C CNN "Digi-Key Part Number"
+F 1 "HSMG-C170" H 6000 5475 50  0001 C CNN
+F 2 "LED:HSMx-C170" H 6010 5750 50  0001 C CNN
+F 3 "https://docs.broadcom.com/doc/AV02-0551EN" H 6010 5750 50  0001 C CNN
+F 4 "LED GREEN DIFFUSED CHIP SMD" H 6000 5600 50  0001 C CNN "Description"
+F 5 "Green 572nm LED Indication - Discrete 2.2V 0805 (2012 Metric)" H 6000 5600 50  0001 C CNN "Detailed Description"
+F 6 "516-1434-1-ND" H 6000 5600 50  0001 C CNN "Digi-Key Part Number"
+F 7 "Broadcom Limited" H 6000 5600 50  0001 C CNN "Manufacturer"
+F 8 "HSMG-C170" H 6000 5600 50  0001 C CNN "Manufacturer Part Number"
 	1    6000 5600
 	0    -1   -1   0   
 $EndComp

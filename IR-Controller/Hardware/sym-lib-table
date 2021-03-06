@@ -1,3 +1,9 @@
 (sym_lib_table
-  (lib (name Library)(type Legacy)(uri ${KIPRJMOD}/../../Library/Library.lib)(options "")(descr ""))
+  (lib (name Capacitor_Ceramic)(type Legacy)(uri ${KIPRJMOD}/../../Library/symbol/Capacitor_Ceramic.lib)(options "")(descr ""))
+  (lib (name Connector_Battery)(type Legacy)(uri ${KIPRJMOD}/../../Library/symbol/Connector_Battery.lib)(options "")(descr ""))
+  (lib (name LED)(type Legacy)(uri ${KIPRJMOD}/../../Library/symbol/LED.lib)(options "")(descr ""))
+  (lib (name Microcontroller)(type Legacy)(uri ${KIPRJMOD}/../../Library/symbol/Microcontroller.lib)(options "")(descr ""))
+  (lib (name Power)(type Legacy)(uri ${KIPRJMOD}/../../Library/symbol/Power.lib)(options "")(descr ""))
+  (lib (name Resistor)(type Legacy)(uri ${KIPRJMOD}/../../Library/symbol/Resistor.lib)(options "")(descr ""))
+  (lib (name Transistor_BJT)(type Legacy)(uri ${KIPRJMOD}/../../Library/symbol/Transistor_BJT.lib)(options "")(descr ""))
 )

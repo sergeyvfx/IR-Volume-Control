@@ -1,0 +1,18 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ACP3225-102-2P-T000
+D CMC 1.5A 2LN 1 KOHM SMD
+F https://product.tdk.com/info/en/catalog/datasheets/cmf_commercial_power_acp3225_en.pdf
+$ENDCMP
+#
+$CMP BLM15PG100SN1D
+D FERRITE BEAD 10 OHM 0402 1LN
+F https://www.murata.com/en-us/products/productdata/8796740059166/ENFA0018.pdf
+$ENDCMP
+#
+$CMP LQH44PN220MP0L
+D FIXED IND 22UH 790MA 444 MOHM
+F https://media.digikey.com/pdf/Data%20Sheets/Murata%20PDFs/LQx_Land-Patterns.pdf
+$ENDCMP
+#
+#End Doc Library

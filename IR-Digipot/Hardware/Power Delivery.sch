@@ -14,17 +14,19 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Library:Molex_1054500101 J5
+L Connector_Data:1054500101 J5
 U 1 1 5FF178F8
 P 4250 2000
 F 0 "J5" H 4250 2115 50  0000 C CNN
-F 1 "Molex_1054500101" H 4250 2024 50  0000 C CNN
-F 2 "Librray:Molex_1054500101" H 4250 2000 50  0001 C CNN
-F 3 "${KIPRJMOD}/../../Datasheet/Molex 1054500101.pdf" H 4250 2000 50  0001 C CNN
+F 1 "1054500101" H 4250 2024 50  0000 C CNN
+F 2 "Connector_Data:1054500101" H 4250 2000 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/ps/PS-105448-001.pdf" H 4250 2000 50  0001 C CNN
 F 4 "CONN RCP USB3.1 TYPEC 24P SMD RA" H 4250 2000 50  0001 C CNN "Description"
-F 5 "Molex" H 4250 2000 50  0001 C CNN "Manufacturer"
-F 6 "1054500101" H 4250 2000 50  0001 C CNN "Manufacturer Part Number"
-F 7 "WM12856CT-ND" H 4250 2000 50  0001 C CNN "Digi-Key Part Number"
+F 5 "USB-C (USB TYPE-C) USB 3.2 Gen 2 (USB 3.1 Gen 2, Superspeed + (USB 3.1)) Receptacle Connector 24 Position Surface Mount, Right Angle; Through Hole" H 4250 2000 50  0001 C CNN "Detailed Description"
+F 6 "WM12856CT-ND" H 4250 2000 50  0001 C CNN "Digi-Key Part Number"
+F 7 "https://www.molex.com/pdm_docs/sd/1054500101_sd.pdf" H 4250 2000 50  0001 C CNN "Drawing"
+F 8 "Molex" H 4250 2000 50  0001 C CNN "Manufacturer"
+F 9 "1054500101" H 4250 2000 50  0001 C CNN "Manufacturer Part Number"
 	1    4250 2000
 	1    0    0    -1  
 $EndComp
@@ -81,15 +83,12 @@ $EndComp
 Wire Wire Line
 	3600 3850 3400 3850
 $Comp
-L Library:C C?
+L Capacitor_Ceramic:C C26
 U 1 1 5FF24732
 P 2400 4000
-AR Path="/5FE20DA8/5FF24732" Ref="C?"  Part="1" 
-AR Path="/5FE379B8/5FF24732" Ref="C?"  Part="1" 
-AR Path="/5FF173B2/5FF24732" Ref="C26"  Part="1" 
 F 0 "C26" V 2421 3865 50  0000 R CNN
 F 1 "4.7uF" V 2330 3865 50  0000 R CNN
-F 2 "Librray:C_1206_3216Metric" H 2250 4200 50  0001 C CNN
+F 2 "Capacitor_Ceramic:C_1206_3216Metric" H 2250 4200 50  0001 C CNN
 F 3 "" H 2250 4200 50  0001 C CNN
 F 4 "CAP CER 4.7UF 50V X7R 1206" V 2400 4000 50  0001 C CNN "Description"
 F 5 "KEMET" V 2400 4000 50  0001 C CNN "Manufacturer"
@@ -116,12 +115,12 @@ Wire Wire Line
 Wire Wire Line
 	2400 4150 2400 4200
 $Comp
-L Library:D_ZENNER D5
+L Diode:D_ZENNER D5
 U 1 1 5FF29B69
 P 2850 4000
 F 0 "D5" V 2804 4078 50  0000 L CNN
 F 1 "ESDA25P35" V 2895 4078 50  0000 L CNN
-F 2 "Librray:UDFN-2" H 2860 4150 50  0001 C CNN
+F 2 "Package_DFN_QFN:UDFN-2" H 2860 4150 50  0001 C CNN
 F 3 "${KIPRJMOD}/../../Datasheet/ESDA25P35-1U1M.pdf" H 2860 4150 50  0001 C CNN
 F 4 "TVS DIODE 22V 41V 1610" V 2850 4000 50  0001 C CNN "Description"
 F 5 "STMicroelectronics" V 2850 4000 50  0001 C CNN "Manufacturer"
@@ -190,29 +189,28 @@ Wire Wire Line
 Wire Wire Line
 	3600 3150 2100 3150
 $Comp
-L IR-Digipot-rescue:STUSB4500QTR-Library-IR-Digipot-rescue U?
+L Interface_USB:STUSB4500QTR U7
 U 1 1 5FE5C56B
 P 6900 4450
-AR Path="/5FE5C56B" Ref="U?"  Part="1" 
-AR Path="/5FF173B2/5FE5C56B" Ref="U7"  Part="1" 
 F 0 "U7" H 7200 5250 50  0000 L BNN
 F 1 "STUSB4500QTR" H 7200 5150 50  0000 L BNN
-F 2 "Librray:QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm" H 6200 4450 50  0001 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm" H 6200 4450 50  0001 C CNN
 F 3 "${KIPRJMOD}/../../Datasheet/STUSB4500 Standalone USB PD sink controller with short-to-VBUS protections.pdf" H 6200 4450 50  0001 C CNN
 F 4 "IC USB CONTROLLER I2C 24QFN" H 6900 4450 50  0001 C CNN "Description"
-F 5 "STMicroelectronics" H 6900 4450 50  0001 C CNN "Manufacturer"
-F 6 "STUSB4500QTR" H 6900 4450 50  0001 C CNN "Manufacturer Part Number"
-F 7 "497-18060-1-ND" H 6900 4450 50  0001 C CNN "Digi-Key Part Number"
+F 5 "USB Controller USB 2.0 I²C Interface 24-QFN (4x4)" H 6900 4450 50  0001 C CNN "Detailed Description"
+F 6 "497-18060-1-ND" H 6900 4450 50  0001 C CNN "Digi-Key Part Number"
+F 7 "STMicroelectronics" H 6900 4450 50  0001 C CNN "Manufacturer"
+F 8 "STUSB4500QTR" H 6900 4450 50  0001 C CNN "Manufacturer Part Number"
 	1    6900 4450
 	1    0    0    -1  
 $EndComp
 $Comp
-L Library:D_ZENNER_DUAL_CATHODE D6
+L Diode:D_ZENNER_DUAL_CATHODE D6
 U 1 1 5FF329A1
 P 3550 5050
 F 0 "D6" V 3504 5128 50  0000 L CNN
 F 1 "ESDA25W" V 3595 5128 50  0000 L CNN
-F 2 "Librray:SOT-323" H 3560 5200 50  0001 C CNN
+F 2 "Package_TO_SOT:SOT-323" H 3560 5200 50  0001 C CNN
 F 3 "${KIPRJMOD}/../../Datasheet/ESDAxxxWx Array for data protection.pdf" H 3560 5200 50  0001 C CNN
 F 4 "TVS DIODE 24V SOT323" V 3550 5050 50  0001 C CNN "Description"
 F 5 "STMicroelectronics" V 3550 5050 50  0001 C CNN "Manufacturer"
@@ -252,15 +250,12 @@ Connection ~ 6000 4750
 Wire Wire Line
 	6000 4750 6050 4750
 $Comp
-L Library:R R?
+L Resistor:R R28
 U 1 1 5FE70C64
 P 5750 5550
-AR Path="/5FE20DA8/5FE70C64" Ref="R?"  Part="1" 
-AR Path="/5FE379B8/5FE70C64" Ref="R?"  Part="1" 
-AR Path="/5FF173B2/5FE70C64" Ref="R28"  Part="1" 
 F 0 "R28" H 5750 5500 50  0000 L BNN
 F 1 "100K" H 5750 5600 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 5750 5550 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 5750 5550 50  0001 C CNN
 F 3 "" H 5750 5550 50  0001 C CNN
 F 4 "CRGCQ 0402 100K 1%" H 5750 5550 50  0001 C CNN "Description"
 F 5 "TE Connectivity Passive Product" H 5750 5550 50  0001 C CNN "Manufacturer"
@@ -270,15 +265,12 @@ F 7 "A129651CT-ND" H 5750 5550 50  0001 C CNN "Digi-Key Part Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Library:R R?
+L Resistor:R R25
 U 1 1 5FE71411
 P 5300 5550
-AR Path="/5FE20DA8/5FE71411" Ref="R?"  Part="1" 
-AR Path="/5FE379B8/5FE71411" Ref="R?"  Part="1" 
-AR Path="/5FF173B2/5FE71411" Ref="R25"  Part="1" 
 F 0 "R25" H 5300 5500 50  0000 L BNN
 F 1 "100K" H 5300 5600 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 5300 5550 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 5300 5550 50  0001 C CNN
 F 3 "" H 5300 5550 50  0001 C CNN
 F 4 "CRGCQ 0402 100K 1%" H 5300 5550 50  0001 C CNN "Description"
 F 5 "TE Connectivity Passive Product" H 5300 5550 50  0001 C CNN "Manufacturer"
@@ -322,29 +314,23 @@ Wire Wire Line
 Wire Wire Line
 	5850 5700 5850 5750
 $Comp
-L Library:R R?
+L Resistor:R R23
 U 1 1 5FE750A4
 P 5150 4950
-AR Path="/5FE20DA8/5FE750A4" Ref="R?"  Part="1" 
-AR Path="/5FE379B8/5FE750A4" Ref="R?"  Part="1" 
-AR Path="/5FF173B2/5FE750A4" Ref="R23"  Part="1" 
 F 0 "R23" V 5150 5000 50  0000 L BNN
 F 1 "NC" V 5150 4800 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 5150 4950 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 5150 4950 50  0001 C CNN
 F 3 "" H 5150 4950 50  0001 C CNN
 	1    5150 4950
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Library:R R?
+L Resistor:R R24
 U 1 1 5FE766C4
 P 5150 5050
-AR Path="/5FE20DA8/5FE766C4" Ref="R?"  Part="1" 
-AR Path="/5FE379B8/5FE766C4" Ref="R?"  Part="1" 
-AR Path="/5FF173B2/5FE766C4" Ref="R24"  Part="1" 
 F 0 "R24" V 5000 5100 50  0000 L BNN
 F 1 "NC" V 5000 4900 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 5150 5050 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 5150 5050 50  0001 C CNN
 F 3 "" H 5150 5050 50  0001 C CNN
 	1    5150 5050
 	0    -1   -1   0   
@@ -356,7 +342,7 @@ Wire Wire Line
 	5400 5150 5300 5150
 Connection ~ 5400 5150
 $Comp
-L Library:+2V7 #PWR058
+L Power:+2V7 #PWR058
 U 1 1 5FE7A16F
 P 4750 5000
 F 0 "#PWR058" H 4750 4850 50  0001 C CNN
@@ -376,15 +362,12 @@ Wire Wire Line
 	4750 5150 5000 5150
 Connection ~ 4750 5050
 $Comp
-L Library:R R?
+L Resistor:R R32
 U 1 1 5FE8004B
 P 7800 5550
-AR Path="/5FE20DA8/5FE8004B" Ref="R?"  Part="1" 
-AR Path="/5FE379B8/5FE8004B" Ref="R?"  Part="1" 
-AR Path="/5FF173B2/5FE8004B" Ref="R32"  Part="1" 
 F 0 "R32" H 7800 5500 50  0000 L BNN
 F 1 "100K" H 7800 5600 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 7800 5550 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 7800 5550 50  0001 C CNN
 F 3 "" H 7800 5550 50  0001 C CNN
 F 4 "CRGCQ 0402 100K 1%" H 7800 5550 50  0001 C CNN "Description"
 F 5 "TE Connectivity Passive Product" H 7800 5550 50  0001 C CNN "Manufacturer"
@@ -455,7 +438,7 @@ Wire Wire Line
 Wire Wire Line
 	6350 3700 6350 3500
 $Comp
-L Library:+2V7 #PWR065
+L Power:+2V7 #PWR065
 U 1 1 5FE8BDBC
 P 6350 2450
 F 0 "#PWR065" H 6350 2300 50  0001 C CNN
@@ -466,15 +449,12 @@ F 3 "" H 6350 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Library:C C?
+L Capacitor_Ceramic:C C29
 U 1 1 5FE4CDF4
 P 5950 3250
-AR Path="/5FE20DA8/5FE4CDF4" Ref="C?"  Part="1" 
-AR Path="/5FE379B8/5FE4CDF4" Ref="C?"  Part="1" 
-AR Path="/5FF173B2/5FE4CDF4" Ref="C29"  Part="1" 
 F 0 "C29" H 6200 3400 50  0000 R CNN
 F 1 "1uF" H 6200 3300 50  0000 R CNN
-F 2 "Librray:C_0603_1608Metric" H 5800 3450 50  0001 C CNN
+F 2 "Capacitor_Ceramic:C_0603_1608Metric" H 5800 3450 50  0001 C CNN
 F 3 "" H 5800 3450 50  0001 C CNN
 F 4 "CAP CER 1UF 50V X7R 0603" V 5950 3250 50  0001 C CNN "Description"
 F 5 "Taiyo Yuden" V 5950 3250 50  0001 C CNN "Manufacturer"
@@ -484,15 +464,12 @@ F 7 "587-3247-1-ND" V 5950 3250 50  0001 C CNN "Digi-Key Part Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Library:C C?
+L Capacitor_Ceramic:C C30
 U 1 1 5FE4EF88
 P 5950 3500
-AR Path="/5FE20DA8/5FE4EF88" Ref="C?"  Part="1" 
-AR Path="/5FE379B8/5FE4EF88" Ref="C?"  Part="1" 
-AR Path="/5FF173B2/5FE4EF88" Ref="C30"  Part="1" 
 F 0 "C30" H 6200 3650 50  0000 R CNN
 F 1 "1uF" H 6200 3550 50  0000 R CNN
-F 2 "Librray:C_0603_1608Metric" H 5800 3700 50  0001 C CNN
+F 2 "Capacitor_Ceramic:C_0603_1608Metric" H 5800 3700 50  0001 C CNN
 F 3 "" H 5800 3700 50  0001 C CNN
 F 4 "CAP CER 1UF 50V X7R 0603" V 5950 3500 50  0001 C CNN "Description"
 F 5 "Taiyo Yuden" V 5950 3500 50  0001 C CNN "Manufacturer"
@@ -502,15 +479,12 @@ F 7 "587-3247-1-ND" V 5950 3500 50  0001 C CNN "Digi-Key Part Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Library:C C?
+L Capacitor_Ceramic:C C28
 U 1 1 5FE4F5F4
 P 5950 3000
-AR Path="/5FE20DA8/5FE4F5F4" Ref="C?"  Part="1" 
-AR Path="/5FE379B8/5FE4F5F4" Ref="C?"  Part="1" 
-AR Path="/5FF173B2/5FE4F5F4" Ref="C28"  Part="1" 
 F 0 "C28" H 6200 3150 50  0000 R CNN
 F 1 "1uF" H 6200 3050 50  0000 R CNN
-F 2 "Librray:C_0603_1608Metric" H 5800 3200 50  0001 C CNN
+F 2 "Capacitor_Ceramic:C_0603_1608Metric" H 5800 3200 50  0001 C CNN
 F 3 "" H 5800 3200 50  0001 C CNN
 F 4 "CAP CER 1UF 50V X7R 0603" V 5950 3000 50  0001 C CNN "Description"
 F 5 "Taiyo Yuden" V 5950 3000 50  0001 C CNN "Manufacturer"
@@ -558,15 +532,12 @@ Connection ~ 5550 3250
 Wire Wire Line
 	5550 3250 5550 3500
 $Comp
-L Library:R R?
+L Resistor:R R27
 U 1 1 5FE63994
 P 5700 2250
-AR Path="/5FE20DA8/5FE63994" Ref="R?"  Part="1" 
-AR Path="/5FE379B8/5FE63994" Ref="R?"  Part="1" 
-AR Path="/5FF173B2/5FE63994" Ref="R27"  Part="1" 
 F 0 "R27" H 5700 2200 50  0000 L BNN
 F 1 "1K" H 5700 2300 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 5700 2250 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 5700 2250 50  0001 C CNN
 F 3 "" H 5700 2250 50  0001 C CNN
 F 4 "CRGCQ 0402 1K0 1%" H 5700 2250 50  0001 C CNN "Description"
 F 5 "TE Connectivity Passive Product" H 5700 2250 50  0001 C CNN "Manufacturer"
@@ -576,15 +547,12 @@ F 7 "A129627CT-ND" H 5700 2250 50  0001 C CNN "Digi-Key Part Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Library:R R?
+L Resistor:R R26
 U 1 1 5FE661AD
 P 5700 1850
-AR Path="/5FE20DA8/5FE661AD" Ref="R?"  Part="1" 
-AR Path="/5FE379B8/5FE661AD" Ref="R?"  Part="1" 
-AR Path="/5FF173B2/5FE661AD" Ref="R26"  Part="1" 
 F 0 "R26" H 5700 1800 50  0000 L BNN
 F 1 "470" H 5700 1900 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 5700 1850 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 5700 1850 50  0001 C CNN
 F 3 "" H 5700 1850 50  0001 C CNN
 F 4 "CRGCQ 0402 470R 1%" H 5700 1850 50  0001 C CNN "Description"
 F 5 "TE Connectivity Passive Product" H 5700 1850 50  0001 C CNN "Manufacturer"
@@ -600,15 +568,12 @@ Wire Wire Line
 Wire Wire Line
 	5800 2100 5800 2050
 $Comp
-L Library:C C?
+L Capacitor_Ceramic:C C27
 U 1 1 5FE6B082
 P 5400 2250
-AR Path="/5FE20DA8/5FE6B082" Ref="C?"  Part="1" 
-AR Path="/5FE379B8/5FE6B082" Ref="C?"  Part="1" 
-AR Path="/5FF173B2/5FE6B082" Ref="C27"  Part="1" 
 F 0 "C27" V 5300 1950 50  0000 L BNN
 F 1 "1uF" V 5400 1950 50  0000 L BNN
-F 2 "Librray:C_0603_1608Metric" H 5250 2450 50  0001 C CNN
+F 2 "Capacitor_Ceramic:C_0603_1608Metric" H 5250 2450 50  0001 C CNN
 F 3 "" H 5250 2450 50  0001 C CNN
 F 4 "CAP CER 1UF 50V X7R 0603" V 5400 2250 50  0001 C CNN "Description"
 F 5 "Taiyo Yuden" V 5400 2250 50  0001 C CNN "Manufacturer"
@@ -659,12 +624,12 @@ F 3 "" H 5400 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Library:D_SCHOTTKY D7
+L Diode:D_SCHOTTKY D7
 U 1 1 5FE776B2
 P 5400 1850
 F 0 "D7" V 5450 2150 50  0000 R CNN
 F 1 "BAT54" V 5350 2150 50  0000 R CNN
-F 2 "Librray:SOD-523" H 5410 2000 50  0001 C CNN
+F 2 "Diode:SOD-523" H 5410 2000 50  0001 C CNN
 F 3 "${KIPRJMOD}/../../Datasheet/BAT54 Small signal Schottky diodes.pdf" H 5410 2000 50  0001 C CNN
 F 4 "DIODE SCHOTTKY 40V 300MA SOD523" V 5400 1850 50  0001 C CNN "Description"
 F 5 "STMicroelectronics" V 5400 1850 50  0001 C CNN "Manufacturer"
@@ -680,34 +645,36 @@ Wire Wire Line
 	5400 2000 5400 2050
 Connection ~ 5400 2050
 $Comp
-L Library:P-CHANNEL-SGD Q5
+L Transistor_FET:STL6P3LLH6 Q5
 U 1 1 5FE8B3EC
 P 7450 2600
-F 0 "Q5" V 7779 2600 50  0000 C CNN
-F 1 "STL6P3LLH6" V 7688 2600 50  0000 C CNN
-F 2 "Librray:8-PowerVDFN" H 7450 2600 50  0001 C CNN
-F 3 "${KIPRJMOD}/../../Datasheet/STL6P3LLH6.pdf" H 7450 2600 50  0001 C CNN
-F 4 "MOSFET P-CH 30V 6A POWERFLAT" V 7450 2600 50  0001 C CNN "Description"
-F 5 "STMicroelectronics" V 7450 2600 50  0001 C CNN "Manufacturer"
-F 6 "STL6P3LLH6" V 7450 2600 50  0001 C CNN "Manufacturer Part Number"
-F 7 "497-15315-1-ND" V 7450 2600 50  0001 C CNN "Digi-Key Part Number"
+F 0 "Q5" V 7800 2600 50  0000 C BNN
+F 1 "STL6P3LLH6" V 7700 2600 50  0000 C BNN
+F 2 "Package_DFN_QFN:8-PowerVDFN" H 7450 2600 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/3c/90/16/29/a8/76/48/02/DM00064617.pdf/files/DM00064617.pdf/jcr:content/translations/en.DM00064617.pdf" H 7450 2600 50  0001 C CNN
+F 4 "MOSFET P-CH 30V 6A POWERFLAT" H 7450 2600 50  0001 C CNN "Description"
+F 5 "P-Channel 30V 6A (Tc) 2.9W (Tc) Surface Mount PowerFlat™ (3.3x3.3)" H 7450 2600 50  0001 C CNN "Detailed Description"
+F 6 "497-15315-1-ND" H 7450 2600 50  0001 C CNN "Digi-Key Part Number"
+F 7 "STMicroelectronics" H 7450 2600 50  0001 C CNN "Manufacturer"
+F 8 "STL6P3LLH6" H 7450 2600 50  0001 C CNN "Manufacturer Part Number"
 	1    7450 2600
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	7650 2500 7800 2500
 $Comp
-L Library:P-CHANNEL-SGD Q6
+L Transistor_FET:STL6P3LLH6 Q6
 U 1 1 5FE92388
 P 8350 2600
-F 0 "Q6" V 8679 2600 50  0000 C CNN
-F 1 "STL6P3LLH6" V 8588 2600 50  0000 C CNN
-F 2 "Librray:8-PowerVDFN" H 8350 2600 50  0001 C CNN
-F 3 "${KIPRJMOD}/../../Datasheet/STL6P3LLH6.pdf" H 8350 2600 50  0001 C CNN
-F 4 "MOSFET P-CH 30V 6A POWERFLAT" V 8350 2600 50  0001 C CNN "Description"
-F 5 "STMicroelectronics" V 8350 2600 50  0001 C CNN "Manufacturer"
-F 6 "STL6P3LLH6" V 8350 2600 50  0001 C CNN "Manufacturer Part Number"
-F 7 "497-15315-1-ND" V 8350 2600 50  0001 C CNN "Digi-Key Part Number"
+F 0 "Q6" V 8700 2600 50  0000 C BNN
+F 1 "STL6P3LLH6" V 8600 2600 50  0000 C BNN
+F 2 "Package_DFN_QFN:8-PowerVDFN" H 8350 2600 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/3c/90/16/29/a8/76/48/02/DM00064617.pdf/files/DM00064617.pdf/jcr:content/translations/en.DM00064617.pdf" H 8350 2600 50  0001 C CNN
+F 4 "MOSFET P-CH 30V 6A POWERFLAT" H 8350 2600 50  0001 C CNN "Description"
+F 5 "P-Channel 30V 6A (Tc) 2.9W (Tc) Surface Mount PowerFlat™ (3.3x3.3)" H 8350 2600 50  0001 C CNN "Detailed Description"
+F 6 "497-15315-1-ND" H 8350 2600 50  0001 C CNN "Digi-Key Part Number"
+F 7 "STMicroelectronics" H 8350 2600 50  0001 C CNN "Manufacturer"
+F 8 "STL6P3LLH6" H 8350 2600 50  0001 C CNN "Manufacturer Part Number"
 	1    8350 2600
 	0    1    -1   0   
 $EndComp
@@ -718,15 +685,12 @@ Wire Wire Line
 Wire Wire Line
 	8350 2900 8350 2800
 $Comp
-L Library:R R?
+L Resistor:R R31
 U 1 1 5FE97F6D
 P 7700 2700
-AR Path="/5FE20DA8/5FE97F6D" Ref="R?"  Part="1" 
-AR Path="/5FE379B8/5FE97F6D" Ref="R?"  Part="1" 
-AR Path="/5FF173B2/5FE97F6D" Ref="R31"  Part="1" 
 F 0 "R31" H 7700 2650 50  0000 L BNN
 F 1 "100K" H 7700 2750 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 7700 2700 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 7700 2700 50  0001 C CNN
 F 3 "" H 7700 2700 50  0001 C CNN
 F 4 "CRGCQ 0402 100K 1%" H 7700 2700 50  0001 C CNN "Description"
 F 5 "TE Connectivity Passive Product" H 7700 2700 50  0001 C CNN "Manufacturer"
@@ -754,15 +718,12 @@ Connection ~ 8000 2500
 Wire Wire Line
 	8000 2500 8150 2500
 $Comp
-L Library:R R?
+L Resistor:R R29
 U 1 1 5FEACB3A
 P 7350 3250
-AR Path="/5FE20DA8/5FEACB3A" Ref="R?"  Part="1" 
-AR Path="/5FE379B8/5FEACB3A" Ref="R?"  Part="1" 
-AR Path="/5FF173B2/5FEACB3A" Ref="R29"  Part="1" 
 F 0 "R29" H 7350 3200 50  0000 L BNN
 F 1 "22K" H 7350 3300 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 7350 3250 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 7350 3250 50  0001 C CNN
 F 3 "" H 7350 3250 50  0001 C CNN
 F 4 "CRGCQ 0402 22K 1%" H 7350 3250 50  0001 C CNN "Description"
 F 5 "TE Connectivity Passive Product" H 7350 3250 50  0001 C CNN "Manufacturer"
@@ -777,15 +738,12 @@ Connection ~ 7450 2900
 Wire Wire Line
 	7850 4000 7900 4000
 $Comp
-L Library:R R?
+L Resistor:R R33
 U 1 1 5FEB88DC
 P 8600 3000
-AR Path="/5FE20DA8/5FEB88DC" Ref="R?"  Part="1" 
-AR Path="/5FE379B8/5FEB88DC" Ref="R?"  Part="1" 
-AR Path="/5FF173B2/5FEB88DC" Ref="R33"  Part="1" 
 F 0 "R33" V 8400 2900 50  0000 L BNN
 F 1 "100" V 8650 2900 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 8600 3000 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 8600 3000 50  0001 C CNN
 F 3 "" H 8600 3000 50  0001 C CNN
 F 4 "CRGCQ 0402 100R 1%" H 8600 3000 50  0001 C CNN "Description"
 F 5 "TE Connectivity Passive Product" H 8600 3000 50  0001 C CNN "Manufacturer"
@@ -798,15 +756,12 @@ Wire Wire Line
 	8350 2900 8450 2900
 Connection ~ 8350 2900
 $Comp
-L Library:C C?
+L Capacitor_Ceramic:C C31
 U 1 1 5FEC7852
 P 8800 2700
-AR Path="/5FE20DA8/5FEC7852" Ref="C?"  Part="1" 
-AR Path="/5FE379B8/5FEC7852" Ref="C?"  Part="1" 
-AR Path="/5FF173B2/5FEC7852" Ref="C31"  Part="1" 
 F 0 "C31" V 8821 2565 50  0000 R CNN
 F 1 "0.1uF" V 8730 2565 50  0000 R CNN
-F 2 "Librray:C_0402_1005Metric" H 8650 2900 50  0001 C CNN
+F 2 "Capacitor_Ceramic:C_0402_1005Metric" H 8650 2900 50  0001 C CNN
 F 3 "" H 8650 2900 50  0001 C CNN
 F 4 "CAP CER 0.1UF 50V X7R 0402" V 8800 2700 50  0001 C CNN "Description"
 F 5 "Taiyo Yuden" V 8800 2700 50  0001 C CNN "Manufacturer"
@@ -824,7 +779,7 @@ Wire Wire Line
 Wire Wire Line
 	8800 2500 8800 2550
 $Comp
-L Library:VSNK #PWR070
+L Power:VSNK #PWR070
 U 1 1 5FED16DA
 P 9400 2450
 F 0 "#PWR070" H 9400 2300 50  0001 C CNN
@@ -838,15 +793,12 @@ Wire Wire Line
 	8800 2500 9200 2500
 Connection ~ 8800 2500
 $Comp
-L Library:R R?
+L Resistor:R R34
 U 1 1 5FED8F31
 P 8650 3350
-AR Path="/5FE20DA8/5FED8F31" Ref="R?"  Part="1" 
-AR Path="/5FE379B8/5FED8F31" Ref="R?"  Part="1" 
-AR Path="/5FF173B2/5FED8F31" Ref="R34"  Part="1" 
 F 0 "R34" V 8700 3300 50  0000 L BNN
 F 1 "1K" V 8450 3300 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 8650 3350 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 8650 3350 50  0001 C CNN
 F 3 "" H 8650 3350 50  0001 C CNN
 F 4 "CRGCQ 0402 1K0 1%" H 8650 3350 50  0001 C CNN "Description"
 F 5 "TE Connectivity Passive Product" H 8650 3350 50  0001 C CNN "Manufacturer"
@@ -873,12 +825,12 @@ Wire Wire Line
 Wire Wire Line
 	7900 3450 7900 4000
 $Comp
-L Library:D_ZENNER D8
+L Diode:D_ZENNER D8
 U 1 1 5FEF03A0
 P 9400 2700
 F 0 "D8" V 9354 2778 50  0000 L CNN
 F 1 "ESDA25P35" V 9445 2778 50  0000 L CNN
-F 2 "Librray:UDFN-2" H 9410 2850 50  0001 C CNN
+F 2 "Package_DFN_QFN:UDFN-2" H 9410 2850 50  0001 C CNN
 F 3 "${KIPRJMOD}/../../Datasheet/ESDA25P35-1U1M.pdf" H 9410 2850 50  0001 C CNN
 F 4 "TVS DIODE 22V 41V 1610" V 9400 2700 50  0001 C CNN "Description"
 F 5 "STMicroelectronics" V 9400 2700 50  0001 C CNN "Manufacturer"
@@ -908,15 +860,12 @@ Wire Wire Line
 	9400 2450 9400 2500
 Connection ~ 9400 2500
 $Comp
-L Library:R R?
+L Resistor:R R30
 U 1 1 5FF1E2C7
 P 7450 2050
-AR Path="/5FE20DA8/5FF1E2C7" Ref="R?"  Part="1" 
-AR Path="/5FE379B8/5FF1E2C7" Ref="R?"  Part="1" 
-AR Path="/5FF173B2/5FF1E2C7" Ref="R30"  Part="1" 
 F 0 "R30" V 7450 2100 50  0000 L BNN
 F 1 "NC" V 7450 1900 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 7450 2050 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 7450 2050 50  0001 C CNN
 F 3 "" H 7450 2050 50  0001 C CNN
 	1    7450 2050
 	0    -1   -1   0   

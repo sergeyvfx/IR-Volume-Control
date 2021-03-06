@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 1054500101
+D CONN RCP USB3.1 TYPEC 24P SMD RA
+F https://www.molex.com/pdm_docs/ps/PS-105448-001.pdf
+$ENDCMP
+#
+#End Doc Library

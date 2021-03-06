@@ -1,0 +1,44 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# BC-2003
+#
+DEF BC-2003 BT 0 40 N N 1 F N
+F0 "BT" 150 100 50 H V L BNN
+F1 "BC-2003" 150 0 50 H V L BNN
+F2 "Connector_Battery:BC-2003" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "https://www.memoryprotectiondevices.com/datasheets/BC-2003-datasheet.pdf" 0 0 50 H I C CNN "Drawing"
+F5 "BATTERY HOLDER COIN 20MM SMD" 0 0 50 H I C CNN "Description"
+F6 "Battery Retainer Coin, 20.0mm 1 Cell SMD (SMT) Tab" 0 0 50 H I C CNN "Detailed Description"
+F7 "MPD (Memory Protection Devices)" 0 0 50 H I C CNN "Manufacturer"
+F8 "BC-2003" 0 0 50 H I C CNN "Manufacturer Part Number"
+F9 "BC-2003-ND" 0 0 50 H I C CNN "Digi-Key Part Number"
+DRAW
+S -125 0 125 -25 0 1 0 F
+S -75 -50 75 -100 0 1 0 F
+P 2 0 1 0 50 50 100 50 N
+P 2 0 1 0 75 75 75 25 N
+X + 1 0 100 100 D 50 50 1 1 P
+X - 2 0 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Battery
+#
+DEF Battery BT 0 40 N N 1 F N
+F0 "BT" 150 100 50 H V L BNN
+F1 "Battery" 150 0 50 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -125 0 125 -25 0 1 0 F
+S -75 -50 75 -100 0 1 0 F
+P 2 0 1 0 50 50 100 50 N
+P 2 0 1 0 75 75 75 25 N
+X + 1 0 100 100 D 50 50 1 1 P
+X - 2 0 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AD5262BRUZ50-RL7
+D IC DGT POT 50KOHM 256TAP 16TSSOP
+F https://www.analog.com/media/en/technical-documentation/data-sheets/AD5260_5262.pdf
+$ENDCMP
+#
+#End Doc Library

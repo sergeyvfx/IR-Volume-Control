@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP STUSB4500QTR
+D IC USB CONTROLLER I2C 24QFN
+F https://www.st.com/resource/en/datasheet/stusb4500.pdf
+$ENDCMP
+#
+#End Doc Library

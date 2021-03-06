@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP HSMG-C170
+D LED GREEN DIFFUSED CHIP SMD
+F https://docs.broadcom.com/doc/AV02-0551EN
+$ENDCMP
+#
+$CMP IN-S126ESGHIR
+D SIDE VIEW / 1210 / 3.0X2.55X1.6
+F http://www.inolux-corp.com/datasheet/IR/Emitter/940%20nm%20SMD/IN-S126ESGHIR_V1.1.pdf
+$ENDCMP
+#
+#End Doc Library

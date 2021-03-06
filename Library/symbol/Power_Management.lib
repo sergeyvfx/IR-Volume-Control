@@ -1,0 +1,58 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# L7985TR
+#
+DEF L7985TR U 0 40 Y Y 1 F N
+F0 "U" 150 150 50 H V L BNN
+F1 "L7985TR" 150 50 50 H V L BNN
+F2 "Package_DFN_QFN:VFDFPN-10_EP_3x3mm_P0.5mm" -950 -450 50 H I C CNN
+F3 "" -950 -450 50 H I C CNN
+F4 "IC REG BUCK ADJUSTABLE 2A" 0 0 50 H I C CNN "Description"
+F5 "Buck Switching Regulator IC Positive Adjustable 0.6V 1 Output 2A 10-VFDFN Exposed Pad" 0 0 50 H I C CNN "Detailed Description"
+F6 "STMicroelectronics" 0 0 50 H I C CNN "Manufacturer"
+F7 "L7985TR" 0 0 50 H I C CNN "Manufacturer Part Number"
+F8 "497-13223-1-ND" 0 0 50 H I C CNN "Digi-Key Part Number"
+DRAW
+S -450 0 500 -800 0 1 0 f
+X OUT1 1 600 -100 100 L 50 50 1 1 w
+X VCC2 10 -550 -200 100 R 50 50 1 1 W
+X EP 11 50 -900 100 U 50 50 1 1 I
+X OUT2 2 600 -200 100 L 50 50 1 1 w
+X SYNCH 3 -550 -600 100 R 50 50 1 1 P
+X EN 4 -550 -400 100 R 50 50 1 1 I
+X COMP 5 250 -900 100 U 50 50 1 1 P
+X FB 6 600 -700 100 L 50 50 1 1 P
+X FSW 7 -550 -700 100 R 50 50 1 1 P
+X GND 8 -50 -900 100 U 50 50 1 1 W
+X VCC1 9 -550 -100 100 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# LM27761DSGR
+#
+DEF LM27761DSGR U 0 40 Y Y 1 F N
+F0 "U" 0 250 50 H V L BNN
+F1 "LM27761DSGR" 0 150 50 H V L BNN
+F2 "Package_SON:WSON-8-EP_P0.5mm" -200 0 50 H I C CNN
+F3 "" -200 0 50 H I C CNN
+F4 "IC REG CHARGE PUMP ADJ 8WSON" 0 0 50 H I C CNN "Description"
+F5 "Charge Pump Switching Regulator IC Negative Adjustable -1.5V 1 Output 250mA 8-WFDFN Exposed Pad" 0 0 50 H I C CNN "Detailed Description"
+F6 "Texas Instruments" 0 0 50 H I C CNN "Manufacturer"
+F7 "LM27761DSGR" 0 0 50 H I C CNN "Manufacturer Part Number"
+F8 "296-44379-1-ND" 0 0 50 H I C CNN "Digi-Key Part Number"
+DRAW
+S -400 100 400 -400 0 1 0 f
+X VIN 1 -500 0 100 R 50 50 1 1 W
+X GND 2 -50 -500 100 U 50 50 1 1 W
+X CPOUT 3 500 -200 100 L 50 50 1 1 P
+X VOUT 4 500 0 100 L 50 50 1 1 w
+X VFB 5 500 -100 100 L 50 50 1 1 I
+X EN 6 -500 -100 100 R 50 50 1 1 I
+X C- 7 -500 -300 100 R 50 50 1 1 P
+X C+ 8 -500 -200 100 R 50 50 1 1 P
+X PAD 9 50 -500 100 U 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+#End Library

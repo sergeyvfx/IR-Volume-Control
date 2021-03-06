@@ -1,0 +1,3 @@
+This STEP model came from DigiKey's model for 1054500101 (WM12856CT-ND).
+
+https://www.digikey.nl/products/en?keywords=WM12856CT-ND

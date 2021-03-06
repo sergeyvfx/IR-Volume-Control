@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MMBT3904LT1G
+D TRANS NPN 40V 200MA SOT23-3
+F https://www.onsemi.com/pdf/datasheet/mmbt3904lt1-d.pdf
+$ENDCMP
+#
+$CMP MMBT3906LT1G
+D TRANS PNP 40V 200MA SOT23-3
+F https://www.onsemi.com/pdf/datasheet/mmbt3906lt1-d.pdf
+$ENDCMP
+#
+#End Doc Library

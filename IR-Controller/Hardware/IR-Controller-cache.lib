@@ -1,28 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Library_Battery
+# Capacitor_Ceramic_C
 #
-DEF Library_Battery BT 0 40 N N 1 F N
-F0 "BT" 150 100 50 H V L BNN
-F1 "Library_Battery" 150 0 50 H V L BNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-S -125 0 125 -25 0 1 0 F
-S -75 -50 75 -100 0 1 0 F
-P 2 0 1 0 50 50 100 50 N
-P 2 0 1 0 75 75 75 25 N
-X + 1 0 100 100 D 50 50 1 1 P
-X - 2 0 -200 100 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Library_C
-#
-DEF Library_C C 0 40 N Y 1 F N
+DEF Capacitor_Ceramic_C C 0 40 N Y 1 F N
 F0 "C" -150 200 50 H V L BNN
-F1 "Library_C" -150 100 50 H V L BNN
+F1 "Capacitor_Ceramic_C" -150 100 50 H V L BNN
 F2 "" -150 200 50 H I C CNN
 F3 "" -150 200 50 H I C CNN
 DRAW
@@ -33,13 +16,41 @@ X ~ 2 150 0 115 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Library_LED
+# Connector_Battery_BC-2003
 #
-DEF Library_LED D 0 40 N Y 1 F N
+DEF Connector_Battery_BC-2003 BT 0 40 N N 1 F N
+F0 "BT" 150 100 50 H V L BNN
+F1 "Connector_Battery_BC-2003" 150 0 50 H V L BNN
+F2 "Connector_Battery:BC-2003" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "https://www.memoryprotectiondevices.com/datasheets/BC-2003-datasheet.pdf" 0 0 50 H I C CNN "Drawing"
+F5 "BATTERY HOLDER COIN 20MM SMD" 0 0 50 H I C CNN "Description"
+F6 "Battery Retainer Coin, 20.0mm 1 Cell SMD (SMT) Tab" 0 0 50 H I C CNN "Detailed Description"
+F7 "MPD (Memory Protection Devices)" 0 0 50 H I C CNN "Manufacturer"
+F8 "BC-2003" 0 0 50 H I C CNN "Manufacturer Part Number"
+F9 "BC-2003-ND" 0 0 50 H I C CNN "Digi-Key Part Number"
+DRAW
+S -125 0 125 -25 0 1 0 F
+S -75 -50 75 -100 0 1 0 F
+P 2 0 1 0 50 50 100 50 N
+P 2 0 1 0 75 75 75 25 N
+X + 1 0 100 100 D 50 50 1 1 P
+X - 2 0 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# LED_IN-S126ESGHIR
+#
+DEF LED_IN-S126ESGHIR D 0 40 N Y 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Library_LED" 0 -100 50 H V C CNN
-F2 "" 10 150 50 H I C CNN
+F1 "LED_IN-S126ESGHIR" 0 -125 50 H V C CNN
+F2 "LED:IN-S126ESGHIR" 10 150 50 H I C CNN
 F3 "" 10 150 50 H I C CNN
+F4 "SIDE VIEW / 1210 / 3.0X2.55X1.6" 0 0 50 H I C CNN "Description"
+F5 "Infrared (IR) Emitter 940nm 1.46V 100mA 92mW/sr @ 100mA (Typ) 30° 1210 (3225 Metric)" 0 0 50 H I C CNN "Detailed Description"
+F6 "Inolux" 0 0 50 H I C CNN "Manufacturer"
+F7 "IN-S126ESGHIR" 0 0 50 H I C CNN "Manufacturer Part Number"
+F8 "1830-IN-S126ESGHIRCT-ND" 0 0 50 H I C CNN "Digi-Key Part Number"
 DRAW
 P 2 0 1 0 -175 -75 -175 -50 N
 P 2 0 1 0 -175 -75 -150 -75 N
@@ -54,32 +65,18 @@ X ~ 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Library_NPN_BEC
+# Microcontroller_PIC18LF2550-ISO
 #
-DEF Library_NPN_BEC Q 0 40 N Y 1 F N
-F0 "Q" 190 70 50 H V L BNN
-F1 "Library_NPN_BEC" 190 0 50 H V L BNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-C 50 0 112 0 1 10 N
-P 2 0 1 20 25 75 25 -75 N
-P 2 0 1 0 100 -100 25 -25 N
-P 2 0 1 0 100 100 25 25 N
-P 4 0 1 0 90 -90 80 -60 60 -80 90 -90 F
-X ~ 1 -200 0 225 R 50 50 1 1 P
-X ~ 2 100 -200 100 U 50 50 1 1 P
-X ~ 3 100 200 100 D 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Library_PIC18F2550
-#
-DEF Library_PIC18F2550 U 0 40 Y Y 1 F N
+DEF Microcontroller_PIC18LF2550-ISO U 0 40 Y Y 1 F N
 F0 "U" 1450 950 50 H V C CNN
-F1 "Library_PIC18F2550" 1650 850 50 H V C CNN
-F2 "" 1450 950 50 H I C CNN
+F1 "Microcontroller_PIC18LF2550-ISO" 1650 850 50 H V C CNN
+F2 "Package_SO:SOIC-28_Width7.50mm_Pitch1.27mm" 1450 950 50 H I C CNN
 F3 "" 1450 950 50 H I C CNN
+F4 "IC MCU 8BIT 32KB FLASH 28SOIC" 0 0 50 H I C CNN "Description"
+F5 "PIC PIC® 18F Microcontroller IC 8-Bit 48MHz 32KB (16K x 16) FLASH 28-SOIC" 0 0 50 H I C CNN "Detailed Description"
+F6 "Microchip Technology" 0 0 50 H I C CNN "Manufacturer"
+F7 "PIC18F2550T-I/SO" 0 0 50 H I C CNN "Manufacturer Part Number"
+F8 "PIC18F2550T-I/SOCT-ND" 0 0 50 H I C CNN "Digi-Key Part Number"
 DRAW
 S -1300 800 1300 -800 0 1 0 f
 X ~MCLR~/VPP/RE3 1 -1400 650 100 R 50 50 1 1 I
@@ -113,17 +110,42 @@ X OSC1/CLKI 9 -1400 -150 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# Library_R
+# Resistor_R
 #
-DEF Library_R R 0 40 N Y 1 F N
+DEF Resistor_R R 0 40 N Y 1 F N
 F0 "R" -50 -100 50 H V L BNN
-F1 "Library_R" -50 0 50 H V L BNN
+F1 "Resistor_R" -50 0 50 H V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
 P 5 0 1 10 -140 100 -60 100 -60 -100 -140 -100 -140 100 N
 X ~ 1 -100 150 50 D 50 50 1 1 P
 X ~ 2 -100 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Transistor_BJT_MMBT3904LT1G
+#
+DEF Transistor_BJT_MMBT3904LT1G Q 0 40 N Y 1 F N
+F0 "Q" 200 50 50 H V L BNN
+F1 "Transistor_BJT_MMBT3904LT1G" 190 0 50 H I L BNN
+F2 "Package_TO_SOT:SOT-23" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "TRANS NPN 40V 200MA SOT23-3" 0 0 50 H I C CNN "Description"
+F5 "Bipolar (BJT) Transistor NPN 40V 200mA 300MHz 300mW Surface Mount SOT-23-3 (TO-236)" 0 0 50 H I C CNN "Detailed Description"
+F6 "ON Semiconductor" 0 0 50 H I C CNN "Manufacturer"
+F7 "MMBT3904LT1G" 0 0 50 H I C CNN "Manufacturer Part Number"
+F8 "MMBT3904LT1GOSCT-ND" 0 0 50 H I C CNN "Digi-Key Part Number"
+F9 "MMBT3904" 200 -25 50 H V L BNN "Base Part Number"
+DRAW
+C 50 0 112 0 1 10 N
+P 2 0 1 20 25 75 25 -75 N
+P 2 0 1 0 100 -100 25 -25 N
+P 2 0 1 0 100 100 25 25 N
+P 4 0 1 0 90 -90 80 -60 60 -80 90 -90 F
+X ~ 1 -200 0 225 R 50 50 1 1 P
+X ~ 2 100 -200 100 U 50 50 1 1 P
+X ~ 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #

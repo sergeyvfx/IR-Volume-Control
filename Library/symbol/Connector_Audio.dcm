@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP STX-3500-5NTR
+D CONN JACK STEREO 3.5MM SMD R/A
+F http://www.kycon.com/Pub_Eng_Draw/STX-3500-5N.pdf
+$ENDCMP
+#
+#End Doc Library

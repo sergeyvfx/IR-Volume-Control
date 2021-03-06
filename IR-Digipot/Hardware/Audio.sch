@@ -14,17 +14,18 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Library:AD5262 U6
+L Potentiometer_Digital:AD5262BRUZ50-RL7 U6
 U 1 1 5FE37C9F
 P 8800 2300
 F 0 "U6" H 9250 2550 50  0000 L BNN
-F 1 "AD5262" H 9250 2450 50  0000 L BNN
-F 2 "Librray:TSSOP-16_4.4x5mm_P0.65mm" H 8800 2300 50  0001 C CNN
-F 3 "${KIPRJMOD}/../../Datasheet/AD5260_5262 15 V Digital Potentiometer.pdf" H 8800 2300 50  0001 C CNN
+F 1 "AD5262BRUZ50-RL7" H 9250 2450 50  0000 L BNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 8800 2300 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD5260_5262.pdf" H 8800 2300 50  0001 C CNN
 F 4 "IC DGT POT 50KOHM 256TAP 16TSSOP" H 8800 2300 50  0001 C CNN "Description"
-F 5 "Analog Devices Inc." H 8800 2300 50  0001 C CNN "Manufacturer"
-F 6 "AD5262BRUZ50-RL7" H 8800 2300 50  0001 C CNN "Manufacturer Part Number"
-F 7 "AD5262BRUZ50-RL7CT-ND" H 8800 2300 50  0001 C CNN "Digi-Key Part Number"
+F 5 "Digital Potentiometer 50k Ohm 2 Circuit 256 Taps SPI Interface 16-TSSOP" H 8800 2300 50  0001 C CNN "Detailed Description"
+F 6 "AD5262BRUZ50-RL7CT-ND" H 8800 2300 50  0001 C CNN "Digi-Key Part Number"
+F 7 "Analog Devices Inc." H 8800 2300 50  0001 C CNN "Manufacturer"
+F 8 "AD5262BRUZ50-RL7" H 8800 2300 50  0001 C CNN "Manufacturer Part Number"
 	1    8800 2300
 	1    0    0    -1  
 $EndComp
@@ -55,17 +56,18 @@ $EndComp
 Wire Wire Line
 	8950 3300 8950 3350
 $Comp
-L Library:Ferrite_Bead FB1
+L Inductor:BLM15PG100SN1D FB1
 U 1 1 5FE43B5B
 P 9150 1850
-F 0 "FB1" H 9050 2100 50  0000 L BNN
-F 1 "Ferrite_Bead" H 9050 2000 50  0000 L BNN
-F 2 "Librray:L_0402_1005Metric" H 9450 2000 50  0001 C CNN
-F 3 "" H 9450 2000 50  0001 C CNN
+F 0 "FB1" H 9200 1950 50  0000 L BNN
+F 1 "BLM15PG100SN1D" H 9450 1950 50  0001 C CNN
+F 2 "Inductor:L_0402_1005Metric" H 9450 2000 50  0001 C CNN
+F 3 "https://www.murata.com/en-us/products/productdata/8796740059166/ENFA0018.pdf" H 9450 2000 50  0001 C CNN
 F 4 "FERRITE BEAD 10 OHM 0402 1LN" H 9150 1850 50  0001 C CNN "Description"
-F 5 "Murata Electronics" H 9150 1850 50  0001 C CNN "Manufacturer"
-F 6 "BLM15PG100SN1D" H 9150 1850 50  0001 C CNN "Manufacturer Part Number"
-F 7 "490-5976-1-ND" H 9150 1850 50  0001 C CNN "Digi-Key Part Number"
+F 5 "10 Ohms @ 100MHz 1 Power Line Ferrite Bead 0402 (1005 Metric) 1A 25mOhm" H 9150 1850 50  0001 C CNN "Detailed Description"
+F 6 "490-5976-1-ND" H 9150 1850 50  0001 C CNN "Digi-Key Part Number"
+F 7 "Murata Electronics" H 9150 1850 50  0001 C CNN "Manufacturer"
+F 8 "BLM15PG100SN1D" H 9150 1850 50  0001 C CNN "Manufacturer Part Number"
 	1    9150 1850
 	1    0    0    -1  
 $EndComp
@@ -117,14 +119,12 @@ Wire Wire Line
 Wire Wire Line
 	9850 2500 9850 3350
 $Comp
-L Library:C C?
+L Capacitor_Ceramic:C C24
 U 1 1 5FE65CEF
 P 7600 1400
-AR Path="/5FE20DA8/5FE65CEF" Ref="C?"  Part="1" 
-AR Path="/5FE379B8/5FE65CEF" Ref="C24"  Part="1" 
 F 0 "C24" V 7621 1265 50  0000 R CNN
 F 1 "0.1uF" V 7530 1265 50  0000 R CNN
-F 2 "Librray:C_0402_1005Metric" H 7450 1600 50  0001 C CNN
+F 2 "Capacitor_Ceramic:C_0402_1005Metric" H 7450 1600 50  0001 C CNN
 F 3 "" H 7450 1600 50  0001 C CNN
 F 4 "CAP CER 0.1UF 25V X7R 0402" V 7600 1400 50  0001 C CNN "Description"
 F 5 "KEMET" V 7600 1400 50  0001 C CNN "Manufacturer"
@@ -134,14 +134,12 @@ F 7 "399-C0402C104K3RAC7411CT-ND" V 7600 1400 50  0001 C CNN "Digi-Key Part Numb
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Library:C C?
+L Capacitor_Ceramic:C C25
 U 1 1 5FE6669F
 P 7600 1750
-AR Path="/5FE20DA8/5FE6669F" Ref="C?"  Part="1" 
-AR Path="/5FE379B8/5FE6669F" Ref="C25"  Part="1" 
 F 0 "C25" V 7621 1615 50  0000 R CNN
 F 1 "0.1uF" V 7530 1615 50  0000 R CNN
-F 2 "Librray:C_0402_1005Metric" H 7450 1950 50  0001 C CNN
+F 2 "Capacitor_Ceramic:C_0402_1005Metric" H 7450 1950 50  0001 C CNN
 F 3 "" H 7450 1950 50  0001 C CNN
 F 4 "CAP CER 0.1UF 25V X7R 0402" V 7600 1750 50  0001 C CNN "Description"
 F 5 "KEMET" V 7600 1750 50  0001 C CNN "Manufacturer"
@@ -151,14 +149,12 @@ F 7 "399-C0402C104K3RAC7411CT-ND" V 7600 1750 50  0001 C CNN "Digi-Key Part Numb
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Library:C C?
+L Capacitor_Ceramic:C C21
 U 1 1 5FE38C6E
 P 7050 1400
-AR Path="/5FE20DA8/5FE38C6E" Ref="C?"  Part="1" 
-AR Path="/5FE379B8/5FE38C6E" Ref="C21"  Part="1" 
 F 0 "C21" V 7071 1265 50  0000 R CNN
 F 1 "10uF" V 6980 1265 50  0000 R CNN
-F 2 "Librray:C_0805_2012Metric" H 6900 1600 50  0001 C CNN
+F 2 "Capacitor_Ceramic:C_0805_2012Metric" H 6900 1600 50  0001 C CNN
 F 3 "" H 6900 1600 50  0001 C CNN
 F 4 "CAP CER 10UF 16V X7R 0805" V 7050 1400 50  0001 C CNN "Description"
 F 5 "Taiyo Yuden" V 7050 1400 50  0001 C CNN "Manufacturer"
@@ -168,14 +164,12 @@ F 7 "587-6139-1-ND" V 7050 1400 50  0001 C CNN "Digi-Key Part Number"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Library:C C?
+L Capacitor_Ceramic:C C22
 U 1 1 5FE399CF
 P 7050 1750
-AR Path="/5FE20DA8/5FE399CF" Ref="C?"  Part="1" 
-AR Path="/5FE379B8/5FE399CF" Ref="C22"  Part="1" 
 F 0 "C22" V 7071 1615 50  0000 R CNN
 F 1 "10uF" V 6980 1615 50  0000 R CNN
-F 2 "Librray:C_0805_2012Metric" H 6900 1950 50  0001 C CNN
+F 2 "Capacitor_Ceramic:C_0805_2012Metric" H 6900 1950 50  0001 C CNN
 F 3 "" H 6900 1950 50  0001 C CNN
 F 4 "CAP CER 10UF 16V X7R 0805" V 7050 1750 50  0001 C CNN "Description"
 F 5 "Taiyo Yuden" V 7050 1750 50  0001 C CNN "Manufacturer"
@@ -243,40 +237,44 @@ Wire Wire Line
 Wire Wire Line
 	8150 1600 8150 1700
 $Comp
-L Library:OPA2134 U5
+L Amplifier_Operational:OPA2134UA_2K5 U5
 U 1 1 5FE3A925
 P 3200 700
 F 0 "U5" H 3500 650 50  0000 L BNN
-F 1 "OPA2134" H 3500 550 50  0000 L BNN
-F 2 "Librray:SOIC-8_Width3.9mm_Pitch1.27mm" H 3200 700 50  0001 C CNN
-F 3 "${KIPRJMOD}/../../Datasheet/OPAx134 SoundPlus High Performance Audio Operational Amplifiers.pdf" H 3200 700 50  0001 C CNN
+F 1 "OPA2134UA_2K5" H 3500 550 50  0000 L BNN
+F 2 "Package_SO:SOIC-8_Width3.9mm_Pitch1.27mm" H 3200 700 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/opa134.pdf" H 3200 700 50  0001 C CNN
 F 4 "IC AUDIO 2 CIRCUIT 8SOIC" H 3200 700 50  0001 C CNN "Description"
 F 5 "Texas Instruments" H 3200 700 50  0001 C CNN "Manufacturer"
 F 6 "OPA2134UA/2K5" H 3200 700 50  0001 C CNN "Manufacturer Part Number"
 F 7 "296-22024-1-ND" H 3200 700 50  0001 C CNN "Digi-Key Part Number"
+F 8 "Audio Amplifier 2 Circuit  8-SOIC" H 3200 700 50  0001 C CNN "Detailed Description"
 	1    3200 700 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Library:OPA2134 U5
+L Amplifier_Operational:OPA2134UA_2K5 U5
 U 2 1 5FE3B8C4
 P 3200 1950
 F 0 "U5" H 3500 1900 50  0000 L BNN
-F 1 "OPA2134" H 3500 1800 50  0000 L BNN
-F 2 "Librray:SOIC-8_Width3.9mm_Pitch1.27mm" H 3200 1950 50  0001 C CNN
-F 3 "${KIPRJMOD}/../../Datasheet/OPAx134 SoundPlus High Performance Audio Operational Amplifiers.pdf" H 3200 1950 50  0001 C CNN
+F 1 "OPA2134UA_2K5" H 3500 1800 50  0000 L BNN
+F 2 "Package_SO:SOIC-8_Width3.9mm_Pitch1.27mm" H 3200 1950 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/opa134.pdf" H 3200 1950 50  0001 C CNN
+F 4 "IC AUDIO 2 CIRCUIT 8SOIC" H 3200 1950 50  0001 C CNN "Description"
+F 5 "Audio Amplifier 2 Circuit  8-SOIC" H 3200 1950 50  0001 C CNN "Detailed Description"
+F 6 "296-22024-1-ND" H 3200 1950 50  0001 C CNN "Digi-Key Part Number"
+F 7 "Texas Instruments" H 3200 1950 50  0001 C CNN "Manufacturer"
+F 8 "OPA2134UA/2K5" H 3200 1950 50  0001 C CNN "Manufacturer Part Number"
 	2    3200 1950
 	1    0    0    -1  
 $EndComp
 $Comp
-L Library:R R?
+L Resistor:R R11
 U 1 1 5FE48FC8
 P 2400 1150
-AR Path="/5FE20DA8/5FE48FC8" Ref="R?"  Part="1" 
-AR Path="/5FE379B8/5FE48FC8" Ref="R11"  Part="1" 
 F 0 "R11" V 2250 1050 50  0000 L BNN
 F 1 "12K" V 2250 1250 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 2400 1150 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 2400 1150 50  0001 C CNN
 F 3 "" H 2400 1150 50  0001 C CNN
 F 4 "CRGCQ 0402 12K 1%" H 2400 1150 50  0001 C CNN "Description"
 F 5 "TE Connectivity Passive Product" H 2400 1150 50  0001 C CNN "Manufacturer"
@@ -301,14 +299,12 @@ Wire Wire Line
 Wire Wire Line
 	3100 2100 3000 2100
 $Comp
-L Library:R R?
+L Resistor:R R19
 U 1 1 5FE58D04
 P 3300 1400
-AR Path="/5FE20DA8/5FE58D04" Ref="R?"  Part="1" 
-AR Path="/5FE379B8/5FE58D04" Ref="R19"  Part="1" 
 F 0 "R19" V 3150 1300 50  0000 L BNN
 F 1 "22K" V 3150 1500 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 3300 1400 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 3300 1400 50  0001 C CNN
 F 3 "" H 3300 1400 50  0001 C CNN
 F 4 "CRGCQ 0402 22K 1%" H 3300 1400 50  0001 C CNN "Description"
 F 5 "TE Connectivity Passive Product" H 3300 1400 50  0001 C CNN "Manufacturer"
@@ -332,14 +328,12 @@ Connection ~ 2900 2300
 Wire Wire Line
 	2900 2300 3100 2300
 $Comp
-L Library:R R?
+L Resistor:R R13
 U 1 1 5FE62AC0
 P 2600 1250
-AR Path="/5FE20DA8/5FE62AC0" Ref="R?"  Part="1" 
-AR Path="/5FE379B8/5FE62AC0" Ref="R13"  Part="1" 
 F 0 "R13" H 2650 1200 50  0000 L BNN
 F 1 "47K" H 2600 1300 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 2600 1250 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 2600 1250 50  0001 C CNN
 F 3 "" H 2600 1250 50  0001 C CNN
 F 4 "CRGCQ 0402 47K 1%" H 2600 1250 50  0001 C CNN "Description"
 F 5 "TE Connectivity Passive Product" H 2600 1250 50  0001 C CNN "Manufacturer"
@@ -349,14 +343,12 @@ F 7 "A129647CT-ND" H 2600 1250 50  0001 C CNN "Digi-Key Part Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Library:R R?
+L Resistor:R R14
 U 1 1 5FE65E04
 P 2600 2500
-AR Path="/5FE20DA8/5FE65E04" Ref="R?"  Part="1" 
-AR Path="/5FE379B8/5FE65E04" Ref="R14"  Part="1" 
 F 0 "R14" H 2600 2450 50  0000 L BNN
 F 1 "47K" H 2600 2550 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 2600 2500 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 2600 2500 50  0001 C CNN
 F 3 "" H 2600 2500 50  0001 C CNN
 F 4 "CRGCQ 0402 47K 1%" H 2600 2500 50  0001 C CNN "Description"
 F 5 "TE Connectivity Passive Product" H 2600 2500 50  0001 C CNN "Manufacturer"
@@ -388,14 +380,12 @@ F 3 "" H 2700 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Library:C C?
+L Capacitor_Ceramic:C C13
 U 1 1 5FE695D3
 P 3300 1500
-AR Path="/5FE20DA8/5FE695D3" Ref="C?"  Part="1" 
-AR Path="/5FE379B8/5FE695D3" Ref="C13"  Part="1" 
 F 0 "C13" H 3350 1550 50  0000 L BNN
 F 1 "47" H 3350 1400 50  0000 L BNN
-F 2 "Librray:C_0402_1005Metric" H 3150 1700 50  0001 C CNN
+F 2 "Capacitor_Ceramic:C_0402_1005Metric" H 3150 1700 50  0001 C CNN
 F 3 "" H 3150 1700 50  0001 C CNN
 F 4 "CAP CER SMD 0402 47PF 5% X7R 25V" V 3300 1500 50  0001 C CNN "Description"
 F 5 "KEMET" V 3300 1500 50  0001 C CNN "Manufacturer"
@@ -413,14 +403,12 @@ Wire Wire Line
 	2900 1500 2900 1300
 Connection ~ 2900 1300
 $Comp
-L Library:C C?
+L Capacitor_Ceramic:C C14
 U 1 1 5FE715D7
 P 3300 2750
-AR Path="/5FE20DA8/5FE715D7" Ref="C?"  Part="1" 
-AR Path="/5FE379B8/5FE715D7" Ref="C14"  Part="1" 
 F 0 "C14" H 3350 2800 50  0000 L BNN
 F 1 "47" H 3350 2650 50  0000 L BNN
-F 2 "Librray:C_0402_1005Metric" H 3150 2950 50  0001 C CNN
+F 2 "Capacitor_Ceramic:C_0402_1005Metric" H 3150 2950 50  0001 C CNN
 F 3 "" H 3150 2950 50  0001 C CNN
 F 4 "CAP CER SMD 0402 47PF 5% X7R 25V" V 3300 2750 50  0001 C CNN "Description"
 F 5 "KEMET" V 3300 2750 50  0001 C CNN "Manufacturer"
@@ -440,14 +428,12 @@ Connection ~ 3700 2550
 Wire Wire Line
 	3700 2550 3700 2750
 $Comp
-L Library:R R?
+L Resistor:R R7
 U 1 1 5FE769F7
 P 1350 1250
-AR Path="/5FE20DA8/5FE769F7" Ref="R?"  Part="1" 
-AR Path="/5FE379B8/5FE769F7" Ref="R7"  Part="1" 
 F 0 "R7" H 1400 1200 50  0000 L BNN
 F 1 "680" H 1350 1300 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 1350 1250 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 1350 1250 50  0001 C CNN
 F 3 "" H 1350 1250 50  0001 C CNN
 F 4 "CRGCQ 0402 680R 1%" H 1350 1250 50  0001 C CNN "Description"
 F 5 "TE Connectivity Passive Product" H 1350 1250 50  0001 C CNN "Manufacturer"
@@ -468,14 +454,12 @@ F 3 "" H 1450 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Library:R R?
+L Resistor:R R8
 U 1 1 5FE7D5BA
 P 1350 2500
-AR Path="/5FE20DA8/5FE7D5BA" Ref="R?"  Part="1" 
-AR Path="/5FE379B8/5FE7D5BA" Ref="R8"  Part="1" 
 F 0 "R8" H 1400 2450 50  0000 L BNN
 F 1 "680" H 1350 2550 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 1350 2500 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 1350 2500 50  0001 C CNN
 F 3 "" H 1350 2500 50  0001 C CNN
 F 4 "CRGCQ 0402 680R 1%" H 1350 2500 50  0001 C CNN "Description"
 F 5 "TE Connectivity Passive Product" H 1350 2500 50  0001 C CNN "Manufacturer"
@@ -496,14 +480,12 @@ F 3 "" H 1450 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Library:C C?
+L Capacitor_Ceramic:C C9
 U 1 1 5FE7EC6B
 P 2100 1250
-AR Path="/5FE20DA8/5FE7EC6B" Ref="C?"  Part="1" 
-AR Path="/5FE379B8/5FE7EC6B" Ref="C9"  Part="1" 
 F 0 "C9" V 2050 950 50  0000 L BNN
 F 1 "150" V 2150 950 50  0000 L BNN
-F 2 "Librray:C_0402_1005Metric" H 1950 1450 50  0001 C CNN
+F 2 "Capacitor_Ceramic:C_0402_1005Metric" H 1950 1450 50  0001 C CNN
 F 3 "" H 1950 1450 50  0001 C CNN
 F 4 "CAP CER 150PF 50V X7R 0402" V 2100 1250 50  0001 C CNN "Description"
 F 5 "AVX Corporation" V 2100 1250 50  0001 C CNN "Manufacturer"
@@ -526,14 +508,12 @@ $EndComp
 Wire Wire Line
 	2100 1100 2100 1050
 $Comp
-L Library:C C?
+L Capacitor_Ceramic:C C10
 U 1 1 5FE99CC6
 P 2100 2500
-AR Path="/5FE20DA8/5FE99CC6" Ref="C?"  Part="1" 
-AR Path="/5FE379B8/5FE99CC6" Ref="C10"  Part="1" 
 F 0 "C10" V 2050 2200 50  0000 L BNN
 F 1 "150" V 2150 2200 50  0000 L BNN
-F 2 "Librray:C_0402_1005Metric" H 1950 2700 50  0001 C CNN
+F 2 "Capacitor_Ceramic:C_0402_1005Metric" H 1950 2700 50  0001 C CNN
 F 3 "" H 1950 2700 50  0001 C CNN
 F 4 "CAP CER 150PF 50V X7R 0402" V 2100 2500 50  0001 C CNN "Description"
 F 5 "AVX Corporation" V 2100 2500 50  0001 C CNN "Manufacturer"
@@ -636,12 +616,12 @@ Connection ~ 7050 1200
 Wire Wire Line
 	7050 1200 7600 1200
 $Comp
-L Library:CP C7
+L Capacitor_Electrolytic:CP C7
 U 1 1 5FF094EE
 P 1700 1050
 F 0 "C7" H 1650 1250 50  0000 L BNN
 F 1 "10uF" H 1650 1150 50  0000 L BNN
-F 2 "Librray:CP_Elec_5x5.4" H 1550 1250 50  0001 C CNN
+F 2 "Capacitor_Electrolytic:CP_Elec_5x5.4" H 1550 1250 50  0001 C CNN
 F 3 "" H 1550 1250 50  0001 C CNN
 F 4 "CAP ALUM 10UF 20% 25V SMD" H 1700 1050 50  0001 C CNN "Description"
 F 5 "Nichicon" H 1700 1050 50  0001 C CNN "Manufacturer"
@@ -657,12 +637,12 @@ Wire Wire Line
 	1850 1050 2100 1050
 Connection ~ 2100 1050
 $Comp
-L Library:CP C8
+L Capacitor_Electrolytic:CP C8
 U 1 1 5FE433AF
 P 1700 2300
 F 0 "C8" H 1650 2500 50  0000 L BNN
 F 1 "10uF" H 1650 2400 50  0000 L BNN
-F 2 "Librray:CP_Elec_5x5.4" H 1550 2500 50  0001 C CNN
+F 2 "Capacitor_Electrolytic:CP_Elec_5x5.4" H 1550 2500 50  0001 C CNN
 F 3 "" H 1550 2500 50  0001 C CNN
 F 4 "CAP ALUM 10UF 20% 25V SMD" H 1700 2300 50  0001 C CNN "Description"
 F 5 "Nichicon" H 1700 2300 50  0001 C CNN "Manufacturer"
@@ -688,14 +668,12 @@ Input buffer and pre-amp
 Text Notes 8500 900  0    50   ~ 0
 Digital potentiometer
 $Comp
-L Library:C C?
+L Capacitor_Ceramic:C C19
 U 1 1 5FED3D46
 P 4800 2700
-AR Path="/5FE20DA8/5FED3D46" Ref="C?"  Part="1" 
-AR Path="/5FE379B8/5FED3D46" Ref="C19"  Part="1" 
 F 0 "C19" V 4821 2565 50  0000 R CNN
 F 1 "0.1uF" V 4730 2565 50  0000 R CNN
-F 2 "Librray:C_0402_1005Metric" H 4650 2900 50  0001 C CNN
+F 2 "Capacitor_Ceramic:C_0402_1005Metric" H 4650 2900 50  0001 C CNN
 F 3 "" H 4650 2900 50  0001 C CNN
 F 4 "CAP CER 0.1UF 25V X7R 0402" V 4800 2700 50  0001 C CNN "Description"
 F 5 "KEMET" V 4800 2700 50  0001 C CNN "Manufacturer"
@@ -705,14 +683,12 @@ F 7 "399-C0402C104K3RAC7411CT-ND" V 4800 2700 50  0001 C CNN "Digi-Key Part Numb
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Library:C C?
+L Capacitor_Ceramic:C C20
 U 1 1 5FED5F8D
 P 4800 3100
-AR Path="/5FE20DA8/5FED5F8D" Ref="C?"  Part="1" 
-AR Path="/5FE379B8/5FED5F8D" Ref="C20"  Part="1" 
 F 0 "C20" V 4821 2965 50  0000 R CNN
 F 1 "0.1uF" V 4730 2965 50  0000 R CNN
-F 2 "Librray:C_0402_1005Metric" H 4650 3300 50  0001 C CNN
+F 2 "Capacitor_Ceramic:C_0402_1005Metric" H 4650 3300 50  0001 C CNN
 F 3 "" H 4650 3300 50  0001 C CNN
 F 4 "CAP CER 0.1UF 25V X7R 0402" V 4800 3100 50  0001 C CNN "Description"
 F 5 "KEMET" V 4800 3100 50  0001 C CNN "Manufacturer"
@@ -748,13 +724,13 @@ F 3 "" H 4150 3200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Library:OPA2134 U5
+L Amplifier_Operational:OPA2134UA_2K5 U5
 U 3 1 5FE3CC4F
 P 4150 2750
 F 0 "U5" H 4208 2671 50  0000 L CNN
-F 1 "OPA2134" H 4208 2580 50  0000 L CNN
-F 2 "Librray:SOIC-8_Width3.9mm_Pitch1.27mm" H 4150 2750 50  0001 C CNN
-F 3 "${KIPRJMOD}/../../Datasheet/OPAx134 SoundPlus High Performance Audio Operational Amplifiers.pdf" H 4150 2750 50  0001 C CNN
+F 1 "OPA2134UA_2K5" H 4208 2580 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_Width3.9mm_Pitch1.27mm" H 4150 2750 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/opa134.pdf" H 4150 2750 50  0001 C CNN
 	3    4150 2750
 	1    0    0    -1  
 $EndComp
@@ -811,28 +787,34 @@ AUDIO_LEFT_ATT
 Text Label 10500 2400 2    50   ~ 0
 AUDIO_RIGHT_ATT
 $Comp
-L Library:OPA2134 U4
+L Amplifier_Operational:OPA2134UA_2K5 U4
 U 1 1 5FF481BD
 P 2450 4200
 F 0 "U4" H 2750 4150 50  0000 L BNN
-F 1 "OPA2134" H 2750 4050 50  0000 L BNN
-F 2 "Librray:SOIC-8_Width3.9mm_Pitch1.27mm" H 2450 4200 50  0001 C CNN
-F 3 "${KIPRJMOD}/../../Datasheet/OPAx134 SoundPlus High Performance Audio Operational Amplifiers.pdf" H 2450 4200 50  0001 C CNN
+F 1 "OPA2134UA_2K5" H 2750 4050 50  0000 L BNN
+F 2 "Package_SO:SOIC-8_Width3.9mm_Pitch1.27mm" H 2450 4200 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/opa134.pdf" H 2450 4200 50  0001 C CNN
 F 4 "IC AUDIO 2 CIRCUIT 8SOIC" H 2450 4200 50  0001 C CNN "Description"
 F 5 "Texas Instruments" H 2450 4200 50  0001 C CNN "Manufacturer"
 F 6 "OPA2134UA/2K5" H 2450 4200 50  0001 C CNN "Manufacturer Part Number"
 F 7 "296-22024-1-ND" H 2450 4200 50  0001 C CNN "Digi-Key Part Number"
+F 8 "Audio Amplifier 2 Circuit  8-SOIC" H 2450 4200 50  0001 C CNN "Detailed Description"
 	1    2450 4200
 	1    0    0    -1  
 $EndComp
 $Comp
-L Library:OPA2134 U4
+L Amplifier_Operational:OPA2134UA_2K5 U4
 U 2 1 5FF481C3
 P 2450 6300
 F 0 "U4" H 2750 6250 50  0000 L BNN
-F 1 "OPA2134" H 2750 6150 50  0000 L BNN
-F 2 "Librray:SOIC-8_Width3.9mm_Pitch1.27mm" H 2450 6300 50  0001 C CNN
-F 3 "${KIPRJMOD}/../../Datasheet/OPAx134 SoundPlus High Performance Audio Operational Amplifiers.pdf" H 2450 6300 50  0001 C CNN
+F 1 "OPA2134UA_2K5" H 2750 6150 50  0000 L BNN
+F 2 "Package_SO:SOIC-8_Width3.9mm_Pitch1.27mm" H 2450 6300 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/opa134.pdf" H 2450 6300 50  0001 C CNN
+F 4 "IC AUDIO 2 CIRCUIT 8SOIC" H 2450 6300 50  0001 C CNN "Description"
+F 5 "Audio Amplifier 2 Circuit  8-SOIC" H 2450 6300 50  0001 C CNN "Detailed Description"
+F 6 "296-22024-1-ND" H 2450 6300 50  0001 C CNN "Digi-Key Part Number"
+F 7 "Texas Instruments" H 2450 6300 50  0001 C CNN "Manufacturer"
+F 8 "OPA2134UA/2K5" H 2450 6300 50  0001 C CNN "Manufacturer Part Number"
 	2    2450 6300
 	1    0    0    -1  
 $EndComp
@@ -853,14 +835,12 @@ Wire Wire Line
 	2350 6450 2250 6450
 Connection ~ 2150 4550
 $Comp
-L Library:C C?
+L Capacitor_Ceramic:C C11
 U 1 1 5FF48225
 P 2850 3900
-AR Path="/5FE20DA8/5FF48225" Ref="C?"  Part="1" 
-AR Path="/5FE379B8/5FF48225" Ref="C11"  Part="1" 
 F 0 "C11" H 2900 3950 50  0000 L BNN
 F 1 "47" H 2900 3800 50  0000 L BNN
-F 2 "Librray:C_0402_1005Metric" H 2700 4100 50  0001 C CNN
+F 2 "Capacitor_Ceramic:C_0402_1005Metric" H 2700 4100 50  0001 C CNN
 F 3 "" H 2700 4100 50  0001 C CNN
 F 4 "CAP CER SMD 0402 47PF 5% X7R 25V" V 2850 3900 50  0001 C CNN "Description"
 F 5 "KEMET" V 2850 3900 50  0001 C CNN "Manufacturer"
@@ -870,14 +850,12 @@ F 7 "399-17558-1-ND" V 2850 3900 50  0001 C CNN "Digi-Key Part Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Library:C C?
+L Capacitor_Ceramic:C C12
 U 1 1 5FF48234
 P 2850 6000
-AR Path="/5FE20DA8/5FF48234" Ref="C?"  Part="1" 
-AR Path="/5FE379B8/5FF48234" Ref="C12"  Part="1" 
 F 0 "C12" H 2900 6050 50  0000 L BNN
 F 1 "47" H 2900 5900 50  0000 L BNN
-F 2 "Librray:C_0402_1005Metric" H 2700 6200 50  0001 C CNN
+F 2 "Capacitor_Ceramic:C_0402_1005Metric" H 2700 6200 50  0001 C CNN
 F 3 "" H 2700 6200 50  0001 C CNN
 F 4 "CAP CER SMD 0402 47PF 5% X7R 25V" V 2850 6000 50  0001 C CNN "Description"
 F 5 "KEMET" V 2850 6000 50  0001 C CNN "Manufacturer"
@@ -899,14 +877,12 @@ Wire Wire Line
 Text Notes 850  3500 0    50   ~ 0
 Output buffer
 $Comp
-L Library:C C?
+L Capacitor_Ceramic:C C5
 U 1 1 5FF482C8
 P 1600 5250
-AR Path="/5FE20DA8/5FF482C8" Ref="C?"  Part="1" 
-AR Path="/5FE379B8/5FF482C8" Ref="C5"  Part="1" 
 F 0 "C5" V 1621 5115 50  0000 R CNN
 F 1 "0.1uF" V 1530 5115 50  0000 R CNN
-F 2 "Librray:C_0402_1005Metric" H 1450 5450 50  0001 C CNN
+F 2 "Capacitor_Ceramic:C_0402_1005Metric" H 1450 5450 50  0001 C CNN
 F 3 "" H 1450 5450 50  0001 C CNN
 F 4 "CAP CER 0.1UF 25V X7R 0402" V 1600 5250 50  0001 C CNN "Description"
 F 5 "KEMET" V 1600 5250 50  0001 C CNN "Manufacturer"
@@ -916,14 +892,12 @@ F 7 "399-C0402C104K3RAC7411CT-ND" V 1600 5250 50  0001 C CNN "Digi-Key Part Numb
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Library:C C?
+L Capacitor_Ceramic:C C6
 U 1 1 5FF482D2
 P 1600 5650
-AR Path="/5FE20DA8/5FF482D2" Ref="C?"  Part="1" 
-AR Path="/5FE379B8/5FF482D2" Ref="C6"  Part="1" 
 F 0 "C6" V 1621 5515 50  0000 R CNN
 F 1 "0.1uF" V 1530 5515 50  0000 R CNN
-F 2 "Librray:C_0402_1005Metric" H 1450 5850 50  0001 C CNN
+F 2 "Capacitor_Ceramic:C_0402_1005Metric" H 1450 5850 50  0001 C CNN
 F 3 "" H 1450 5850 50  0001 C CNN
 F 4 "CAP CER 0.1UF 25V X7R 0402" V 1600 5650 50  0001 C CNN "Description"
 F 5 "KEMET" V 1600 5650 50  0001 C CNN "Manufacturer"
@@ -959,13 +933,13 @@ F 3 "" H 950 5750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Library:OPA2134 U4
+L Amplifier_Operational:OPA2134UA_2K5 U4
 U 3 1 5FF482E6
 P 950 5300
 F 0 "U4" H 1008 5221 50  0000 L CNN
-F 1 "OPA2134" H 1008 5130 50  0000 L CNN
-F 2 "Librray:SOIC-8_Width3.9mm_Pitch1.27mm" H 950 5300 50  0001 C CNN
-F 3 "${KIPRJMOD}/../../Datasheet/OPAx134 SoundPlus High Performance Audio Operational Amplifiers.pdf" H 950 5300 50  0001 C CNN
+F 1 "OPA2134UA_2K5" H 1008 5130 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_Width3.9mm_Pitch1.27mm" H 950 5300 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/opa134.pdf" H 950 5300 50  0001 C CNN
 	3    950  5300
 	1    0    0    -1  
 $EndComp
@@ -1020,12 +994,12 @@ Wire Wire Line
 Wire Wire Line
 	1800 4550 2150 4550
 $Comp
-L Library:CP C18
+L Capacitor_Electrolytic:CP C18
 U 1 1 5FFB43FD
 P 4300 6550
 F 0 "C18" H 4250 6750 50  0000 L BNN
 F 1 "470uF" H 4250 6650 50  0000 L BNN
-F 2 "Librray:CP_Elec_8x10" H 4150 6750 50  0001 C CNN
+F 2 "Capacitor_Electrolytic:CP_Elec_8x10" H 4150 6750 50  0001 C CNN
 F 3 "" H 4150 6750 50  0001 C CNN
 F 4 "CAP ALUM 470UF 20% 10V SMD" H 4300 6550 50  0001 C CNN "Description"
 F 5 "Nichicon" H 4300 6550 50  0001 C CNN "Manufacturer"
@@ -1037,19 +1011,19 @@ $EndComp
 Wire Wire Line
 	4450 6550 5200 6550
 $Comp
-L IR-Digipot-rescue:NPN_BEC-Library-IR-Digipot-rescue Q?
+L Transistor_BJT:MMBT3904LT1G Q1
 U 1 1 5FE4DCB4
 P 3700 4050
-AR Path="/5FE4DCB4" Ref="Q?"  Part="1" 
-AR Path="/5FE379B8/5FE4DCB4" Ref="Q1"  Part="1" 
 F 0 "Q1" H 3750 4300 50  0000 R BNN
-F 1 "MMBT3904" H 3750 4200 50  0000 R BNN
-F 2 "Librray:SOT-23" H 3700 4050 50  0001 C CNN
-F 3 "${KIPRJMOD}/../../Datasheet/MMBT3904L SMMBT3904L General Purpose Transistor NPN Silicon.pdf" H 3700 4050 50  0001 C CNN
-F 4 "TRANS NPN 40V 200MA SOT23-3" H 3700 4050 50  0001 C CNN "Description"
-F 5 "ON Semiconductor" H 3700 4050 50  0001 C CNN "Manufacturer"
-F 6 "MMBT3904LT1G" H 3700 4050 50  0001 C CNN "Manufacturer Part Number"
+F 1 "MMBT3904LT1G" H 3890 4050 50  0001 L BNN
+F 2 "Package_TO_SOT:SOT-23" H 3700 4050 50  0001 C CNN
+F 3 "https://www.onsemi.com/pdf/datasheet/mmbt3904lt1-d.pdf" H 3700 4050 50  0001 C CNN
+F 4 "MMBT3904" H 3750 4200 50  0000 R BNN "Base Part Number"
+F 5 "TRANS NPN 40V 200MA SOT23-3" H 3700 4050 50  0001 C CNN "Description"
+F 6 "Bipolar (BJT) Transistor NPN 40V 200mA 300MHz 300mW Surface Mount SOT-23-3 (TO-236)" H 3700 4050 50  0001 C CNN "Detailed Description"
 F 7 "MMBT3904LT1GOSCT-ND" H 3700 4050 50  0001 C CNN "Digi-Key Part Number"
+F 8 "ON Semiconductor" H 3700 4050 50  0001 C CNN "Manufacturer"
+F 9 "MMBT3904LT1G" H 3700 4050 50  0001 C CNN "Manufacturer Part Number"
 	1    3700 4050
 	1    0    0    -1  
 $EndComp
@@ -1076,14 +1050,12 @@ F 3 "" H 3800 5300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Library:R R?
+L Resistor:R R17
 U 1 1 5FE7121F
 P 3050 5050
-AR Path="/5FE20DA8/5FE7121F" Ref="R?"  Part="1" 
-AR Path="/5FE379B8/5FE7121F" Ref="R17"  Part="1" 
 F 0 "R17" H 3100 5000 50  0000 L BNN
 F 1 "10K" H 3050 5100 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 3050 5050 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 3050 5050 50  0001 C CNN
 F 3 "" H 3050 5050 50  0001 C CNN
 F 4 "CRGCQ 0402 10K 1%" H 3050 5050 50  0001 C CNN "Description"
 F 5 "TE Connectivity Passive Product" H 3050 5050 50  0001 C CNN "Manufacturer"
@@ -1093,29 +1065,29 @@ F 7 "A129639CT-ND" H 3050 5050 50  0001 C CNN "Digi-Key Part Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L IR-Digipot-rescue:PNP_BEC-Library-IR-Digipot-rescue Q2
+L Transistor_BJT:MMBT3906LT1G Q2
 U 1 1 5FE4CB88
 P 3700 4850
 F 0 "Q2" H 3750 5000 50  0000 R BNN
-F 1 "MMBT3906" H 3750 5100 50  0000 R BNN
-F 2 "Librray:SOT-23" H 3700 4850 50  0001 C CNN
-F 3 "${KIPRJMOD}/../../Datasheet/MMBT3906L SMMBT3906L General Purpose Transistor PNP Silicon.pdf" H 3700 4850 50  0001 C CNN
-F 4 "TRANS PNP 40V 200MA SOT23-3" H 3700 4850 50  0001 C CNN "Description"
-F 5 "ON Semiconductor" H 3700 4850 50  0001 C CNN "Manufacturer"
-F 6 "MMBT3906LT1G" H 3700 4850 50  0001 C CNN "Manufacturer Part Number"
+F 1 "MMBT3906LT1G" H 3890 4850 50  0001 L BNN
+F 2 "Package_TO_SOT:SOT-23" H 3700 4850 50  0001 C CNN
+F 3 "https://www.onsemi.com/pdf/datasheet/mmbt3906lt1-d.pdf" H 3700 4850 50  0001 C CNN
+F 4 "MMBT3906" H 3750 5100 50  0000 R BNN "Base Part Number"
+F 5 "TRANS PNP 40V 200MA SOT23-3" H 3700 4850 50  0001 C CNN "Description"
+F 6 "Bipolar (BJT) Transistor PNP 40V 200mA 250MHz 300mW Surface Mount SOT-23-3 (TO-236)" H 3700 4850 50  0001 C CNN "Detailed Description"
 F 7 "MMBT3906LT1GOSCT-ND" H 3700 4850 50  0001 C CNN "Digi-Key Part Number"
+F 8 "ON Semiconductor" H 3700 4850 50  0001 C CNN "Manufacturer"
+F 9 "MMBT3906LT1G" H 3700 4850 50  0001 C CNN "Manufacturer Part Number"
 	1    3700 4850
 	1    0    0    1   
 $EndComp
 $Comp
-L Library:C C?
+L Capacitor_Ceramic:C C15
 U 1 1 5FE996DD
 P 3350 4450
-AR Path="/5FE20DA8/5FE996DD" Ref="C?"  Part="1" 
-AR Path="/5FE379B8/5FE996DD" Ref="C15"  Part="1" 
 F 0 "C15" H 3400 4500 50  0000 L BNN
 F 1 "0.22 uF" H 3400 4350 50  0000 L BNN
-F 2 "Librray:C_0402_1005Metric" H 3200 4650 50  0001 C CNN
+F 2 "Capacitor_Ceramic:C_0402_1005Metric" H 3200 4650 50  0001 C CNN
 F 3 "" H 3200 4650 50  0001 C CNN
 F 4 "CAP CER 0.22UF 16V X7R 0402" V 3350 4450 50  0001 C CNN "Description"
 F 5 "AVX Corporation" V 3350 4450 50  0001 C CNN "Manufacturer"
@@ -1137,12 +1109,12 @@ Wire Wire Line
 Wire Wire Line
 	3800 4450 3800 4650
 $Comp
-L Library:CP C17
+L Capacitor_Electrolytic:CP C17
 U 1 1 5FFB2799
 P 4300 4450
 F 0 "C17" H 4250 4650 50  0000 L BNN
 F 1 "470uF" H 4250 4550 50  0000 L BNN
-F 2 "Librray:CP_Elec_8x10" H 4150 4650 50  0001 C CNN
+F 2 "Capacitor_Electrolytic:CP_Elec_8x10" H 4150 4650 50  0001 C CNN
 F 3 "" H 4150 4650 50  0001 C CNN
 F 4 "CAP ALUM 470UF 20% 10V SMD" H 4300 4450 50  0001 C CNN "Description"
 F 5 "Nichicon" H 4300 4450 50  0001 C CNN "Manufacturer"
@@ -1198,12 +1170,12 @@ Wire Wire Line
 	4100 3700 4100 4450
 Connection ~ 3050 3700
 $Comp
-L Library:D D3
+L Diode:D D3
 U 1 1 5FFD0310
 P 3150 4650
 F 0 "D3" V 3150 4550 50  0000 R CNN
 F 1 "1N914" V 3050 4550 50  0000 R CNN
-F 2 "Librray:SOD-523" H 3160 4800 50  0001 C CNN
+F 2 "Diode:SOD-523" H 3160 4800 50  0001 C CNN
 F 3 "" H 3160 4800 50  0001 C CNN
 F 4 "DIODE GEN PURP 75V 200MA SOD523F" V 3150 4650 50  0001 C CNN "Description"
 F 5 "ON Semiconductor" V 3150 4650 50  0001 C CNN "Manufacturer"
@@ -1218,19 +1190,19 @@ Wire Wire Line
 	3150 4800 3150 4850
 Connection ~ 3150 4850
 $Comp
-L IR-Digipot-rescue:NPN_BEC-Library-IR-Digipot-rescue Q?
+L Transistor_BJT:MMBT3904LT1G Q3
 U 1 1 5FFEA0FD
 P 3700 6150
-AR Path="/5FFEA0FD" Ref="Q?"  Part="1" 
-AR Path="/5FE379B8/5FFEA0FD" Ref="Q3"  Part="1" 
 F 0 "Q3" H 3750 6400 50  0000 R BNN
-F 1 "MMBT3904" H 3750 6300 50  0000 R BNN
-F 2 "Librray:SOT-23" H 3700 6150 50  0001 C CNN
-F 3 "${KIPRJMOD}/../../Datasheet/MMBT3904L SMMBT3904L General Purpose Transistor NPN Silicon.pdf" H 3700 6150 50  0001 C CNN
-F 4 "TRANS NPN 40V 200MA SOT23-3" H 3700 6150 50  0001 C CNN "Description"
-F 5 "ON Semiconductor" H 3700 6150 50  0001 C CNN "Manufacturer"
-F 6 "MMBT3904LT1G" H 3700 6150 50  0001 C CNN "Manufacturer Part Number"
+F 1 "MMBT3904LT1G" H 3890 6150 50  0001 L BNN
+F 2 "Package_TO_SOT:SOT-23" H 3700 6150 50  0001 C CNN
+F 3 "https://www.onsemi.com/pdf/datasheet/mmbt3904lt1-d.pdf" H 3700 6150 50  0001 C CNN
+F 4 "MMBT3904" H 3750 6300 50  0000 R BNN "Base Part Number"
+F 5 "TRANS NPN 40V 200MA SOT23-3" H 3700 6150 50  0001 C CNN "Description"
+F 6 "Bipolar (BJT) Transistor NPN 40V 200mA 300MHz 300mW Surface Mount SOT-23-3 (TO-236)" H 3700 6150 50  0001 C CNN "Detailed Description"
 F 7 "MMBT3904LT1GOSCT-ND" H 3700 6150 50  0001 C CNN "Digi-Key Part Number"
+F 8 "ON Semiconductor" H 3700 6150 50  0001 C CNN "Manufacturer"
+F 9 "MMBT3904LT1G" H 3700 6150 50  0001 C CNN "Manufacturer Part Number"
 	1    3700 6150
 	1    0    0    -1  
 $EndComp
@@ -1246,14 +1218,12 @@ F 3 "" H 3800 7400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Library:R R?
+L Resistor:R R18
 U 1 1 5FFEA10D
 P 3050 7150
-AR Path="/5FE20DA8/5FFEA10D" Ref="R?"  Part="1" 
-AR Path="/5FE379B8/5FFEA10D" Ref="R18"  Part="1" 
 F 0 "R18" H 3100 7100 50  0000 L BNN
 F 1 "10K" H 3050 7200 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 3050 7150 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 3050 7150 50  0001 C CNN
 F 3 "" H 3050 7150 50  0001 C CNN
 F 4 "CRGCQ 0402 10K 1%" H 3050 7150 50  0001 C CNN "Description"
 F 5 "TE Connectivity Passive Product" H 3050 7150 50  0001 C CNN "Manufacturer"
@@ -1263,29 +1233,29 @@ F 7 "A129639CT-ND" H 3050 7150 50  0001 C CNN "Digi-Key Part Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L IR-Digipot-rescue:PNP_BEC-Library-IR-Digipot-rescue Q4
+L Transistor_BJT:MMBT3906LT1G Q4
 U 1 1 5FFEA117
 P 3700 6950
 F 0 "Q4" H 3750 7100 50  0000 R BNN
-F 1 "MMBT3906" H 3750 7200 50  0000 R BNN
-F 2 "Librray:SOT-23" H 3700 6950 50  0001 C CNN
-F 3 "${KIPRJMOD}/../../Datasheet/MMBT3906L SMMBT3906L General Purpose Transistor PNP Silicon.pdf" H 3700 6950 50  0001 C CNN
-F 4 "TRANS PNP 40V 200MA SOT23-3" H 3700 6950 50  0001 C CNN "Description"
-F 5 "ON Semiconductor" H 3700 6950 50  0001 C CNN "Manufacturer"
-F 6 "MMBT3906LT1G" H 3700 6950 50  0001 C CNN "Manufacturer Part Number"
+F 1 "MMBT3906LT1G" H 3890 6950 50  0001 L BNN
+F 2 "Package_TO_SOT:SOT-23" H 3700 6950 50  0001 C CNN
+F 3 "https://www.onsemi.com/pdf/datasheet/mmbt3906lt1-d.pdf" H 3700 6950 50  0001 C CNN
+F 4 "MMBT3906" H 3750 7200 50  0000 R BNN "Base Part Number"
+F 5 "TRANS PNP 40V 200MA SOT23-3" H 3700 6950 50  0001 C CNN "Description"
+F 6 "Bipolar (BJT) Transistor PNP 40V 200mA 250MHz 300mW Surface Mount SOT-23-3 (TO-236)" H 3700 6950 50  0001 C CNN "Detailed Description"
 F 7 "MMBT3906LT1GOSCT-ND" H 3700 6950 50  0001 C CNN "Digi-Key Part Number"
+F 8 "ON Semiconductor" H 3700 6950 50  0001 C CNN "Manufacturer"
+F 9 "MMBT3906LT1G" H 3700 6950 50  0001 C CNN "Manufacturer Part Number"
 	1    3700 6950
 	1    0    0    1   
 $EndComp
 $Comp
-L Library:C C?
+L Capacitor_Ceramic:C C16
 U 1 1 5FFEA121
 P 3350 6550
-AR Path="/5FE20DA8/5FFEA121" Ref="C?"  Part="1" 
-AR Path="/5FE379B8/5FFEA121" Ref="C16"  Part="1" 
 F 0 "C16" H 3400 6600 50  0000 L BNN
 F 1 "0.22 uF" H 3400 6450 50  0000 L BNN
-F 2 "Librray:C_0402_1005Metric" H 3200 6750 50  0001 C CNN
+F 2 "Capacitor_Ceramic:C_0402_1005Metric" H 3200 6750 50  0001 C CNN
 F 3 "" H 3200 6750 50  0001 C CNN
 F 4 "CAP CER 0.22UF 16V X7R 0402" V 3350 6550 50  0001 C CNN "Description"
 F 5 "AVX Corporation" V 3350 6550 50  0001 C CNN "Manufacturer"
@@ -1326,12 +1296,12 @@ Connection ~ 3150 6550
 Wire Wire Line
 	3800 5750 3800 5950
 $Comp
-L Library:D D4
+L Diode:D D4
 U 1 1 5FFEA13D
 P 3150 6750
 F 0 "D4" V 3150 6650 50  0000 R CNN
 F 1 "1N914" V 3050 6650 50  0000 R CNN
-F 2 "Librray:SOD-523" H 3160 6900 50  0001 C CNN
+F 2 "Diode:SOD-523" H 3160 6900 50  0001 C CNN
 F 3 "" H 3160 6900 50  0001 C CNN
 F 4 "DIODE GEN PURP 75V 200MA SOD523F" V 3150 6750 50  0001 C CNN "Description"
 F 5 "ON Semiconductor" V 3150 6750 50  0001 C CNN "Manufacturer"
@@ -1450,32 +1420,34 @@ Output jack
 Text Notes 8400 4150 0    50   ~ 0
 Input jack
 $Comp
-L Library:STX-3500-5NTR J4
+L Connector_Audio:STX-3500-5NTR J4
 U 1 1 5FEF747B
 P 9400 5650
 F 0 "J4" H 9479 5319 50  0000 C CNN
 F 1 "STX-3500-5NTR" H 9479 5410 50  0000 C CNN
-F 2 "Librray:STX-3500-5NTR" H 9300 6000 50  0001 C CNN
-F 3 "${KIPRJMOD}/../../Datasheet/STX-3500-5N.pdf" H 9300 6000 50  0001 C CNN
+F 2 "Connector_Audio:STX-3500-5NTR" H 9300 6000 50  0001 C CNN
+F 3 "http://www.kycon.com/Pub_Eng_Draw/STX-3500-5N.pdf" H 9300 6000 50  0001 C CNN
 F 4 "CONN JACK STEREO 3.5MM SMD R/A" H 9400 5650 50  0001 C CNN "Description"
 F 5 "Kycon, Inc." H 9400 5650 50  0001 C CNN "Manufacturer"
 F 6 "STX-3500-5NTR" H 9400 5650 50  0001 C CNN "Manufacturer Part Number"
 F 7 "2092-STX-3500-5NCT-ND" H 9400 5650 50  0001 C CNN "Digi-Key Part Number"
+F 8 "3.50mm (0.141\", 1/8\", Mini Plug) - Headphone Phone Jack Stereo (3 Conductor, TRS) Connector Solder" H 9400 5650 50  0001 C CNN "Detailed Description"
 	1    9400 5650
 	1    0    0    1   
 $EndComp
 $Comp
-L Library:STX-3500-5NTR J3
+L Connector_Audio:STX-3500-5NTR J3
 U 1 1 5FE5ABD5
 P 9400 4500
 F 0 "J3" H 9479 4169 50  0000 C CNN
 F 1 "STX-3500-5NTR" H 9479 4260 50  0000 C CNN
-F 2 "Librray:STX-3500-5NTR" H 9300 4850 50  0001 C CNN
-F 3 "${KIPRJMOD}/../../Datasheet/STX-3500-5N.pdf" H 9300 4850 50  0001 C CNN
+F 2 "Connector_Audio:STX-3500-5NTR" H 9300 4850 50  0001 C CNN
+F 3 "http://www.kycon.com/Pub_Eng_Draw/STX-3500-5N.pdf" H 9300 4850 50  0001 C CNN
 F 4 "CONN JACK STEREO 3.5MM SMD R/A" H 9400 4500 50  0001 C CNN "Description"
 F 5 "Kycon, Inc." H 9400 4500 50  0001 C CNN "Manufacturer"
 F 6 "STX-3500-5NTR" H 9400 4500 50  0001 C CNN "Manufacturer Part Number"
 F 7 "2092-STX-3500-5NCT-ND" H 9400 4500 50  0001 C CNN "Digi-Key Part Number"
+F 8 "3.50mm (0.141\", 1/8\", Mini Plug) - Headphone Phone Jack Stereo (3 Conductor, TRS) Connector Solder" H 9400 4500 50  0001 C CNN "Detailed Description"
 	1    9400 4500
 	1    0    0    1   
 $EndComp
@@ -1491,14 +1463,12 @@ F 3 "" H 7350 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Library:C C?
+L Capacitor_Ceramic:C C23
 U 1 1 5FF4710D
 P 7350 3350
-AR Path="/5FE20DA8/5FF4710D" Ref="C?"  Part="1" 
-AR Path="/5FE379B8/5FF4710D" Ref="C23"  Part="1" 
 F 0 "C23" V 7371 3215 50  0000 R CNN
 F 1 "0.1uF" V 7280 3215 50  0000 R CNN
-F 2 "Librray:C_0402_1005Metric" H 7200 3550 50  0001 C CNN
+F 2 "Capacitor_Ceramic:C_0402_1005Metric" H 7200 3550 50  0001 C CNN
 F 3 "" H 7200 3550 50  0001 C CNN
 F 4 "CAP CER 0.1UF 25V X7R 0402" V 7350 3350 50  0001 C CNN "Description"
 F 5 "KEMET" V 7350 3350 50  0001 C CNN "Manufacturer"
@@ -1519,14 +1489,12 @@ F 3 "" H 8950 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Library:R R?
+L Resistor:R R21
 U 1 1 5FF44F9D
 P 7150 2350
-AR Path="/5FE20DA8/5FF44F9D" Ref="R?"  Part="1" 
-AR Path="/5FE379B8/5FF44F9D" Ref="R21"  Part="1" 
 F 0 "R21" V 7150 2400 50  0000 L BNN
 F 1 "3.3K" V 7150 2100 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 7150 2350 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 7150 2350 50  0001 C CNN
 F 3 "" H 7150 2350 50  0001 C CNN
 F 4 "CRGCQ 0402 3K3 1%" H 7150 2350 50  0001 C CNN "Description"
 F 5 "TE Connectivity Passive Product" H 7150 2350 50  0001 C CNN "Manufacturer"
@@ -1552,16 +1520,12 @@ Wire Wire Line
 	7350 3500 7350 3550
 Connection ~ 9250 1850
 $Comp
-L Library:R R?
+L Resistor:R R22
 U 1 1 6004A6D1
 P 9550 1650
-AR Path="/5FE20DA8/6004A6D1" Ref="R?"  Part="1" 
-AR Path="/5FE379B8/6004A6D1" Ref="R22"  Part="1" 
-AR Path="/5FF173B2/6004A6D1" Ref="R?"  Part="1" 
-AR Path="/5FF86B45/6004A6D1" Ref="R?"  Part="1" 
 F 0 "R22" V 9550 1700 50  0000 L BNN
 F 1 "NC" V 9550 1500 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 9550 1650 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 9550 1650 50  0001 C CNN
 F 3 "" H 9550 1650 50  0001 C CNN
 	1    9550 1650
 	-1   0    0    1   
@@ -1599,14 +1563,12 @@ Wire Wire Line
 Wire Wire Line
 	6450 2450 7000 2450
 $Comp
-L Library:R R?
+L Resistor:R R15
 U 1 1 5FF481CD
 P 2850 3800
-AR Path="/5FE20DA8/5FF481CD" Ref="R?"  Part="1" 
-AR Path="/5FE379B8/5FF481CD" Ref="R15"  Part="1" 
 F 0 "R15" V 2700 3700 50  0000 L BNN
 F 1 "12K" V 2700 3900 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 2850 3800 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 2850 3800 50  0001 C CNN
 F 3 "" H 2850 3800 50  0001 C CNN
 F 4 "CRGCQ 0402 12K 1%" H 2850 3800 50  0001 C CNN "Description"
 F 5 "TE Connectivity Passive Product" H 2850 3800 50  0001 C CNN "Manufacturer"
@@ -1616,14 +1578,12 @@ F 7 "A129640CT-ND" H 2850 3800 50  0001 C CNN "Digi-Key Part Number"
 	0    1    1    0   
 $EndComp
 $Comp
-L Library:R R?
+L Resistor:R R16
 U 1 1 5FF481FB
 P 2850 5900
-AR Path="/5FE20DA8/5FF481FB" Ref="R?"  Part="1" 
-AR Path="/5FE379B8/5FF481FB" Ref="R16"  Part="1" 
 F 0 "R16" V 2700 5800 50  0000 L BNN
 F 1 "12K" V 2700 6000 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 2850 5900 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 2850 5900 50  0001 C CNN
 F 3 "" H 2850 5900 50  0001 C CNN
 F 4 "CRGCQ 0402 12K 1%" H 2850 5900 50  0001 C CNN "Description"
 F 5 "TE Connectivity Passive Product" H 2850 5900 50  0001 C CNN "Manufacturer"
@@ -1633,14 +1593,12 @@ F 7 "A129640CT-ND" H 2850 5900 50  0001 C CNN "Digi-Key Part Number"
 	0    1    1    0   
 $EndComp
 $Comp
-L Library:R R?
+L Resistor:R R10
 U 1 1 5FF481F1
 P 1650 6750
-AR Path="/5FE20DA8/5FF481F1" Ref="R?"  Part="1" 
-AR Path="/5FE379B8/5FF481F1" Ref="R10"  Part="1" 
 F 0 "R10" V 1500 6650 50  0000 L BNN
 F 1 "22K" V 1500 6850 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 1650 6750 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 1650 6750 50  0001 C CNN
 F 3 "" H 1650 6750 50  0001 C CNN
 F 4 "CRGCQ 0402 22K 1%" H 1650 6750 50  0001 C CNN "Description"
 F 5 "TE Connectivity Passive Product" H 1650 6750 50  0001 C CNN "Manufacturer"
@@ -1650,14 +1608,12 @@ F 7 "A129643CT-ND" H 1650 6750 50  0001 C CNN "Digi-Key Part Number"
 	0    1    1    0   
 $EndComp
 $Comp
-L Library:R R?
+L Resistor:R R9
 U 1 1 5FF481DF
 P 1650 4650
-AR Path="/5FE20DA8/5FF481DF" Ref="R?"  Part="1" 
-AR Path="/5FE379B8/5FF481DF" Ref="R9"  Part="1" 
 F 0 "R9" V 1500 4550 50  0000 L BNN
 F 1 "22K" V 1500 4750 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 1650 4650 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 1650 4650 50  0001 C CNN
 F 3 "" H 1650 4650 50  0001 C CNN
 F 4 "CRGCQ 0402 22K 1%" H 1650 4650 50  0001 C CNN "Description"
 F 5 "TE Connectivity Passive Product" H 1650 4650 50  0001 C CNN "Manufacturer"
@@ -1667,14 +1623,12 @@ F 7 "A129643CT-ND" H 1650 4650 50  0001 C CNN "Digi-Key Part Number"
 	0    1    1    0   
 $EndComp
 $Comp
-L Library:R R?
+L Resistor:R R20
 U 1 1 5FE61557
 P 3300 2650
-AR Path="/5FE20DA8/5FE61557" Ref="R?"  Part="1" 
-AR Path="/5FE379B8/5FE61557" Ref="R20"  Part="1" 
 F 0 "R20" V 3150 2550 50  0000 L BNN
 F 1 "22K" V 3150 2750 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 3300 2650 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 3300 2650 50  0001 C CNN
 F 3 "" H 3300 2650 50  0001 C CNN
 F 4 "CRGCQ 0402 22K 1%" H 3300 2650 50  0001 C CNN "Description"
 F 5 "TE Connectivity Passive Product" H 3300 2650 50  0001 C CNN "Manufacturer"
@@ -1684,14 +1638,12 @@ F 7 "A129643CT-ND" H 3300 2650 50  0001 C CNN "Digi-Key Part Number"
 	0    1    1    0   
 $EndComp
 $Comp
-L Library:R R?
+L Resistor:R R12
 U 1 1 5FE61E85
 P 2400 2400
-AR Path="/5FE20DA8/5FE61E85" Ref="R?"  Part="1" 
-AR Path="/5FE379B8/5FE61E85" Ref="R12"  Part="1" 
 F 0 "R12" V 2250 2300 50  0000 L BNN
 F 1 "12K" V 2250 2500 50  0000 L BNN
-F 2 "Librray:R_0402_1005Metric" H 2400 2400 50  0001 C CNN
+F 2 "Resistor:R_0402_1005Metric" H 2400 2400 50  0001 C CNN
 F 3 "" H 2400 2400 50  0001 C CNN
 F 4 "CRGCQ 0402 12K 1%" H 2400 2400 50  0001 C CNN "Description"
 F 5 "TE Connectivity Passive Product" H 2400 2400 50  0001 C CNN "Manufacturer"

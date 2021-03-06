@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP OPA2134UA_2K5
+D IC AUDIO 2 CIRCUIT 8SOIC
+F https://www.ti.com/lit/ds/symlink/opa134.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP STL6P3LLH6
+D MOSFET P-CH 30V 6A POWERFLAT
+F https://www.st.com/content/ccc/resource/technical/document/datasheet/3c/90/16/29/a8/76/48/02/DM00064617.pdf/files/DM00064617.pdf/jcr:content/translations/en.DM00064617.pdf
+$ENDCMP
+#
+#End Doc Library

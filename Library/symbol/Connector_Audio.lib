@@ -1,0 +1,33 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# STX-3500-5NTR
+#
+DEF STX-3500-5NTR J 0 40 Y Y 1 F N
+F0 "J" -100 400 50 H V C CNN
+F1 "STX-3500-5NTR" -100 -350 50 H V C CNN
+F2 "Connector_Audio:STX-3500-5NTR" -100 350 50 H I C CNN
+F3 "" -100 350 50 H I C CNN
+F4 "CONN JACK STEREO 3.5MM SMD R/A" 0 0 50 H I C CNN "Description"
+F5 "3.50mm (0.141\", 1/8\", Mini Plug) - Headphone Phone Jack Stereo (3 Conductor, TRS) Connector Solder" 0 0 50 H I C CNN "Detailed Description"
+F6 "Kycon, Inc." 0 0 50 H I C CNN "Manufacturer"
+F7 "STX-3500-5NTR" 0 0 50 H I C CNN "Manufacturer Part Number"
+F8 "2092-STX-3500-5NCT-ND" 0 0 50 H I C CNN "Digi-Key Part Number"
+DRAW
+P 3 0 1 0 -100 -50 -50 -50 -50 -150 N
+P 3 0 1 0 -100 50 0 50 0 150 N
+P 3 0 1 0 -100 250 350 250 350 150 N
+P 3 0 1 0 -25 -100 -50 -150 -75 -100 N
+P 3 0 1 0 -25 100 0 150 25 100 N
+P 4 0 1 0 -100 -150 50 -150 100 -50 150 -150 N
+P 4 0 1 0 -100 150 150 150 200 50 250 150 N
+P 5 0 1 0 325 150 375 150 375 -150 325 -150 325 150 N
+X ~ 1 -200 250 100 R 50 50 1 1 P
+X ~ 2 -200 -150 100 R 50 50 1 1 P
+X ~ 3 -200 150 100 R 50 50 1 1 P
+X ~ 4 -200 -50 100 R 50 50 1 1 P
+X ~ 5 -200 50 100 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

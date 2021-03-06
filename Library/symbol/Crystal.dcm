@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ABM8W-20.0000MHZ-4-K1Z-T3
+D CRYSTAL 20.0000MHZ 4PF SMD
+F https://abracon.com/Resonators/ABM8W.pdf
+$ENDCMP
+#
+#End Doc Library

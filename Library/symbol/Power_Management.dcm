@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP L7985TR
+D IC REG BUCK ADJUSTABLE 2A
+F https://www.st.com/content/ccc/resource/technical/document/datasheet/group3/4f/f5/7f/c3/c3/ee/4b/de/DM00041559/files/DM00041559.pdf/jcr:content/translations/en.DM00041559.pdf
+$ENDCMP
+#
+$CMP LM27761DSGR
+D IC REG CHARGE PUMP ADJ 8WSON
+F https://www.ti.com/lit/ds/symlink/lm27761.pdf
+$ENDCMP
+#
+#End Doc Library

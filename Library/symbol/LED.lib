@@ -1,0 +1,77 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# HSMG-C170
+#
+DEF HSMG-C170 D 0 40 N Y 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "HSMG-C170" 0 -125 50 H V C CNN
+F2 "LED:HSMx-C170" 10 150 50 H I C CNN
+F3 "" 10 150 50 H I C CNN
+F4 "LED GREEN DIFFUSED CHIP SMD" 0 0 50 H I C CNN "Description"
+F5 "Green 572nm LED Indication - Discrete 2.2V 0805 (2012 Metric)" 0 0 50 H I C CNN "Detailed Description"
+F6 "Broadcom Limited" 0 0 50 H I C CNN "Manufacturer"
+F7 "HSMG-C170" 0 0 50 H I C CNN "Manufacturer Part Number"
+F8 "516-1434-1-ND" 0 0 50 H I C CNN "Digi-Key Part Number"
+DRAW
+P 2 0 1 0 -175 -75 -175 -50 N
+P 2 0 1 0 -175 -75 -150 -75 N
+P 2 0 1 0 -125 -75 -125 -50 N
+P 2 0 1 0 -125 -75 -100 -75 N
+P 2 0 1 0 -125 -25 -175 -75 N
+P 2 0 1 0 -75 -25 -125 -75 N
+P 2 0 1 0 -50 50 -50 -50 N
+P 4 0 1 0 -50 0 50 50 50 -50 -50 0 N
+X ~ 1 -150 0 100 R 50 50 1 1 P
+X ~ 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# IN-S126ESGHIR
+#
+DEF IN-S126ESGHIR D 0 40 N Y 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "IN-S126ESGHIR" 0 -125 50 H V C CNN
+F2 "LED:IN-S126ESGHIR" 10 150 50 H I C CNN
+F3 "" 10 150 50 H I C CNN
+F4 "SIDE VIEW / 1210 / 3.0X2.55X1.6" 0 0 50 H I C CNN "Description"
+F5 "Infrared (IR) Emitter 940nm 1.46V 100mA 92mW/sr @ 100mA (Typ) 30° 1210 (3225 Metric)" 0 0 50 H I C CNN "Detailed Description"
+F6 "Inolux" 0 0 50 H I C CNN "Manufacturer"
+F7 "IN-S126ESGHIR" 0 0 50 H I C CNN "Manufacturer Part Number"
+F8 "1830-IN-S126ESGHIRCT-ND" 0 0 50 H I C CNN "Digi-Key Part Number"
+DRAW
+P 2 0 1 0 -175 -75 -175 -50 N
+P 2 0 1 0 -175 -75 -150 -75 N
+P 2 0 1 0 -125 -75 -125 -50 N
+P 2 0 1 0 -125 -75 -100 -75 N
+P 2 0 1 0 -125 -25 -175 -75 N
+P 2 0 1 0 -75 -25 -125 -75 N
+P 2 0 1 0 -50 50 -50 -50 N
+P 4 0 1 0 -50 0 50 50 50 -50 -50 0 N
+X ~ 1 -150 0 100 R 50 50 1 1 P
+X ~ 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# LED
+#
+DEF LED D 0 40 N Y 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "LED" 0 -100 50 H V C CNN
+F2 "" 10 150 50 H I C CNN
+F3 "" 10 150 50 H I C CNN
+DRAW
+P 2 0 1 0 -175 -75 -175 -50 N
+P 2 0 1 0 -175 -75 -150 -75 N
+P 2 0 1 0 -125 -75 -125 -50 N
+P 2 0 1 0 -125 -75 -100 -75 N
+P 2 0 1 0 -125 -25 -175 -75 N
+P 2 0 1 0 -75 -25 -125 -75 N
+P 2 0 1 0 -50 50 -50 -50 N
+P 4 0 1 0 -50 0 50 50 50 -50 -50 0 N
+X ~ 1 -150 0 100 R 50 50 1 1 P
+X ~ 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
