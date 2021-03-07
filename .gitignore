@@ -63,3 +63,6 @@ fp-info-cache
 # Build directory of sofware.
 /IR-Controller/Firmware/build
 /IR-Digipot/Firmware/build
+
+# Local copy of datasheets.
+/datasheet/
