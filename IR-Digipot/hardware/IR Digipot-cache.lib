@@ -271,6 +271,29 @@ X ~ 3 150 -100 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Diode_SS14HE
+#
+DEF Diode_SS14HE D 0 40 N Y 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Diode_SS14HE" 0 -100 50 H V C CNN
+F2 "Diode:SOD-323HE" 10 150 50 H I C CNN
+F3 "" 10 150 50 H I C CNN
+F4 "DIODE SCHOTTKY 40V 1A SOD323HE" 0 0 50 H I C CNN "Description"
+F5 "Diode Schottky 40V 1A Surface Mount SOD-323HE" 0 0 50 H I C CNN "Detailed Description"
+F6 "ON Semiconductor" 0 0 50 H I C CNN "Manufacturer"
+F7 "SS14HE" 0 0 50 H I C CNN "Manufacturer Part Number"
+F8 "SS14HECT-ND" 0 0 50 H I C CNN "Digi-Key Part Number"
+F9 "SS14" 0 0 50 H I C CNN "Base Part Number"
+DRAW
+P 2 0 1 0 -50 50 -50 -50 N
+P 3 0 1 0 -50 -50 -65 -50 -65 -35 N
+P 3 0 1 0 -50 50 -35 50 -35 35 N
+P 4 0 1 0 -50 0 50 50 50 -50 -50 0 N
+X ~ 1 -150 0 100 R 50 50 1 1 P
+X ~ 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Inductor_ACP3225-102-2P-T000
 #
 DEF Inductor_ACP3225-102-2P-T000 L 0 40 N Y 1 F N

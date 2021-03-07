@@ -380,17 +380,19 @@ Wire Wire Line
 	4100 2050 4100 2350
 Connection ~ 4100 2350
 $Comp
-L Diode:D_SCHOTTKY D9
+L Diode:SS14HE D9
 U 1 1 5FEA0696
 P 3850 1650
-F 0 "D9" V 3804 1728 50  0000 L CNN
-F 1 "STPS3L60U" V 3895 1728 50  0000 L CNN
+F 0 "D9" V 3800 1750 50  0000 L CNN
+F 1 "SS14HE" V 3900 1750 50  0000 L BNN
 F 2 "Diode:SOD-323HE" H 3860 1800 50  0001 C CNN
-F 3 "" H 3860 1800 50  0001 C CNN
-F 4 "DIODE SCHOTTKY 40V 1A SOD323HE" V 3850 1650 50  0001 C CNN "Description"
-F 5 "ON Semiconductor" V 3850 1650 50  0001 C CNN "Manufacturer"
-F 6 "SS14HE" V 3850 1650 50  0001 C CNN "Manufacturer Part Number"
-F 7 "SS14HECT-ND" V 3850 1650 50  0001 C CNN "Digi-Key Part Number"
+F 3 "https://www.onsemi.com/pdf/datasheet/ss13he-d.pdf" H 3860 1800 50  0001 C CNN
+F 4 "DIODE SCHOTTKY 40V 1A SOD323HE" H 3850 1650 50  0001 C CNN "Description"
+F 5 "ON Semiconductor" H 3850 1650 50  0001 C CNN "Manufacturer"
+F 6 "SS14HE" H 3850 1650 50  0001 C CNN "Manufacturer Part Number"
+F 7 "SS14HECT-ND" H 3850 1650 50  0001 C CNN "Digi-Key Part Number"
+F 8 "SS14" H 3850 1650 50  0001 C CNN "Base Part Number"
+F 9 "Diode Schottky 40V 1A Surface Mount SOD-323HE" H 3850 1650 50  0001 C CNN "Detailed Description"
 	1    3850 1650
 	0    1    1    0   
 $EndComp

@@ -97,78 +97,10 @@ F 3 "" H 3550 1750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3550 1700 3550 1750
-$Comp
-L Power_Supervisor:TCM809LVNB713 U1
-U 1 1 5FE25880
-P 2200 1750
-F 0 "U1" H 2072 1746 50  0000 R CNN
-F 1 "TCM809LVNB713" H 2072 1655 50  0000 R CNN
-F 2 "Package_TO_SOT:SOT-23" H 2650 1950 50  0001 C CNN
-F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/21661E.pdf" H 2650 1950 50  0001 C CNN
-F 4 "IC SUPERVISOR 1 CHANNEL SOT23-3" H 2200 1750 50  0001 C CNN "Description"
-F 5 "Supervisor Push-Pull, Totem Pole 1 Channel SOT-23-3" H 2200 1750 50  0001 C CNN "Detailed Description"
-F 6 "TCM809LVNB713CT-ND" H 2200 1750 50  0001 C CNN "Digi-Key Part Number"
-F 7 "Microchip Technology" H 2200 1750 50  0001 C CNN "Manufacturer"
-F 8 "TCM809LVNB713" H 2200 1750 50  0001 C CNN "Manufacturer Part Number"
-	1    2200 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5VD #PWR04
-U 1 1 5FE2B259
-P 2200 1400
-F 0 "#PWR04" H 2200 1250 50  0001 C CNN
-F 1 "+5VD" H 2215 1573 50  0000 C CNN
-F 2 "" H 2200 1400 50  0001 C CNN
-F 3 "" H 2200 1400 50  0001 C CNN
-	1    2200 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDD #PWR05
-U 1 1 5FE2B9AA
-P 2200 2250
-F 0 "#PWR05" H 2200 2000 50  0001 C CNN
-F 1 "GNDD" H 2204 2095 50  0000 C CNN
-F 2 "" H 2200 2250 50  0001 C CNN
-F 3 "" H 2200 2250 50  0001 C CNN
-	1    2200 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2200 1400 2200 1450
 Wire Wire Line
 	3050 1800 3050 2700
-$Comp
-L Resistor:R R1
-U 1 1 5FE4251D
-P 2850 2000
-F 0 "R1" H 2820 2046 50  0000 L CNN
-F 1 "100K" H 2820 1955 50  0000 L CNN
-F 2 "Resistor:R_0402_1005Metric" H 2850 2000 50  0001 C CNN
-F 3 "" H 2850 2000 50  0001 C CNN
-F 4 "CRGCQ 0402 100K 1%" H 2850 2000 50  0001 C CNN "Description"
-F 5 "TE Connectivity Passive Product" H 2850 2000 50  0001 C CNN "Manufacturer"
-F 6 "CRGCQ0402F100K" H 2850 2000 50  0001 C CNN "Manufacturer Part Number"
-F 7 "A129651CT-ND" H 2850 2000 50  0001 C CNN "Digi-Key Part Number"
-	1    2850 2000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3050 2700 3250 2700
-$Comp
-L power:GNDD #PWR06
-U 1 1 5FE43D04
-P 2750 2250
-F 0 "#PWR06" H 2750 2000 50  0001 C CNN
-F 1 "GNDD" H 2754 2095 50  0000 C CNN
-F 2 "" H 2750 2250 50  0001 C CNN
-F 3 "" H 2750 2250 50  0001 C CNN
-	1    2750 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2200 2150 2200 2250
 $Comp
 L Crystal:ABM8W-20.0000MHZ-4-K1Z-T3 X1
 U 1 1 5FE286DC
@@ -468,15 +400,6 @@ Wire Wire Line
 	2950 3100 3250 3100
 Wire Wire Line
 	3550 1350 3550 1400
-Wire Wire Line
-	2650 1800 2750 1800
-Wire Wire Line
-	2750 1850 2750 1800
-Connection ~ 2750 1800
-Wire Wire Line
-	2750 1800 3050 1800
-Wire Wire Line
-	2750 2150 2750 2250
 $Comp
 L Capacitor_Ceramic:C C1
 U 1 1 5FE2B3B5
@@ -668,5 +591,82 @@ F 7 "Broadcom Limited" H 6000 5600 50  0001 C CNN "Manufacturer"
 F 8 "HSMG-C170" H 6000 5600 50  0001 C CNN "Manufacturer Part Number"
 	1    6000 5600
 	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2750 2150 2750 2250
+Wire Wire Line
+	2750 1800 3050 1800
+Connection ~ 2750 1800
+Wire Wire Line
+	2750 1850 2750 1800
+Wire Wire Line
+	2650 1800 2750 1800
+Wire Wire Line
+	2200 2150 2200 2250
+$Comp
+L power:GNDD #PWR06
+U 1 1 5FE43D04
+P 2750 2250
+F 0 "#PWR06" H 2750 2000 50  0001 C CNN
+F 1 "GNDD" H 2754 2095 50  0000 C CNN
+F 2 "" H 2750 2250 50  0001 C CNN
+F 3 "" H 2750 2250 50  0001 C CNN
+	1    2750 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistor:R R1
+U 1 1 5FE4251D
+P 2850 2000
+F 0 "R1" H 2820 2046 50  0000 L CNN
+F 1 "100K" H 2820 1955 50  0000 L CNN
+F 2 "Resistor:R_0402_1005Metric" H 2850 2000 50  0001 C CNN
+F 3 "" H 2850 2000 50  0001 C CNN
+F 4 "CRGCQ 0402 100K 1%" H 2850 2000 50  0001 C CNN "Description"
+F 5 "TE Connectivity Passive Product" H 2850 2000 50  0001 C CNN "Manufacturer"
+F 6 "CRGCQ0402F100K" H 2850 2000 50  0001 C CNN "Manufacturer Part Number"
+F 7 "A129651CT-ND" H 2850 2000 50  0001 C CNN "Digi-Key Part Number"
+	1    2850 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1400 2200 1450
+$Comp
+L power:GNDD #PWR05
+U 1 1 5FE2B9AA
+P 2200 2250
+F 0 "#PWR05" H 2200 2000 50  0001 C CNN
+F 1 "GNDD" H 2204 2095 50  0000 C CNN
+F 2 "" H 2200 2250 50  0001 C CNN
+F 3 "" H 2200 2250 50  0001 C CNN
+	1    2200 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VD #PWR04
+U 1 1 5FE2B259
+P 2200 1400
+F 0 "#PWR04" H 2200 1250 50  0001 C CNN
+F 1 "+5VD" H 2215 1573 50  0000 C CNN
+F 2 "" H 2200 1400 50  0001 C CNN
+F 3 "" H 2200 1400 50  0001 C CNN
+	1    2200 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power_Supervisor:TCM809LVNB713 U1
+U 1 1 5FE25880
+P 2200 1750
+F 0 "U1" H 2072 1746 50  0000 R CNN
+F 1 "TCM809LVNB713" H 2072 1655 50  0000 R CNN
+F 2 "Package_TO_SOT:SOT-23" H 2650 1950 50  0001 C CNN
+F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/21661E.pdf" H 2650 1950 50  0001 C CNN
+F 4 "IC SUPERVISOR 1 CHANNEL SOT23-3" H 2200 1750 50  0001 C CNN "Description"
+F 5 "Supervisor Push-Pull, Totem Pole 1 Channel SOT-23-3" H 2200 1750 50  0001 C CNN "Detailed Description"
+F 6 "TCM809LVNB713CT-ND" H 2200 1750 50  0001 C CNN "Digi-Key Part Number"
+F 7 "Microchip Technology" H 2200 1750 50  0001 C CNN "Manufacturer"
+F 8 "TCM809LVNB713" H 2200 1750 50  0001 C CNN "Manufacturer Part Number"
+	1    2200 1750
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
