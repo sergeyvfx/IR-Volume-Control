@@ -638,7 +638,7 @@
       (net 69 /Power/+5V_UNFILTERED))
     (pad 1 smd rect (at -1.425 0) (size 1.55 3) (layers F.Cu F.Paste F.Mask)
       (net 114 "Net-(D9-Pad1)"))
-    (model ${KIPRJMOD}/../../Library/package3d/Inductor.3dshapes/L_1515_4040Metric.wrl
+    (model ${KIPRJMOD}/../../library/package3d/Inductor.3dshapes/L_1515_4040Metric.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.3937007874015748 0.3937007874015748 0.3937007874015748))
       (rotate (xyz 0 0 0))
@@ -1161,7 +1161,7 @@
       (net 2 +5VD) (zone_connect 0))
     (pad 1 smd rect (at 0.325 1.525) (size 0.4 0.75) (layers F.Cu F.Paste F.Mask)
       (net 2 +5VD) (zone_connect 0))
-    (model ${KIPRJMOD}/../../Library/package3d/Package_DFN_QFN.3dshapes/PowerFLAT.wrl
+    (model ${KIPRJMOD}/../../library/package3d/Package_DFN_QFN.3dshapes/PowerFLAT.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.3937 0.3937 0.3937))
       (rotate (xyz 0 0 0))
@@ -1195,7 +1195,7 @@
       (net 89 "Net-(C34-Pad2)"))
     (pad 1 smd rect (at -1.4 -0.575 270) (size 0.9 0.4) (layers F.Cu F.Paste F.Mask)
       (net 1 GNDD))
-    (model ${KIPRJMOD}/../../Library/package3d/Inductor.3dshapes/ACP3225.wrl
+    (model ${KIPRJMOD}/../../library/package3d/Inductor.3dshapes/ACP3225.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.3937007874015748 0.3937007874015748 0.3937007874015748))
       (rotate (xyz 0 0 0))
@@ -1349,7 +1349,7 @@
       (net 69 /Power/+5V_UNFILTERED))
     (pad 1 smd rect (at -1.4 -0.575 270) (size 0.9 0.4) (layers F.Cu F.Paste F.Mask)
       (net 49 GND))
-    (model ${KIPRJMOD}/../../Library/package3d/Inductor.3dshapes/ACP3225.wrl
+    (model ${KIPRJMOD}/../../library/package3d/Inductor.3dshapes/ACP3225.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.3937007874015748 0.3937007874015748 0.3937007874015748))
       (rotate (xyz 0 0 0))
@@ -1422,7 +1422,7 @@
       (net 49 GND))
     (pad 1 smd rect (at -0.625 0 270) (size 0.55 0.8) (layers F.Cu F.Paste F.Mask)
       (net 69 /Power/+5V_UNFILTERED))
-    (model ${KIPRJMOD}/../../Library/package3d/Diode.3dshapes/D_0603_1610Metric.wrl
+    (model ${KIPRJMOD}/../../library/package3d/Diode.3dshapes/D_0603_1610Metric.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.3937007874015748 0.3937007874015748 0.3937007874015748))
       (rotate (xyz 0 0 0))
@@ -1447,7 +1447,7 @@
       (net 49 GND))
     (pad 1 smd rect (at -0.65 0 90) (size 2 1.1) (layers F.Cu F.Paste F.Mask)
       (net 114 "Net-(D9-Pad1)"))
-    (model ${KIPRJMOD}/../../Library/package3d/Diode.3dshapes/SS14HE.wrl
+    (model ${KIPRJMOD}/../../library/package3d/Diode.3dshapes/SS14HE.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.3937007874015748 0.3937007874015748 0.3937007874015748))
       (rotate (xyz 0 0 0))
@@ -1935,7 +1935,7 @@
       (net 86 "Net-(C28-Pad2)") (zone_connect 0))
     (pad 1 smd rect (at 0.325 1.525) (size 0.4 0.75) (layers F.Cu F.Paste F.Mask)
       (net 86 "Net-(C28-Pad2)") (zone_connect 0))
-    (model ${KIPRJMOD}/../../Library/package3d/Package_DFN_QFN.3dshapes/PowerFLAT.wrl
+    (model ${KIPRJMOD}/../../library/package3d/Package_DFN_QFN.3dshapes/PowerFLAT.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.3937 0.3937 0.3937))
       (rotate (xyz 0 0 0))
@@ -1972,7 +1972,7 @@
       (net 86 "Net-(C28-Pad2)") (zone_connect 0))
     (pad 1 smd rect (at 0.325 1.525) (size 0.4 0.75) (layers F.Cu F.Paste F.Mask)
       (net 86 "Net-(C28-Pad2)") (zone_connect 0))
-    (model ${KIPRJMOD}/../../Library/package3d/Package_DFN_QFN.3dshapes/PowerFLAT.wrl
+    (model ${KIPRJMOD}/../../library/package3d/Package_DFN_QFN.3dshapes/PowerFLAT.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.3937 0.3937 0.3937))
       (rotate (xyz 0 0 0))
@@ -1997,7 +1997,7 @@
       (net 49 GND))
     (pad 1 smd rect (at -0.625 0 270) (size 0.55 0.8) (layers F.Cu F.Paste F.Mask)
       (net 62 VSNK))
-    (model ${KIPRJMOD}/../../Library/package3d/Package_DFN_QFN.3dshapes/UDFN-2.wrl
+    (model ${KIPRJMOD}/../../library/package3d/Package_DFN_QFN.3dshapes/UDFN-2.wrl
       (offset (xyz 0 0 -0.02))
       (scale (xyz 0.3937 0.3937 0.3937))
       (rotate (xyz 0 0 0))
@@ -2370,7 +2370,7 @@
       (net 49 GND))
     (pad 1 smd rect (at -0.625 0 270) (size 0.55 0.8) (layers F.Cu F.Paste F.Mask)
       (net 50 VBUS))
-    (model ${KIPRJMOD}/../../Library/package3d/Package_DFN_QFN.3dshapes/UDFN-2.wrl
+    (model ${KIPRJMOD}/../../library/package3d/Package_DFN_QFN.3dshapes/UDFN-2.wrl
       (offset (xyz 0 0 -0.02))
       (scale (xyz 0.3937 0.3937 0.3937))
       (rotate (xyz 0 0 0))
@@ -2455,7 +2455,7 @@
       (net 49 GND))
     (pad A1 smd rect (at -3 0 90) (size 0.3 0.76) (layers F.Cu F.Paste F.Mask)
       (net 49 GND))
-    (model ${KIPRJMOD}/../../Library/package3d-third_party/Connector_Data.3dshapes/1054500101.stp
+    (model ${KIPRJMOD}/../../library/package3d-third_party/Connector_Data.3dshapes/1054500101.stp
       (offset (xyz 0 -3 1.6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -2503,7 +2503,7 @@
       (net 30 /Audio/AUDIO_LEFT_OUT))
     (pad 4 smd rect (at 0.75 15.75 270) (size 2.5 2.5) (layers F.Cu F.Paste F.Mask)
       (net 34 "Net-(J4-Pad4)"))
-    (model ${KIPRJMOD}/../../Library/package3d-third_party/Connector_Audio.3dshapes/STX-3500-5NTR_rA4.STEP
+    (model ${KIPRJMOD}/../../library/package3d-third_party/Connector_Audio.3dshapes/STX-3500-5NTR_rA4.STEP
       (offset (xyz 0 -14.5 0))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 -90))
@@ -2551,7 +2551,7 @@
       (net 25 /Audio/AUDIO_LEFT_IN))
     (pad 4 smd rect (at 0.75 15.75 90) (size 2.5 2.5) (layers F.Cu F.Paste F.Mask)
       (net 32 "Net-(J3-Pad4)"))
-    (model ${KIPRJMOD}/../../Library/package3d-third_party/Connector_Audio.3dshapes/STX-3500-5NTR_rA4.STEP
+    (model ${KIPRJMOD}/../../library/package3d-third_party/Connector_Audio.3dshapes/STX-3500-5NTR_rA4.STEP
       (offset (xyz 0 -14.5 0))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 -90))
@@ -3916,7 +3916,7 @@
       (net 1 GNDD))
     (pad 2 smd rect (at -0.635 0 180) (size 0.8 1.8) (layers F.Cu F.Paste F.Mask)
       (net 2 +5VD))
-    (model ${KIPRJMOD}/../../Library/package3d/Interface_Optical.3dshapes/TSOP754.wrl
+    (model ${KIPRJMOD}/../../library/package3d/Interface_Optical.3dshapes/TSOP754.wrl
       (offset (xyz 0 0.64 0))
       (scale (xyz 0.3937 0.3937 0.3937))
       (rotate (xyz 0 0 0))

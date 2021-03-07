@@ -13,7 +13,7 @@
   (fp_line (start -1.651 1.905) (end 1.778 1.905) (layer F.SilkS) (width 0.12))
   (pad 1 smd rect (at -1.425 0) (size 1.55 3) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 1.425 0) (size 1.55 3) (layers F.Cu F.Paste F.Mask))
-  (model ${KIPRJMOD}/../../Library/package3d/Inductor.3dshapes/L_1515_4040Metric.wrl
+  (model ${KIPRJMOD}/../../library/package3d/Inductor.3dshapes/L_1515_4040Metric.wrl
     (at (xyz 0 0 0))
     (scale (xyz 0.3937007874015748 0.3937007874015748 0.3937007874015748))
     (rotate (xyz 0 0 0))

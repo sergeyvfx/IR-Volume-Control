@@ -46,7 +46,7 @@
   (pad SHLD thru_hole oval (at 4.32 0.41) (size 1.1 2.1) (drill oval 0.6 1.6) (layers *.Cu *.Mask))
   (pad SHLD thru_hole oval (at -4.32 5.77) (size 1.1 2.6) (drill oval 0.6 2.1) (layers *.Cu *.Mask))
   (pad SHLD thru_hole oval (at 4.32 5.77) (size 1.1 2.6) (drill oval 0.6 2.1) (layers *.Cu *.Mask))
-  (model ${KIPRJMOD}/../../Library/package3d-third_party/Connector_Data.3dshapes/1054500101.stp
+  (model ${KIPRJMOD}/../../library/package3d-third_party/Connector_Data.3dshapes/1054500101.stp
     (offset (xyz 0 -3 1.6))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 180))
