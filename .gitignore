@@ -53,20 +53,12 @@ fp-info-cache
 *.blend?
 
 # MPLAB-X build system.
-/IR-Controller/Firmware/IR-Controller.X/build/default/
-/IR-Controller/Firmware/IR-Controller.X/dist/default/
-/IR-Digipot/Firmware/IR-Digipot.X/build/default/
-/IR-Digipot/Firmware/IR-Digipot.X/dist/default/
-
-# Makefiles auto-generators.
-/IR-Controller/Firmware/IR-Controller.X/nbproject/Makefile-*
-/IR-Controller/Firmware/IR-Controller.X/nbproject/Package-*
-/IR-Digipot/Firmware/IR-Digipot.X/nbproject/Makefile-*
-/IR-Digipot/Firmware/IR-Digipot.X/nbproject/Package-*
-
-# Private locally-generated files.
-/IR-Controller/Firmware/IR-Controller.X/nbproject/private/
-/IR-Digipot/Firmware/IR-Digipot.X/nbproject/private/
+/IR-Controller/Firmware/IR-Controller.X/build/
+/IR-Controller/Firmware/IR-Controller.X/dist/
+/IR-Controller/Firmware/IR-Controller.X/disassembly/
+/IR-Digipot/Firmware/IR-Digipot.X/build/
+/IR-Digipot/Firmware/IR-Digipot.X/dist/
+/IR-Digipot/Firmware/IR-Digipot.X/disassembly/
 
 # Build directory of sofware.
 /IR-Controller/Firmware/build
