@@ -1,8 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP TSOP75438TR
-D SENSOR REMOTE REC 38.0KHZ 45M
-F https://www.vishay.com/docs/82494/tsop752.pdf
-$ENDCMP
-#
-#End Doc Library

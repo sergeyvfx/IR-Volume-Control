@@ -1,8 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP BC-2003
-D BATTERY HOLDER COIN 20MM SMD
-F https://media.digikey.com/pdf/Data%20Sheets/Memory%20Protection%20PDFs/Coin_Cell_Guide.pdf
-$ENDCMP
-#
-#End Doc Library
