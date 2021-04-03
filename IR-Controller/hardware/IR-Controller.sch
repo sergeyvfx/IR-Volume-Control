@@ -330,48 +330,48 @@ Wire Wire Line
 $Comp
 L Resistor:CRGCQ0402F10K R3
 U 1 1 6069684D
-P 6000 4050
-F 0 "R3" H 5970 4096 50  0000 L CNN
-F 1 "CRGCQ0402F10K" H 5950 4050 50  0001 L BNN
-F 2 "Resistor:R_0402_1005Metric" H 6000 4050 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English" H 6000 4050 50  0001 C CNN
-F 4 "CRGCQ 0402 10K 1%" H 6000 4050 50  0001 C CNN "Description"
-F 5 "10 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200, Moisture Resistant Thick Film" H 6000 4050 50  0001 C CNN "Detailed Description"
-F 6 "TE Connectivity Passive Product" H 6000 4050 50  0001 C CNN "Manufacturer"
-F 7 "CRGCQ0402F10K" H 6000 4050 50  0001 C CNN "Manufacturer Part Number"
-F 8 "A129639CT-ND" H 6000 4050 50  0001 C CNN "Digi-Key Part Number"
-F 9 "10k" H 5970 4005 50  0000 L CNN "Resistance"
-F 10 "CRGCQ" H 6000 4050 50  0001 C CNN "Series"
-F 11 "Cut Tape (CT)" H 6000 4050 50  0001 C CNN "Packaging"
-F 12 "±1%" H 6000 4050 50  0001 C CNN "Tolerance"
-F 13 "0.063W, 1/16W" H 6000 4050 50  0001 C CNN "Power (Watts)"
-F 14 "Thick Film" H 6000 4050 50  0001 C CNN "Composition"
-F 15 "Automotive AEC-Q200, Moisture Resistant" H 6000 4050 50  0001 C CNN "Features"
-F 16 "±100ppm/°C" H 6000 4050 50  0001 C CNN "Temperature Coefficient"
-F 17 "-55°C ~ 155°C" H 6000 4050 50  0001 C CNN "Operating Temperature"
-F 18 "0402 (1005 Metric)" H 6000 4050 50  0001 C CNN "Package / Case"
-F 19 "AEC-Q200" H 6000 4050 50  0001 C CNN "Ratings"
-F 20 "0402" H 6000 4050 50  0001 C CNN "Supplier Device Package"
-F 21 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 6000 4050 50  0001 C CNN "Size / Dimension"
-F 22 "0.016\" (0.40mm)" H 6000 4050 50  0001 C CNN "Height - Seated (Max)"
-F 23 "2" H 6000 4050 50  0001 C CNN "Number of Terminations"
-F 24 "CRGCQ0402" H 6000 4050 50  0001 C CNN "Base Part Number"
-	1    6000 4050
+P 6350 4050
+F 0 "R3" H 6320 4096 50  0000 L CNN
+F 1 "CRGCQ0402F10K" H 6300 4050 50  0001 L BNN
+F 2 "Resistor:R_0402_1005Metric" H 6350 4050 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English" H 6350 4050 50  0001 C CNN
+F 4 "CRGCQ 0402 10K 1%" H 6350 4050 50  0001 C CNN "Description"
+F 5 "10 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200, Moisture Resistant Thick Film" H 6350 4050 50  0001 C CNN "Detailed Description"
+F 6 "TE Connectivity Passive Product" H 6350 4050 50  0001 C CNN "Manufacturer"
+F 7 "CRGCQ0402F10K" H 6350 4050 50  0001 C CNN "Manufacturer Part Number"
+F 8 "A129639CT-ND" H 6350 4050 50  0001 C CNN "Digi-Key Part Number"
+F 9 "10k" H 6320 4005 50  0000 L CNN "Resistance"
+F 10 "CRGCQ" H 6350 4050 50  0001 C CNN "Series"
+F 11 "Cut Tape (CT)" H 6350 4050 50  0001 C CNN "Packaging"
+F 12 "±1%" H 6350 4050 50  0001 C CNN "Tolerance"
+F 13 "0.063W, 1/16W" H 6350 4050 50  0001 C CNN "Power (Watts)"
+F 14 "Thick Film" H 6350 4050 50  0001 C CNN "Composition"
+F 15 "Automotive AEC-Q200, Moisture Resistant" H 6350 4050 50  0001 C CNN "Features"
+F 16 "±100ppm/°C" H 6350 4050 50  0001 C CNN "Temperature Coefficient"
+F 17 "-55°C ~ 155°C" H 6350 4050 50  0001 C CNN "Operating Temperature"
+F 18 "0402 (1005 Metric)" H 6350 4050 50  0001 C CNN "Package / Case"
+F 19 "AEC-Q200" H 6350 4050 50  0001 C CNN "Ratings"
+F 20 "0402" H 6350 4050 50  0001 C CNN "Supplier Device Package"
+F 21 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 6350 4050 50  0001 C CNN "Size / Dimension"
+F 22 "0.016\" (0.40mm)" H 6350 4050 50  0001 C CNN "Height - Seated (Max)"
+F 23 "2" H 6350 4050 50  0001 C CNN "Number of Terminations"
+F 24 "CRGCQ0402" H 6350 4050 50  0001 C CNN "Base Part Number"
+	1    6350 4050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Power:GND #PWR09
 U 1 1 6069D06B
-P 5900 4250
-F 0 "#PWR09" H 5900 4050 50  0001 C CNN
-F 1 "GND" H 5905 4112 50  0000 C CNN
-F 2 "" H 5900 4250 50  0001 C CNN
-F 3 "" H 5900 4250 50  0001 C CNN
-	1    5900 4250
+P 6250 4250
+F 0 "#PWR09" H 6250 4050 50  0001 C CNN
+F 1 "GND" H 6255 4112 50  0000 C CNN
+F 2 "" H 6250 4250 50  0001 C CNN
+F 3 "" H 6250 4250 50  0001 C CNN
+	1    6250 4250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5900 4200 5900 4250
+	6250 4200 6250 4250
 $Comp
 L Power:+3V #PWR03
 U 1 1 606A50F2
@@ -449,14 +449,44 @@ PGD
 Text Label 6750 2500 2    50   ~ 0
 PGC
 Wire Wire Line
-	5650 3100 5900 3100
-Wire Wire Line
 	5650 2600 6750 2600
 Wire Wire Line
 	5650 2700 6750 2700
 Wire Wire Line
-	5900 3100 5900 3900
-Connection ~ 5900 3100
+	6250 3100 6250 3900
+Connection ~ 6250 3100
 Wire Wire Line
-	5900 3100 6750 3100
+	6250 3100 6750 3100
+Wire Wire Line
+	5650 3100 6250 3100
+Wire Wire Line
+	5650 3700 5700 3700
+$Comp
+L Power:GND #PWR?
+U 1 1 6069341C
+P 5700 4250
+F 0 "#PWR?" H 5700 4050 50  0001 C CNN
+F 1 "GND" H 5705 4112 50  0000 C CNN
+F 2 "" H 5700 4250 50  0001 C CNN
+F 3 "" H 5700 4250 50  0001 C CNN
+	1    5700 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3600 5900 3600
+$Comp
+L Power:GND #PWR?
+U 1 1 6069472C
+P 5900 4250
+F 0 "#PWR?" H 5900 4050 50  0001 C CNN
+F 1 "GND" H 5905 4112 50  0000 C CNN
+F 2 "" H 5900 4250 50  0001 C CNN
+F 3 "" H 5900 4250 50  0001 C CNN
+	1    5900 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3700 5700 4250
+Wire Wire Line
+	5900 3600 5900 4250
 $EndSCHEMATC
