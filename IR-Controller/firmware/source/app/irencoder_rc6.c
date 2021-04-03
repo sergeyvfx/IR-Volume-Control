@@ -152,7 +152,7 @@ static inline void TransmitCommand(const uint8_t command) {
   TransmitUInt8(command);
 }
 
-void IRENCODER_Transmit_RC6(struct IRTransmission* transmission) {
+void IRENCODER_Transmit_RC6(const IRTransmission* transmission) {
   ConfigurePWM();
 
   TransmitLeaderBit();

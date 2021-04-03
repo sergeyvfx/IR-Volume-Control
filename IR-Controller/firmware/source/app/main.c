@@ -20,15 +20,12 @@
 //
 // Author: Sergey Sharybin (sergey.vfx@gmail.com)
 
+#include <stdbool.h>
 #include <xc.h>
 
 #include "app/irencoder.h"
 #include "system/configuration.h"
 #include "time/time.h"
-
-// TODO(sergey): In the final design there will be no need in alive flag: the uC
-// will be waken up, it'll handle the transmission and go back to sleep.
-static int flag;
 
 static void APP_ResetAllPortsToOutput0(void) {
   TRISA = 0;
@@ -56,13 +53,115 @@ static void APP_ConfigureOnStartup(void) {
   APP_ResetAllPortsToOutput0();
   APP_DisableInterrupts();
 
-  HEARTBEAT_LED_TRIS = 0;
+  // Ensure debug pin is output and is 0.
+  DEBUG_PIN_TRIS = 0;
+}
 
-  // TODO(sergey): In the final design keep all interrupts disabled until
-  // entering the sleep.
-  INTCONbits.INT0IF = 0;
-  INTCONbits.INT0IE = 1;
-  INTCONbits.GIE = 1;
+typedef struct KeypadButton {
+  int row;
+  int column;
+} KeypadButton;
+
+// Special value which indicates none of the buttons are pressed.
+static const KeypadButton kNullKeypadButton = {-1, -1};
+
+static KeypadButton MakeKeypadButton(const int row, const int column) {
+  KeypadButton button;
+  button.row = row;
+  button.column = column;
+  return button;
+}
+
+static bool KeypadButtonEqual(const KeypadButton* a, const KeypadButton* b) {
+  return a->row == b->row && a->column == b->column;
+}
+
+static bool IsNullKeypadButton(const KeypadButton* button) {
+  return KeypadButtonEqual(button, &kNullKeypadButton);
+}
+
+#define CHECK_KEYPAD_BUTTON_AND_RETURN(row, column)                            \
+  do {                                                                         \
+    KEYPAD_ROW_##row##_LAT = 1;                                                \
+    int num_pressed = 0;                                                       \
+    for (int i = 0; i < 5; ++i) {                                              \
+      if (KEYPAD_COLUMN_##column##_PORT) {                                     \
+        ++num_pressed;                                                         \
+      }                                                                        \
+    }                                                                          \
+    if (num_pressed >= 3) {                                                    \
+      return MakeKeypadButton(row, column);                                    \
+    }                                                                          \
+  } while (false)
+
+static KeypadButton APP_ReadKeypad(void) {
+  // Columns are inputs.
+  KEYPAD_COLUMN_0_TRIS = 1;
+
+  // Rows are outputs, default to 0;
+  KEYPAD_ROW_0_TRIS = 0;
+  KEYPAD_ROW_0_LAT = 0;
+  KEYPAD_ROW_1_TRIS = 0;
+  KEYPAD_ROW_1_LAT = 0;
+
+  CHECK_KEYPAD_BUTTON_AND_RETURN(0, 0);
+  CHECK_KEYPAD_BUTTON_AND_RETURN(1, 0);
+
+  return kNullKeypadButton;
+}
+
+#undef CHECK_KEYPAD_BUTTON_AND_RETURN
+
+static IRTransmission CreateRC6IRTransmission(uint8_t address,
+                                              uint8_t command) {
+  IRTransmission transmission;
+  transmission.protocol = PROTOCOL_RC6;
+  transmission.rc6.start_bit = 1;
+  transmission.rc6.field = 0;
+  transmission.rc6.t = 0;
+  transmission.rc6.address = address;
+  transmission.rc6.command = command;
+  return transmission;
+}
+
+// Handle the input from the keypad, if any.
+static bool APP_HandleKeypadIteration(void) {
+  const KeypadButton button = APP_ReadKeypad();
+  if (IsNullKeypadButton(&button)) {
+    return false;
+  }
+
+#define kNumRows 2
+#define kNumCols 1
+
+  if (button.row < 0 || button.row >= kNumRows || button.column < 0 ||
+      button.column >= kNumCols) {
+    // TODO(sergey): Indicate an error situation somehow.
+    return false;
+  }
+
+  IRTransmission kTransmissions[kNumRows][kNumCols] = {
+      {CreateRC6IRTransmission(0, 0x10)},  // [0, 0]: Volume Up.
+      {CreateRC6IRTransmission(0, 0x11)},  // [1, 0]: Volume Down.
+  };
+
+  const IRTransmission* transmission =
+      &kTransmissions[button.row][button.column];
+  if (transmission->protocol != PROTOCOL_UNKNOWN) {
+    IRENCODER_Transmit(transmission);
+    return true;
+  }
+
+  return false;
+
+#undef kNumRows
+#undef kNumCols
+}
+
+static void APP_HandleKeypad(void) {
+  while (APP_HandleKeypadIteration()) {
+    DelayMilliseconds(100);
+  }
 }
 
 // Configure the chip for minimal power draw during sleep, keeping required
@@ -87,8 +186,14 @@ static void APP_ConfigureAndSleep(void) {
   T1CONbits.T1OSCEN = 0;   // Disable Timer1 oscillator.
   HLVDCONbits.HLVDEN = 0;  // Disable High/Low-Voltage Detect Power Enable bit.
 
-  // Configure interrupt input pin as input.
-  WAKE_INT_TRIS = 1;
+  // Configure keypad columns as interrupt inputs.
+  KEYPAD_COLUMN_0_TRIS = 1;
+
+  // Configure rows as outputs and latch them to 1.
+  KEYPAD_ROW_0_TRIS = 0;
+  KEYPAD_ROW_0_LAT = 1;
+  KEYPAD_ROW_1_TRIS = 0;
+  KEYPAD_ROW_1_LAT = 1;
 
   // Interrupt on raising edge.
   INTCON2bits.INTEDG0 = 1;
@@ -106,27 +211,11 @@ static void APP_ConfigureAndSleep(void) {
 void main(void) {
   APP_ConfigureOnStartup();
 
-  flag = 1;
-  while (flag) {
-    IRTransmission transmission;
-    transmission.protocol = PROTOCOL_RC6;
-    transmission.rc6.start_bit = 1;
-    transmission.rc6.field = 0;
-    transmission.rc6.t = 0;
-    transmission.rc6.address = 0;
-    transmission.rc6.command = 0x10;
-    IRENCODER_Transmit(&transmission);
-
-    HEARTBEAT_LED_LAT = 1;
-    DelayMilliseconds(500);
-    HEARTBEAT_LED_LAT = 0;
-    DelayMilliseconds(500);
-  }
+  APP_HandleKeypad();
 
   APP_ConfigureAndSleep();
 }
 
 void __interrupt() ISR(void) {
-  flag = !flag;
   INTCONbits.INT0IF = 0;
 }

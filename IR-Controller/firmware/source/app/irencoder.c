@@ -24,7 +24,7 @@
 
 #include "app/irencoder_rc6.h"
 
-void IRENCODER_Transmit(IRTransmission* transmission) {
+void IRENCODER_Transmit(const IRTransmission* transmission) {
   switch (transmission->protocol) {
     case PROTOCOL_UNKNOWN: break;
     case PROTOCOL_RC6: IRENCODER_Transmit_RC6(transmission); break;

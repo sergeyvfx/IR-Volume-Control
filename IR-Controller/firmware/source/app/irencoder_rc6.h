@@ -26,6 +26,6 @@
 struct IRTransmission;
 
 // Blocking call which transmits IR command in RC6 encoding.
-void IRENCODER_Transmit_RC6(struct IRTransmission* transmission);
+void IRENCODER_Transmit_RC6(const struct IRTransmission* transmission);
 
 #endif  // APP_IRENCODER_RC6_H_

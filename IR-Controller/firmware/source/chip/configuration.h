@@ -63,7 +63,7 @@
 #pragma config CCP2MX = OFF
 #pragma config PBADEN = OFF
 #pragma config LPT1OSC = ON
-#pragma config MCLRE = ON
+#pragma config MCLRE = OFF
 
 // CONFIG4L
 #pragma config STVREN = ON

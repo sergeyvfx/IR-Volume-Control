@@ -47,6 +47,6 @@ typedef struct IRTransmission {
 } IRTransmission;
 
 // Blocking call which transmits IR command.
-void IRENCODER_Transmit(IRTransmission* transmission);
+void IRENCODER_Transmit(const IRTransmission* transmission);
 
 #endif  // APP_IRENCODER_H_

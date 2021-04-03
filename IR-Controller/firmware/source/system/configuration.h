@@ -44,19 +44,22 @@
 #define _XTAL_FREQ FOSC_FREQ
 
 ////////////////////////////////////////////////////////////////////////////////
-// Wake-up interrupt.
+// Keypad configuration.
 
-#define WAKE_INT_TRIS TRISBbits.RB0
+// Columns are responsible for listening in the sleep mode.
+#define KEYPAD_COLUMN_0_TRIS TRISBbits.RB0
+#define KEYPAD_COLUMN_0_PORT PORTBbits.RB0
+
+#define KEYPAD_ROW_0_TRIS TRISBbits.RB4
+#define KEYPAD_ROW_0_LAT LATBbits.LATB4
+
+#define KEYPAD_ROW_1_TRIS TRISBbits.RB5
+#define KEYPAD_ROW_1_LAT LATBbits.LATB5
 
 ////////////////////////////////////////////////////////////////////////////////
-// Keyboard.
+// Debug pin.
 
-// #define KEY_TRIS TRISAbits.RA0
-
-////////////////////////////////////////////////////////////////////////////////
-// Heart-Beat LED
-
-#define HEARTBEAT_LED_TRIS TRISAbits.RA0
-#define HEARTBEAT_LED_LAT LATAbits.LATA0
+#define DEBUG_PIN_TRIS TRISAbits.RA0
+#define DEBUG_PIN_LAT LATAbits.LATA0
 
 #endif  // SYSTEM_CONFIGURATION_H_
