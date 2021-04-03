@@ -39,6 +39,24 @@ X - 2 0 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Connector_Generic_Conn_1x06_Generic
+#
+DEF Connector_Generic_Conn_1x06_Generic J 0 40 Y Y 1 F N
+F0 "J" 0 0 50 H V C CNN
+F1 "Connector_Generic_Conn_1x06_Generic" -50 -700 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -50 -50 100 -650 0 1 0 f
+X 1 1 -150 -100 100 R 50 50 1 1 P
+X 2 2 -150 -200 100 R 50 50 1 1 P
+X 3 3 -150 -300 100 R 50 50 1 1 P
+X 4 4 -150 -400 100 R 50 50 1 1 P
+X 5 5 -150 -500 100 R 50 50 1 1 P
+X 6 6 -150 -600 100 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # LED_IN-S126ESGHIR
 #
 DEF LED_IN-S126ESGHIR D 0 40 N Y 1 F N
@@ -110,6 +128,70 @@ X OSC1/CLKI 9 -1400 -150 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
+# Power_+3V
+#
+DEF Power_+3V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "Power_+3V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# Power_GND
+#
+DEF Power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -200 50 H I C CNN
+F1 "Power_GND" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -50 -50 50 -65 0 1 0 F
+P 2 0 1 0 0 0 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# Resistor_CRGCQ0402F10K
+#
+DEF Resistor_CRGCQ0402F10K R 0 40 N Y 1 F N
+F0 "R" -50 50 50 H V L BNN
+F1 "Resistor_CRGCQ0402F10K" -50 0 50 H I L BNN
+F2 "Resistor:R_0402_1005Metric" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "CRGCQ 0402 10K 1%" 0 0 50 H I C CNN "Description"
+F5 "10 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200, Moisture Resistant Thick Film" 0 0 50 H I C CNN "Detailed Description"
+F6 "TE Connectivity Passive Product" 0 0 50 H I C CNN "Manufacturer"
+F7 "CRGCQ0402F10K" 0 0 50 H I C CNN "Manufacturer Part Number"
+F8 "A129639CT-ND" 0 0 50 H I C CNN "Digi-Key Part Number"
+F9 "10k" -50 -50 50 H V L BNN "Resistance"
+F10 "CRGCQ" 0 0 50 H I C CNN "Series"
+F11 "Cut Tape (CT)" 0 0 50 H I C CNN "Packaging"
+F12 "±1%" 0 0 50 H I C CNN "Tolerance"
+F13 "0.063W, 1/16W" 0 0 50 H I C CNN "Power (Watts)"
+F14 "Thick Film" 0 0 50 H I C CNN "Composition"
+F15 "Automotive AEC-Q200, Moisture Resistant" 0 0 50 H I C CNN "Features"
+F16 "±100ppm/°C" 0 0 50 H I C CNN "Temperature Coefficient"
+F17 "-55°C ~ 155°C" 0 0 50 H I C CNN "Operating Temperature"
+F18 "0402 (1005 Metric)" 0 0 50 H I C CNN "Package / Case"
+F19 "AEC-Q200" 0 0 50 H I C CNN "Ratings"
+F20 "0402" 0 0 50 H I C CNN "Supplier Device Package"
+F21 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" 0 0 50 H I C CNN "Size / Dimension"
+F22 "0.016\" (0.40mm)" 0 0 50 H I C CNN "Height - Seated (Max)"
+F23 "2" 0 0 50 H I C CNN "Number of Terminations"
+F24 "CRGCQ0402" 0 0 50 H I C CNN "Base Part Number"
+DRAW
+P 5 0 1 10 -140 100 -60 100 -60 -100 -140 -100 -140 100 N
+X ~ 1 -100 150 50 D 50 50 1 1 P
+X ~ 2 -100 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Resistor_R
 #
 DEF Resistor_R R 0 40 N Y 1 F N
@@ -121,6 +203,46 @@ DRAW
 P 5 0 1 10 -140 100 -60 100 -60 -100 -140 -100 -140 100 N
 X ~ 1 -100 150 50 D 50 50 1 1 P
 X ~ 2 -100 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Switches_MCSLPT4644B1TR
+#
+DEF Switches_MCSLPT4644B1TR SW 0 40 N N 1 F N
+F0 "SW" 0 250 50 H V C CNN
+F1 "Switches_MCSLPT4644B1TR" 0 150 50 H V C CNN
+F2 "Switches:MCSLPT4644B1TR" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=2337234&DocType=Customer+Drawing&DocLang=English" 0 0 50 H I C CNN "Drawing"
+F5 "TACT MICRO JB 4.6X4.4X0.55 P3.5" 0 0 50 H I C CNN "Description"
+F6 "Tactile Switch SPST-NO Top Actuated Surface Mount" 0 0 50 H I C CNN "Detailed Description"
+F7 "TE Connectivity ALCOSWITCH Switches" 0 0 50 H I C CNN "Manufacturer"
+F8 "MCSLPT4644B1TR" 0 0 50 H I C CNN "Manufacturer Part Number"
+F9 "450-3379-1-ND" 0 0 50 H I C CNN "Digi-Key Part Number"
+F10 "LPT" 0 0 50 H I C CNN "Series"
+F11 "Cut Tape (CT)" 0 0 50 H I C CNN "Packaging"
+F12 "SPST-NO" 0 0 50 H I C CNN "Circuit"
+F13 "Off-Mom" 0 0 50 H I C CNN "Switch Function"
+F14 "0.05A @ 12VDC" 0 0 50 H I C CNN "Contact Rating @ Voltage"
+F15 "Flush" 0 0 50 H I C CNN "Actuator Type"
+F16 "Surface Mount" 0 0 50 H I C CNN "Mounting Type"
+F17 "0.55mm" 0 0 50 H I C CNN "Actuator Height off PCB, Vertical"
+F18 "Top Actuated" 0 0 50 H I C CNN "Actuator Orientation"
+F19 "J Lead" 0 0 50 H I C CNN "Termination Style"
+F20 "4.60mm x 4.40mm" 0 0 50 H I C CNN "Outline"
+F21 "Non-Illuminated" 0 0 50 H I C CNN "Illumination"
+F22 "100gf" 0 0 50 H I C CNN "Operating Force"
+F23 "-20°C ~ 70°C" 0 0 50 H I C CNN "Operating Temperature"
+F24 "Polyamide (PA), Nylon" 0 0 50 H I C CNN "Actuator Material"
+F25 "0.20mm" 0 0 50 H I C CNN "Switch Travel"
+F26 "1,000,000 Cycles" 0 0 50 H I C CNN "Mechanical Life"
+F27 "MCSLPT" 0 0 50 H I C CNN "Base Part Number"
+DRAW
+C -100 0 15 0 1 0 N
+C 100 0 15 0 1 0 N
+P 2 0 1 0 80 90 -85 10 N
+X 1 1 -200 0 85 R 50 50 1 1 P
+X 2 2 200 0 85 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -146,34 +268,6 @@ P 4 0 1 0 90 -90 80 -60 60 -80 90 -90 F
 X ~ 1 -200 0 225 R 50 50 1 1 P
 X ~ 2 100 -200 100 U 50 50 1 1 P
 X ~ 3 100 200 100 D 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# power_+3V0
-#
-DEF power_+3V0 #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+3V0" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +3V0 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_GND
-#
-DEF power_GND #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_GND" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #

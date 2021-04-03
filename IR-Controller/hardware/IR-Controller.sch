@@ -29,17 +29,6 @@ F 8 "PIC18F2550T-I/SO" H 4250 3050 50  0001 C CNN "Manufacturer Part Number"
 	1    4250 3050
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR06
-U 1 1 60030E14
-P 4200 4050
-F 0 "#PWR06" H 4200 3800 50  0001 C CNN
-F 1 "GND" H 4205 3877 50  0000 C CNN
-F 2 "" H 4200 4050 50  0001 C CNN
-F 3 "" H 4200 4050 50  0001 C CNN
-	1    4200 4050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4200 4050 4200 4000
 Wire Wire Line
@@ -49,17 +38,6 @@ Wire Wire Line
 Connection ~ 4200 4000
 Wire Wire Line
 	4200 4000 4200 3950
-$Comp
-L power:+3V0 #PWR07
-U 1 1 60031C1A
-P 4250 2050
-F 0 "#PWR07" H 4250 1900 50  0001 C CNN
-F 1 "+3V0" H 4265 2223 50  0000 C CNN
-F 2 "" H 4250 2050 50  0001 C CNN
-F 3 "" H 4250 2050 50  0001 C CNN
-	1    4250 2050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4250 2050 4250 2150
 $Comp
@@ -77,28 +55,6 @@ F 7 "https://www.memoryprotectiondevices.com/datasheets/BC-2003-datasheet.pdf" H
 F 8 "MPD (Memory Protection Devices)" H 1550 1600 50  0001 C CNN "Manufacturer"
 F 9 "BC-2003" H 1550 1600 50  0001 C CNN "Manufacturer Part Number"
 	1    1550 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V0 #PWR01
-U 1 1 600382A6
-P 1550 1450
-F 0 "#PWR01" H 1550 1300 50  0001 C CNN
-F 1 "+3V0" H 1565 1623 50  0000 C CNN
-F 2 "" H 1550 1450 50  0001 C CNN
-F 3 "" H 1550 1450 50  0001 C CNN
-	1    1550 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 60038C3B
-P 1550 1850
-F 0 "#PWR02" H 1550 1600 50  0001 C CNN
-F 1 "GND" H 1555 1677 50  0000 C CNN
-F 2 "" H 1550 1850 50  0001 C CNN
-F 3 "" H 1550 1850 50  0001 C CNN
-	1    1550 1850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -119,28 +75,6 @@ F 6 "C0402C104K3RAC7411" V 3550 1550 50  0001 C CNN "Manufacturer Part Number"
 F 7 "399-C0402C104K3RAC7411CT-ND" V 3550 1550 50  0001 C CNN "Digi-Key Part Number"
 	1    3550 1550
 	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+3V0 #PWR04
-U 1 1 60030181
-P 3550 1350
-F 0 "#PWR04" H 3550 1200 50  0001 C CNN
-F 1 "+3V0" H 3565 1523 50  0000 C CNN
-F 2 "" H 3550 1350 50  0001 C CNN
-F 3 "" H 3550 1350 50  0001 C CNN
-	1    3550 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR05
-U 1 1 60030711
-P 3550 1750
-F 0 "#PWR05" H 3550 1500 50  0001 C CNN
-F 1 "GND" H 3555 1577 50  0000 C CNN
-F 2 "" H 3550 1750 50  0001 C CNN
-F 3 "" H 3550 1750 50  0001 C CNN
-	1    3550 1750
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3550 1400 3550 1350
@@ -179,17 +113,6 @@ F 8 "Infrared (IR) Emitter 940nm 1.46V 100mA 92mW/sr @ 100mA (Typ) 30° 1210 (32
 	1    1550 2850
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:GND #PWR03
-U 1 1 60033686
-P 1550 3850
-F 0 "#PWR03" H 1550 3600 50  0001 C CNN
-F 1 "GND" H 1555 3677 50  0000 C CNN
-F 2 "" H 1550 3850 50  0001 C CNN
-F 3 "" H 1550 3850 50  0001 C CNN
-	1    1550 3850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1550 3800 1550 3850
 $Comp
@@ -211,17 +134,6 @@ Wire Wire Line
 	1550 3350 1550 3400
 Wire Wire Line
 	1550 3000 1550 3050
-$Comp
-L power:+3V0 #PWR08
-U 1 1 60035A12
-P 1550 2650
-F 0 "#PWR08" H 1550 2500 50  0001 C CNN
-F 1 "+3V0" H 1565 2823 50  0000 C CNN
-F 2 "" H 1550 2650 50  0001 C CNN
-F 3 "" H 1550 2650 50  0001 C CNN
-	1    1550 2650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1550 2650 1550 2700
 $Comp
@@ -243,4 +155,308 @@ Wire Wire Line
 	2850 3600 2450 3600
 Wire Wire Line
 	2150 3600 1850 3600
+$Comp
+L Switches:MCSLPT4644B1TR SW1
+U 1 1 6068B9D5
+P 7300 2150
+F 0 "SW1" H 7300 2313 50  0000 C CNN
+F 1 "MCSLPT4644B1TR" H 7300 2314 50  0001 C CNN
+F 2 "Switches:MCSLPT4644B1TR" H 7300 2150 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Tyco%20Electronics%20Alcoswitch%20PDFs/2337232-1_DS.pdf" H 7300 2150 50  0001 C CNN
+F 4 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=2337234&DocType=Customer+Drawing&DocLang=English" H 7300 2150 50  0001 C CNN "Drawing"
+F 5 "TACT MICRO JB 4.6X4.4X0.55 P3.5" H 7300 2150 50  0001 C CNN "Description"
+F 6 "Tactile Switch SPST-NO Top Actuated Surface Mount" H 7300 2150 50  0001 C CNN "Detailed Description"
+F 7 "TE Connectivity ALCOSWITCH Switches" H 7300 2150 50  0001 C CNN "Manufacturer"
+F 8 "MCSLPT4644B1TR" H 7300 2150 50  0001 C CNN "Manufacturer Part Number"
+F 9 "450-3379-1-ND" H 7300 2150 50  0001 C CNN "Digi-Key Part Number"
+F 10 "LPT" H 7300 2150 50  0001 C CNN "Series"
+F 11 "Cut Tape (CT)" H 7300 2150 50  0001 C CNN "Packaging"
+F 12 "SPST-NO" H 7300 2150 50  0001 C CNN "Circuit"
+F 13 "Off-Mom" H 7300 2150 50  0001 C CNN "Switch Function"
+F 14 "0.05A @ 12VDC" H 7300 2150 50  0001 C CNN "Contact Rating @ Voltage"
+F 15 "Flush" H 7300 2150 50  0001 C CNN "Actuator Type"
+F 16 "Surface Mount" H 7300 2150 50  0001 C CNN "Mounting Type"
+F 17 "0.55mm" H 7300 2150 50  0001 C CNN "Actuator Height off PCB, Vertical"
+F 18 "Top Actuated" H 7300 2150 50  0001 C CNN "Actuator Orientation"
+F 19 "J Lead" H 7300 2150 50  0001 C CNN "Termination Style"
+F 20 "4.60mm x 4.40mm" H 7300 2150 50  0001 C CNN "Outline"
+F 21 "Non-Illuminated" H 7300 2150 50  0001 C CNN "Illumination"
+F 22 "100gf" H 7300 2150 50  0001 C CNN "Operating Force"
+F 23 "-20°C ~ 70°C" H 7300 2150 50  0001 C CNN "Operating Temperature"
+F 24 "Polyamide (PA), Nylon" H 7300 2150 50  0001 C CNN "Actuator Material"
+F 25 "0.20mm" H 7300 2150 50  0001 C CNN "Switch Travel"
+F 26 "1,000,000 Cycles" H 7300 2150 50  0001 C CNN "Mechanical Life"
+F 27 "MCSLPT" H 7300 2150 50  0001 C CNN "Base Part Number"
+	1    7300 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power:GND #PWR04
+U 1 1 6068530C
+P 1550 3850
+F 0 "#PWR04" H 1550 3650 50  0001 C CNN
+F 1 "GND" H 1555 3712 50  0000 C CNN
+F 2 "" H 1550 3850 50  0001 C CNN
+F 3 "" H 1550 3850 50  0001 C CNN
+	1    1550 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power:GND #PWR07
+U 1 1 60685DB1
+P 4200 4050
+F 0 "#PWR07" H 4200 3850 50  0001 C CNN
+F 1 "GND" H 4205 3912 50  0000 C CNN
+F 2 "" H 4200 4050 50  0001 C CNN
+F 3 "" H 4200 4050 50  0001 C CNN
+	1    4200 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power:GND #PWR02
+U 1 1 60686759
+P 1550 1850
+F 0 "#PWR02" H 1550 1650 50  0001 C CNN
+F 1 "GND" H 1555 1712 50  0000 C CNN
+F 2 "" H 1550 1850 50  0001 C CNN
+F 3 "" H 1550 1850 50  0001 C CNN
+	1    1550 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power:GND #PWR06
+U 1 1 60686FF1
+P 3550 1750
+F 0 "#PWR06" H 3550 1550 50  0001 C CNN
+F 1 "GND" H 3555 1612 50  0000 C CNN
+F 2 "" H 3550 1750 50  0001 C CNN
+F 3 "" H 3550 1750 50  0001 C CNN
+	1    3550 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power:+3V #PWR01
+U 1 1 606853B1
+P 1550 1450
+F 0 "#PWR01" H 1550 1300 50  0001 C CNN
+F 1 "+3V" H 1565 1623 50  0000 C CNN
+F 2 "" H 1550 1450 50  0001 C CNN
+F 3 "" H 1550 1450 50  0001 C CNN
+	1    1550 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power:+3V #PWR05
+U 1 1 60685E70
+P 3550 1350
+F 0 "#PWR05" H 3550 1200 50  0001 C CNN
+F 1 "+3V" H 3565 1523 50  0000 C CNN
+F 2 "" H 3550 1350 50  0001 C CNN
+F 3 "" H 3550 1350 50  0001 C CNN
+	1    3550 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power:+3V #PWR08
+U 1 1 60686867
+P 4250 2050
+F 0 "#PWR08" H 4250 1900 50  0001 C CNN
+F 1 "+3V" H 4265 2223 50  0000 C CNN
+F 2 "" H 4250 2050 50  0001 C CNN
+F 3 "" H 4250 2050 50  0001 C CNN
+	1    4250 2050
+	1    0    0    -1  
+$EndComp
+Text Label 6750 2600 2    50   ~ 0
+SW_ROW_1
+Text Label 6750 2700 2    50   ~ 0
+SW_ROW_0
+Wire Wire Line
+	7500 2400 8550 2400
+$Comp
+L Switches:MCSLPT4644B1TR SW2
+U 1 1 6068E3F1
+P 7300 2600
+F 0 "SW2" H 7300 2763 50  0000 C CNN
+F 1 "MCSLPT4644B1TR" H 7300 2764 50  0001 C CNN
+F 2 "Switches:MCSLPT4644B1TR" H 7300 2600 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Tyco%20Electronics%20Alcoswitch%20PDFs/2337232-1_DS.pdf" H 7300 2600 50  0001 C CNN
+F 4 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=2337234&DocType=Customer+Drawing&DocLang=English" H 7300 2600 50  0001 C CNN "Drawing"
+F 5 "TACT MICRO JB 4.6X4.4X0.55 P3.5" H 7300 2600 50  0001 C CNN "Description"
+F 6 "Tactile Switch SPST-NO Top Actuated Surface Mount" H 7300 2600 50  0001 C CNN "Detailed Description"
+F 7 "TE Connectivity ALCOSWITCH Switches" H 7300 2600 50  0001 C CNN "Manufacturer"
+F 8 "MCSLPT4644B1TR" H 7300 2600 50  0001 C CNN "Manufacturer Part Number"
+F 9 "450-3379-1-ND" H 7300 2600 50  0001 C CNN "Digi-Key Part Number"
+F 10 "LPT" H 7300 2600 50  0001 C CNN "Series"
+F 11 "Cut Tape (CT)" H 7300 2600 50  0001 C CNN "Packaging"
+F 12 "SPST-NO" H 7300 2600 50  0001 C CNN "Circuit"
+F 13 "Off-Mom" H 7300 2600 50  0001 C CNN "Switch Function"
+F 14 "0.05A @ 12VDC" H 7300 2600 50  0001 C CNN "Contact Rating @ Voltage"
+F 15 "Flush" H 7300 2600 50  0001 C CNN "Actuator Type"
+F 16 "Surface Mount" H 7300 2600 50  0001 C CNN "Mounting Type"
+F 17 "0.55mm" H 7300 2600 50  0001 C CNN "Actuator Height off PCB, Vertical"
+F 18 "Top Actuated" H 7300 2600 50  0001 C CNN "Actuator Orientation"
+F 19 "J Lead" H 7300 2600 50  0001 C CNN "Termination Style"
+F 20 "4.60mm x 4.40mm" H 7300 2600 50  0001 C CNN "Outline"
+F 21 "Non-Illuminated" H 7300 2600 50  0001 C CNN "Illumination"
+F 22 "100gf" H 7300 2600 50  0001 C CNN "Operating Force"
+F 23 "-20°C ~ 70°C" H 7300 2600 50  0001 C CNN "Operating Temperature"
+F 24 "Polyamide (PA), Nylon" H 7300 2600 50  0001 C CNN "Actuator Material"
+F 25 "0.20mm" H 7300 2600 50  0001 C CNN "Switch Travel"
+F 26 "1,000,000 Cycles" H 7300 2600 50  0001 C CNN "Mechanical Life"
+F 27 "MCSLPT" H 7300 2600 50  0001 C CNN "Base Part Number"
+	1    7300 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 2750 8550 2750
+Text Label 8550 2400 2    50   ~ 0
+SW_ROW_1
+Text Label 8550 2750 2    50   ~ 0
+SW_ROW_0
+Wire Wire Line
+	7100 2600 7100 2150
+Wire Wire Line
+	7100 2150 7100 1300
+Connection ~ 7100 2150
+Text Label 6750 3100 2    50   ~ 0
+SW_COL_0
+Text Label 7100 1300 3    50   ~ 0
+SW_COL_0
+Wire Wire Line
+	7500 2150 7500 2400
+Wire Wire Line
+	7500 2600 7500 2750
+$Comp
+L Resistor:CRGCQ0402F10K R3
+U 1 1 6069684D
+P 6000 4050
+F 0 "R3" H 5970 4096 50  0000 L CNN
+F 1 "CRGCQ0402F10K" H 5950 4050 50  0001 L BNN
+F 2 "Resistor:R_0402_1005Metric" H 6000 4050 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English" H 6000 4050 50  0001 C CNN
+F 4 "CRGCQ 0402 10K 1%" H 6000 4050 50  0001 C CNN "Description"
+F 5 "10 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200, Moisture Resistant Thick Film" H 6000 4050 50  0001 C CNN "Detailed Description"
+F 6 "TE Connectivity Passive Product" H 6000 4050 50  0001 C CNN "Manufacturer"
+F 7 "CRGCQ0402F10K" H 6000 4050 50  0001 C CNN "Manufacturer Part Number"
+F 8 "A129639CT-ND" H 6000 4050 50  0001 C CNN "Digi-Key Part Number"
+F 9 "10k" H 5970 4005 50  0000 L CNN "Resistance"
+F 10 "CRGCQ" H 6000 4050 50  0001 C CNN "Series"
+F 11 "Cut Tape (CT)" H 6000 4050 50  0001 C CNN "Packaging"
+F 12 "±1%" H 6000 4050 50  0001 C CNN "Tolerance"
+F 13 "0.063W, 1/16W" H 6000 4050 50  0001 C CNN "Power (Watts)"
+F 14 "Thick Film" H 6000 4050 50  0001 C CNN "Composition"
+F 15 "Automotive AEC-Q200, Moisture Resistant" H 6000 4050 50  0001 C CNN "Features"
+F 16 "±100ppm/°C" H 6000 4050 50  0001 C CNN "Temperature Coefficient"
+F 17 "-55°C ~ 155°C" H 6000 4050 50  0001 C CNN "Operating Temperature"
+F 18 "0402 (1005 Metric)" H 6000 4050 50  0001 C CNN "Package / Case"
+F 19 "AEC-Q200" H 6000 4050 50  0001 C CNN "Ratings"
+F 20 "0402" H 6000 4050 50  0001 C CNN "Supplier Device Package"
+F 21 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 6000 4050 50  0001 C CNN "Size / Dimension"
+F 22 "0.016\" (0.40mm)" H 6000 4050 50  0001 C CNN "Height - Seated (Max)"
+F 23 "2" H 6000 4050 50  0001 C CNN "Number of Terminations"
+F 24 "CRGCQ0402" H 6000 4050 50  0001 C CNN "Base Part Number"
+	1    6000 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power:GND #PWR09
+U 1 1 6069D06B
+P 5900 4250
+F 0 "#PWR09" H 5900 4050 50  0001 C CNN
+F 1 "GND" H 5905 4112 50  0000 C CNN
+F 2 "" H 5900 4250 50  0001 C CNN
+F 3 "" H 5900 4250 50  0001 C CNN
+	1    5900 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4200 5900 4250
+$Comp
+L Power:+3V #PWR03
+U 1 1 606A50F2
+P 1550 2650
+F 0 "#PWR03" H 1550 2500 50  0001 C CNN
+F 1 "+3V" H 1565 2823 50  0000 C CNN
+F 2 "" H 1550 2650 50  0001 C CNN
+F 3 "" H 1550 2650 50  0001 C CNN
+	1    1550 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_1x06_Generic J1
+U 1 1 6068768D
+P 8100 3800
+F 0 "J1" H 8050 3850 50  0000 L CNN
+F 1 "Conn_1x06_Generic" H 8228 3410 50  0001 L CNN
+F 2 "Connector_Generic:Conn_1x06_Socket_Pitch2.54mm_sideways" H 8100 3800 50  0001 C CNN
+F 3 "" H 8100 3800 50  0001 C CNN
+	1    8100 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 4400 7350 4400
+Wire Wire Line
+	7950 4100 7350 4100
+Wire Wire Line
+	7350 4000 7950 4000
+Text Label 7350 4400 0    50   ~ 0
+MCLR
+Text Label 7350 4100 0    50   ~ 0
+PGD
+Text Label 7350 4000 0    50   ~ 0
+PGC
+Wire Wire Line
+	7950 4300 7650 4300
+Wire Wire Line
+	7650 4300 7650 3650
+Wire Wire Line
+	7950 4200 7700 4200
+Wire Wire Line
+	7700 4200 7700 4600
+$Comp
+L Power:GND #PWR0101
+U 1 1 6068FA1F
+P 7700 4600
+F 0 "#PWR0101" H 7700 4400 50  0001 C CNN
+F 1 "GND" H 7705 4462 50  0000 C CNN
+F 2 "" H 7700 4600 50  0001 C CNN
+F 3 "" H 7700 4600 50  0001 C CNN
+	1    7700 4600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Power:+3V #PWR0102
+U 1 1 60690747
+P 7650 3650
+F 0 "#PWR0102" H 7650 3500 50  0001 C CNN
+F 1 "+3V" H 7665 3823 50  0000 C CNN
+F 2 "" H 7650 3650 50  0001 C CNN
+F 3 "" H 7650 3650 50  0001 C CNN
+	1    7650 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 2400 2200 2400
+Text Label 2200 2400 0    50   ~ 0
+MCLR
+Wire Wire Line
+	5650 2500 6750 2500
+Wire Wire Line
+	5650 2400 6750 2400
+Text Label 6750 2400 2    50   ~ 0
+PGD
+Text Label 6750 2500 2    50   ~ 0
+PGC
+Wire Wire Line
+	5650 3100 5900 3100
+Wire Wire Line
+	5650 2600 6750 2600
+Wire Wire Line
+	5650 2700 6750 2700
+Wire Wire Line
+	5900 3100 5900 3900
+Connection ~ 5900 3100
+Wire Wire Line
+	5900 3100 6750 3100
 $EndSCHEMATC
