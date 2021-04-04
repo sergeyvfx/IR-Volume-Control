@@ -159,8 +159,12 @@ static bool APP_HandleKeypadIteration(void) {
 }
 
 static void APP_HandleKeypad(void) {
+  // Start with a longer delay before repeating. Allows to more easily perform
+  // single click o na small tacktile dome switches.
+  int delay = 200;
   while (APP_HandleKeypadIteration()) {
-    DelayMilliseconds(100);
+    DelayMilliseconds(delay);
+    delay = 100;
   }
 }
 
