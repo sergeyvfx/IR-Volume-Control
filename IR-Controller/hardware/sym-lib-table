@@ -7,5 +7,5 @@
   (lib (name Power)(type Legacy)(uri ${KIPRJMOD}/../../library/symbol/Power.lib)(options "")(descr ""))
   (lib (name Resistor)(type Legacy)(uri ${KIPRJMOD}/../../library/symbol/Resistor.lib)(options "")(descr ""))
   (lib (name Transistor_BJT)(type Legacy)(uri ${KIPRJMOD}/../../library/symbol/Transistor_BJT.lib)(options "")(descr ""))
-  (lib (name Switches)(type Legacy)(uri D:/Projects/Electronics/IR-Volume-Control/library/symbol/Switches.lib)(options "")(descr ""))
+  (lib (name Switches)(type Legacy)(uri ${KIPRJMOD}/../../library/symbol/Switches.lib)(options "")(descr ""))
 )

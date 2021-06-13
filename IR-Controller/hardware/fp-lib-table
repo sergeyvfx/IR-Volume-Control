@@ -6,5 +6,5 @@
   (lib (name Package_SO)(type KiCad)(uri ${KIPRJMOD}/../../library/footprint/Package_SO.pretty)(options "")(descr ""))
   (lib (name Package_TO_SOT)(type KiCad)(uri ${KIPRJMOD}/../../library/footprint/Package_TO_SOT.pretty)(options "")(descr ""))
   (lib (name Resistor)(type KiCad)(uri ${KIPRJMOD}/../../library/footprint/Resistor.pretty)(options "")(descr ""))
-  (lib (name Switches)(type KiCad)(uri D:/Projects/Electronics/IR-Volume-Control/library/footprint/Switches.pretty)(options "")(descr ""))
+  (lib (name Switches)(type KiCad)(uri ${KIPRJMOD}/../../library/footprint/Switches.pretty)(options "")(descr ""))
 )
