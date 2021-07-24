@@ -52,13 +52,14 @@ static SPIContext global_context;
 // SPI Context.
 
 #define SPI_CLK LATCbits.LATC0
-#define SPI_CS LATCbits.LATC1
-#define SPI_SDO LATCbits.LATC2
+#define SPI_SDO LATCbits.LATC1
+#define SPI_CS LATCbits.LATC2
 
 static void CONTEXT_Initialize(SPIContext* context) {
   context->state = IDLE;
   context->bit_mask = 0;
 
+  // TODO(sergey): Make ports configuration more flexible.
   TRISCbits.TRISC0 = 0;
   TRISCbits.TRISC1 = 0;
   TRISCbits.TRISC2 = 0;

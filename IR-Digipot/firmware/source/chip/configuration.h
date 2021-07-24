@@ -34,7 +34,7 @@
 // unit of the project).
 
 // Ensure we have the correct target PIC device family.
-#if !defined(__18F2550)
+#if !defined(__18F2550) && !defined(__18LF2550)
 #  error This firmware only was tested on PIC18F2550 microcontrollers.
 #endif
 

@@ -37,11 +37,11 @@ static const int global_num_leds = 2;
 static uint8_t num_decrement = 0;
 
 static void INDICATION_InitializePorts(void) {
+  TRISAbits.RA0 = 0;
   TRISAbits.RA1 = 0;
-  TRISAbits.RA2 = 0;
 
+  LATAbits.LATA0 = 0;
   LATAbits.LATA1 = 0;
-  LATAbits.LATA2 = 0;
 }
 
 static void INDICATION_InitializeTimer(void) {
@@ -86,8 +86,8 @@ void INDICATION_Tasks(void) {
     num_decrement = 0;
   }
 
-  LATAbits.LATA1 = (global_led_counters[0] != 0) ? 1 : 0;
-  LATAbits.LATA2 = (global_led_counters[1] != 0) ? 1 : 0;
+  LATAbits.LATA0 = (global_led_counters[0] != 0) ? 1 : 0;
+  LATAbits.LATA1 = (global_led_counters[1] != 0) ? 1 : 0;
 }
 
 void INDICATION_InterruptHandler(void) {

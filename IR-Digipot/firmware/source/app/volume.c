@@ -30,6 +30,7 @@
 #include "math/math.h"
 #include "spi/software_spi.h"
 #include "system/configuration.h"
+#include "time/time.h"
 #include "uart/uart.h"
 
 // Incremental update submits new resistance value in gradual increments as
@@ -86,11 +87,12 @@ VolumeContext global_context;
 // Timer value which makes it to run at 99.29Hz.
 #define TIMER3_VALUE 35322
 
-#define POT_SHTD LATAbits.LATA3
+#define AUDIO_POWER_SHTD LATAbits.LATA3
+#define POT_SHTD LATAbits.LATA4
 
 // Change in the pot value per one volume step.
 #define VOLUME_STEP 1
-#define MAX_VOLUME 16
+#define MAX_VOLUME 32
 
 ////////////////////////////////////////////////////////////////////////////////
 // Context.
@@ -165,10 +167,10 @@ static bool CONTEXT_VolumeStepDown(VolumeContext* context) {
 }
 
 static uint8_t VolumeToResistance(const uint8_t volume) {
-  if (volume >= 16) {
+  if (volume >= 32) {
     return 255;
   }
-  return volume * volume;
+  return volume * 8;
 }
 
 static void CONTEXT_FinishTransmissionIfNeeded(VolumeContext* context) {
@@ -233,7 +235,7 @@ static void CONTEXT_ScheduleTransmissionIfNeeded(VolumeContext* context) {
 
 #if USE_INCREMENTAL_UPDATE
   if (context->has_current_resistance) {
-    static const uint8_t max_steps = 4;
+    static const uint8_t max_steps = INCREMENTAL_MAX_STEPS;
     const uint8_t resistance_change =
         (context->current_resistance < context->transmit_target_resistance)
             ? context->transmit_target_resistance - context->current_resistance
@@ -278,7 +280,11 @@ static void CONTEXT_Tasks(VolumeContext* context) {
 // Volume system.
 
 static void VOLUME_InitializePorts(void) {
+  // TODO(sergey): Make TRIS bits configuration more flexible.
   TRISAbits.TRISA3 = 0;
+  TRISAbits.TRISA4 = 0;
+
+  AUDIO_POWER_SHTD = 1;
   POT_SHTD = 0;
 }
 
@@ -316,8 +322,14 @@ void VOLUME_UpdateOnStartup(void) {
   UART_WriteHexByte(global_context.volume);
   UART_WriteBuffer("\r\n", 2);
 
+  // TODO(sergey): Gradually bring power on.
+  AUDIO_POWER_SHTD = 0;
+
   CONTEXT_VolumeSet(&global_context, global_context.volume);
   POT_SHTD = 1;
+
+  // Wait for the chip to come online.
+  DelayMilliseconds(5);
 }
 
 static bool IsVolumeDownTransmission(const IRTransmission* transmission) {
